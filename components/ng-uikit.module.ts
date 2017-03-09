@@ -1,11 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { SelectComponent } from './select/select.component';
-import { ButtonComponent } from './button/button.component';
+import { SelectModule } from './select/select.module';
+import { ButtonModule } from './button/button.module';
 
 var MATERIAL_MODULES = [
-  SelectComponent,
-  ButtonComponent
+  SelectModule,
+  ButtonModule
 ];
 
 // @NgModule({

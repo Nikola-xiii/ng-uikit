@@ -2,18 +2,18 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-import { SelectComponent } from '../../ng-uikit'
-import { ButtonComponent } from '../../ng-uikit';
+import { SelectModule } from '../../ng-uikit'
+import { ButtonModule } from '../../ng-uikit';
 import { AppComponent } from './app.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    SelectComponent,
-    ButtonComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
+    SelectModule,
+    ButtonModule,
     FormsModule,
     HttpModule
   ],
