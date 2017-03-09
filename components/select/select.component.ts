@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {NgModule, Component, OnInit, Input} from '@angular/core';
 
 @Component({
   selector: 'uikit-select',
@@ -6,10 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./select.component.scss']
 })
 export class SelectComponent implements OnInit {
-
   constructor() { }
 
   ngOnInit() {
   }
 
 }
+
+@NgModule({
+  imports: [],
+  exports: [SelectComponent],
+  declarations: [SelectComponent]
+})
+export class SelectModule { }

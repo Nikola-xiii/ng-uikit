@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { NgModule, Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'uikit-button',
@@ -16,3 +16,11 @@ export class ButtonComponent implements OnInit {
     console.log('Helllo from UIKit');
   }
 }
+
+@NgModule({
+  imports: [],
+  exports: [ButtonComponent],
+  declarations: [ButtonComponent]
+})
+
+export class ButtonModule { }
