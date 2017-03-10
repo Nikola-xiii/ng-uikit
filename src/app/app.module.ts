@@ -2,7 +2,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-import { SelectModule } from '../../ng-uikit'
 import { ButtonModule } from '../../ng-uikit';
 import { AppComponent } from './app.component';
 
@@ -12,7 +11,6 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    SelectModule,
     ButtonModule,
     FormsModule,
     HttpModule
