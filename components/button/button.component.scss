@@ -14,44 +14,55 @@ $grey-darker: #D0D0D0;
   font-family: $font-root-family;
   text-transform: uppercase;
   border-radius: 3px;
+  border: 1px solid;
   font-size: 10px;
   line-height: 1.4;
-  font-weight: bold;
-}
+  font-weight: 700;
 
-.uikit-button-primary {
-  background: $red;
-  border: 1px solid $red-darker;
-  color: $white;
-  font-weight: bold;
-
-  &:hover {
-    background: $red-darker;
-    cursor: pointer;
-  }
-}
-
-.uikit-button-cancel {
-  background: $grey;
-  border: 1px solid $grey-darker;
-  color: $grey-dark;
-  font-weight: bold;
-
-  &:hover {
-    background: $grey-darker;
-    cursor: pointer;
-  }
-}
-
-.uikit-button-secondary {
-  background: $white;
-  border: 1px solid $red;
-  color: $red;
-  font-weight: bold;
-
-  &:hover {
-    background: $red-darker;
+  &-primary {
+    background: $red;
+    border-color: $red-darker;
     color: $white;
-    cursor: pointer;
+    font-weight: bold;
+
+    &:hover {
+      background: $red-darker;
+      cursor: pointer;
+    }
+
+    &.cancel {
+      background: $grey;
+      border-color: $grey-darker;
+      color: $grey-dark;
+
+      &:hover {
+        background: $grey-darker;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &-secondary {
+    background: $white;
+    border-color: $red;
+    color: $red;
+    font-weight: 400;
+
+    &:hover {
+      background: $red-darker;
+      color: $white;
+      cursor: pointer;
+    }
+
+    &.cancel {
+      background: $white;
+      border-color: $grey-darker;
+      color: $grey-dark;
+
+      &:hover {
+        background: $grey-darker;
+        cursor: pointer;
+      }
+    }
   }
 }
