@@ -8,7 +8,7 @@ var MATERIAL_MODULES = [
 ];
 
 @NgModule({
-  imports: MATERIAL_MODULES
+  imports: MATERIAL_MODULES,
 })
 
 export class NgUIKitModule { }

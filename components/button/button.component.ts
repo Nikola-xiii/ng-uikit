@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'uikit-button',
@@ -7,12 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ButtonComponent implements OnInit {
 
+  @Input() styleClass: string = 'default';
+
   constructor() {}
 
   ngOnInit() {
-  }
-
-  MakeAfterClick = function() {
-    console.log('Helllo from UIKit');
   }
 }

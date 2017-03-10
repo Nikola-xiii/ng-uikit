@@ -1,6 +1,43 @@
 @import "../settings/uikit.settings";
 
+// Basic colors for UIkit
+$red: #B11118;
+$red-darker: #8A070C;
+
+$grey: #F4F4F4;
+$grey-darker: #D0D0D0;
+
 .uikit-button {
+  min-width: 80px;
+  padding: 4px 15px;
+  font-family: $font-root-family;
+  text-transform: uppercase;
+  border-radius: 3px;
+  font-size: 10px;
+  line-height: 1.4;
+  font-weight: bold;
+}
+
+.uikit-button-primary {
   background: $red;
+  border: 1px solid $red-darker;
   color: $white;
+  font-weight: bold;
+
+  &:hover {
+    background: $red-darker;
+    cursor: pointer;
+  }
+}
+
+.uikit-button-cancel {
+  background: $grey;
+  border: 1px solid $grey-darker;
+  color: $white;
+  font-weight: bold;
+
+  &:hover {
+    background: $grey-darker;
+    cursor: pointer;
+  }
 }
