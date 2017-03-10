@@ -5,6 +5,7 @@ $red: #B11118;
 $red-darker: #8A070C;
 
 $grey: #F4F4F4;
+$grey-dark: #7D7D7D;
 $grey-darker: #D0D0D0;
 
 .uikit-button {
@@ -33,11 +34,24 @@ $grey-darker: #D0D0D0;
 .uikit-button-cancel {
   background: $grey;
   border: 1px solid $grey-darker;
-  color: $white;
+  color: $grey-dark;
   font-weight: bold;
 
   &:hover {
     background: $grey-darker;
+    cursor: pointer;
+  }
+}
+
+.uikit-button-secondary {
+  background: $white;
+  border: 1px solid $red;
+  color: $red;
+  font-weight: bold;
+
+  &:hover {
+    background: $red-darker;
+    color: $white;
     cursor: pointer;
   }
 }
