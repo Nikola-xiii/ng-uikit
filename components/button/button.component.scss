@@ -19,6 +19,10 @@ $grey-darker: #D0D0D0;
   line-height: 1.4;
   font-weight: 700;
 
+  &[disabled] {
+    opacity: .5;
+  }
+
   &-primary {
     background: $red;
     border-color: $red-darker;
