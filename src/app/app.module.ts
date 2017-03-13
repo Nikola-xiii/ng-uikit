@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { ButtonModule } from '../../ng-uikit';
 import { HeaderModule } from '../../ng-uikit';
+import { SidebarModule } from '../../ng-uikit';
 import { AppComponent } from './app.component';
 
 @NgModule({
@@ -14,6 +15,7 @@ import { AppComponent } from './app.component';
     BrowserModule,
     ButtonModule,
     HeaderModule,
+    SidebarModule,
     FormsModule,
     HttpModule
   ],

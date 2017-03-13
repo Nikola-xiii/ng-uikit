@@ -7,6 +7,4 @@ import { HeaderComponent } from './header.component';
   declarations: [HeaderComponent]
 })
 
-export class HeaderModule { }/**
- * Created by nikola on 3/13/17.
- */
+export class HeaderModule { }

@@ -1,9 +1,16 @@
 <uikit-header>
   <img src="../assets/img/logo.svg" height="25">
 </uikit-header>
-<p><strong>UIButtonType:</strong> primary</p>
-<uikit-button UIButtonType="primary" (click)="HelloClick()">{{CreateBTNText}}</uikit-button>
-<uikit-button UIButtonType="primary cancel">Cancel</uikit-button>
-<p><strong>UIButtonType:</strong> secondary</p>
-<uikit-button type="submit" UIButtonType="secondary">Create</uikit-button>
-<uikit-button type="submit" UIButtonType="secondary cancel">Create</uikit-button>
+<main>
+  <uikit-sidebar>
+    <span>Sidebar</span>
+  </uikit-sidebar>
+  <div>
+    <p><strong>UIButtonType:</strong> primary</p>
+    <uikit-button UIButtonType="primary" (click)="HelloClick()">{{CreateBTNText}}</uikit-button>
+    <uikit-button UIButtonType="primary cancel">Cancel</uikit-button>
+    <p><strong>UIButtonType:</strong> secondary</p>
+    <uikit-button type="submit" UIButtonType="secondary">Create</uikit-button>
+    <uikit-button type="submit" UIButtonType="secondary cancel">Create</uikit-button>
+  </div>
+</main>
