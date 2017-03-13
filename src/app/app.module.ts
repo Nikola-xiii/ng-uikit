@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { ButtonModule } from '../../ng-uikit';
+import { HeaderModule } from '../../ng-uikit';
 import { AppComponent } from './app.component';
 
 @NgModule({
@@ -12,6 +13,7 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     ButtonModule,
+    HeaderModule,
     FormsModule,
     HttpModule
   ],

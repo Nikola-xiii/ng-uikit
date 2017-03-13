@@ -8,4 +8,8 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Angular 2 UIKit';
   CreateBTNText = "Create";
+
+  HelloClick() {
+    console.log('Hello from main app');
+  }
 }
