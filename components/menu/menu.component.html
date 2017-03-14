@@ -1,7 +1,7 @@
 <div class="uikit-menu">
   <ul>
     <li class="uikit-menu-item" *ngFor="let menuItem of menuItems;">
-      <i *ngIf="menuItem.icon" class="icon {{menuItem.icon}}"></i>
+      <i *ngIf="menuItem.icon" class="material-icons">{{menuItem.icon}}</i>
       <img *ngIf="menuItem.iconUrl" src="{{menuItem.iconUrl}}">
       <a href="{{menuItem.id}}">{{menuItem.name}}</a>
       <ul *ngIf="menuItem.subItems">

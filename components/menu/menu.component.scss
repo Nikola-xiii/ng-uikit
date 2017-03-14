@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
 .uikit-menu {
   ul {
     margin: 0;
@@ -23,4 +25,10 @@
 
 .uikit-menu-sub-item {
   padding: 5px 0;
+}
+
+.material-icons {
+  display: block;
+  margin: 0 auto 12px;
+  font-size: 48px;
 }

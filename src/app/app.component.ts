@@ -11,9 +11,11 @@ export class AppComponent {
 
   menuItems = [
     {
-      name: 'Button',
+      name: 'Buttons',
       id: "btn",
-      iconUrl: '/assets/img/ic_applications_48px.svg',
+      active: true,
+      //iconUrl: '/assets/img/ic_applications_48px.svg',
+      icon: 'touch_app',
       subItems: [
         { name: 'SubItem 1', id: "menu" },
         { name: 'SubItem 2', id: "menu" }
@@ -22,7 +24,8 @@ export class AppComponent {
     {
       name: 'Menu',
       id: "menu",
-      iconUrl: '/assets/img/ic_segment_48px.svg'
+      active: false,
+      icon: 'widgets',
     }
   ];
 
