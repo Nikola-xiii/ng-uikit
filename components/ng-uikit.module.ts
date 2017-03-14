@@ -1,14 +1,19 @@
 import { NgModule } from '@angular/core';
-import { SelectModule } from './select/select.module';
+import { HeaderModule } from './header/header.module';
+import { SidebarModule } from './sidebar/sidebar.module';
+import { MenuModule } from './menu/menu.module';
 import { ButtonModule } from './button/button.module';
 
+
 var MATERIAL_MODULES = [
-  SelectModule,
-  ButtonModule
+  HeaderModule,
+  SidebarModule,
+  MenuModule,
+  ButtonModule,
 ];
 
 @NgModule({
-  imports: MATERIAL_MODULES,
+  exports: MATERIAL_MODULES,
 })
 
 export class NgUIKitModule { }
