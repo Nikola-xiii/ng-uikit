@@ -1,6 +1,6 @@
 webpackJsonp([2,4],{
 
-/***/ 31:
+/***/ 27:
 /***/ (function(module, exports) {
 
 /*
@@ -57,16 +57,16 @@ module.exports = function() {
 
 /***/ }),
 
-/***/ 335:
+/***/ 336:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(516);
+var content = __webpack_require__(517);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // add the styles to the DOM
-var update = __webpack_require__(547)(content, {});
+var update = __webpack_require__(550)(content, {});
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
@@ -84,10 +84,10 @@ if(false) {
 
 /***/ }),
 
-/***/ 516:
+/***/ 517:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(31)();
+exports = module.exports = __webpack_require__(27)();
 // imports
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i);", ""]);
 
@@ -99,7 +99,7 @@ exports.push([module.i, "html {\n  width: 100%;\n  height: 100%; }\n\nbody {\n  
 
 /***/ }),
 
-/***/ 547:
+/***/ 550:
 /***/ (function(module, exports) {
 
 /*
@@ -352,13 +352,13 @@ function updateLink(linkElement, obj) {
 
 /***/ }),
 
-/***/ 551:
+/***/ 554:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(335);
+module.exports = __webpack_require__(336);
 
 
 /***/ })
 
-},[551]);
+},[554]);
 //# sourceMappingURL=styles.bundle.js.map
