@@ -27,8 +27,25 @@
     margin: 0 auto 12px;
     font-size: 48px;
   }
+
+  &.active::after {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    right: -5px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-right: 7px solid #ffffff;
+  }
 }
 
 .uikit-menu-sub-item {
   padding: 5px 0;
+}
+
+.sub-menu {
+  display: none;
 }

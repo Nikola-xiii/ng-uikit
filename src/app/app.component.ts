@@ -11,19 +11,19 @@ export class AppComponent {
   menuItems = [
     {
       name: 'Buttons',
-      id: "btn",
+      id: "buttons",
       active: true,
-      link: 'button',
+      routerLink: 'buttons',
       icon: 'touch_app',
       subItems: [
-        { name: 'SubItem 1', id: "menu", link: '' },
-        { name: 'SubItem 2', id: "menu", link: '' }
+        { name: 'SubItem 1', id: "menu", routerLink: '' },
+        { name: 'SubItem 2', id: "menu", routerLink: '' }
       ]
     },
     {
       name: 'Menu',
       id: "menu",
-      link: '',
+      routerLink: '',
       active: false,
       icon: 'widgets',
     }
