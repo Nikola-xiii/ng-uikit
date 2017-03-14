@@ -10,6 +10,11 @@ export class AppComponent {
 
   menuItems = [
     {
+      name: 'ReadMe',
+      routerLink: 'readme',
+      icon: 'warning',
+    },
+    {
       name: 'Buttons',
       id: "buttons",
       active: true,
@@ -25,7 +30,7 @@ export class AppComponent {
       id: "menu",
       routerLink: 'menu',
       active: false,
-      icon: 'reorder',
+      icon: 'menu',
     }
   ];
 

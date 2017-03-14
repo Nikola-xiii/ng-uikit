@@ -1,7 +1,19 @@
 <h1>Button component</h1>
 <p><strong>UIButtonType:</strong> primary</p>
-<uikit-button UIButtonType="primary" [disabled]="false" (click)="HelloClick()">{{CreateBTNText}}</uikit-button>
+<uikit-button UIButtonType="primary" (click)="HelloClick()">{{CreateBTNText}}</uikit-button>
 <uikit-button UIButtonType="primary cancel">Cancel</uikit-button>
+<p><strong>UIButtonType:</strong> primary <strong>[disabled]="true"</strong></p>
+<uikit-button UIButtonType="primary" [disabled]="true" (click)="HelloClick()">{{CreateBTNText}}</uikit-button>
+<uikit-button UIButtonType="primary cancel" [disabled]="true">Cancel</uikit-button>
 <p><strong>UIButtonType:</strong> secondary</p>
 <uikit-button type="submit" UIButtonType="secondary">Create</uikit-button>
 <uikit-button type="submit" UIButtonType="secondary cancel">Create</uikit-button>
+<p><strong>UIButtonType:</strong> primary <strong>[disabled]="true"</strong></p>
+<uikit-button UIButtonType="secondary" [disabled]="true" (click)="HelloClick()">{{CreateBTNText}}</uikit-button>
+<uikit-button UIButtonType="secondary cancel" [disabled]="true">Cancel</uikit-button>
+<h2>Component selector</h2>
+<div>
+  <p>Tag name - <strong>uikit-button</strong></p>
+  <p>Attr - <strong>UIButtonType</strong></p>
+  <p>Values: primary | secondary | cancel</p>
+</div>

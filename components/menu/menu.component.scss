@@ -37,6 +37,13 @@
       border-bottom: 7px solid transparent;
       border-right: 7px solid #ffffff;
     }
+
+    &:hover {
+      .material-icons,
+      span {
+        opacity: 1;
+      }
+    }
   }
 
   .material-icons {

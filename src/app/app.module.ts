@@ -11,12 +11,14 @@ import { AppComponent } from './app.component';
 import { NgUIKitModule } from '../../components/ng-uikit.module'
 import { ButtonDocComponent } from './button-doc/button-doc.component';
 import { MenuDocComponent } from './menu-doc/menu-doc.component';
+import { ReadmeComponent } from './readme/readme.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ButtonDocComponent,
     MenuDocComponent,
+    ReadmeComponent,
   ],
   imports: [
     BrowserModule,
