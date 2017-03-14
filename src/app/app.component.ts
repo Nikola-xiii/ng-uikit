@@ -7,23 +7,23 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Angular 2 UIKit';
-  CreateBTNText = "Create";
 
   menuItems = [
     {
       name: 'Buttons',
       id: "btn",
       active: true,
-      //iconUrl: '/assets/img/ic_applications_48px.svg',
+      link: 'button',
       icon: 'touch_app',
       subItems: [
-        { name: 'SubItem 1', id: "menu" },
-        { name: 'SubItem 2', id: "menu" }
+        { name: 'SubItem 1', id: "menu", link: '' },
+        { name: 'SubItem 2', id: "menu", link: '' }
       ]
     },
     {
       name: 'Menu',
       id: "menu",
+      link: '',
       active: false,
       icon: 'widgets',
     }
