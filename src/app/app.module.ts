@@ -5,6 +5,7 @@ import { HttpModule } from '@angular/http';
 import { ButtonModule } from '../../ng-uikit';
 import { HeaderModule } from '../../ng-uikit';
 import { SidebarModule } from '../../ng-uikit';
+import { MenuModule } from '../../ng-uikit';
 import { AppComponent } from './app.component';
 
 @NgModule({
@@ -16,6 +17,7 @@ import { AppComponent } from './app.component';
     ButtonModule,
     HeaderModule,
     SidebarModule,
+    MenuModule,
     FormsModule,
     HttpModule
   ],

@@ -1,8 +1,14 @@
 <div class="uikit-menu">
   <ul>
-    <!--<li *ngFor="let memuItem of memuItems">-->
-      <!--<i class="icon {{menuItem.name}}"></i>-->
-      <!--<a href="{{menuItem.id}}">{{menuItem.name}}</a>-->
-    <!--</li>-->
+    <li class="uikit-menu-item" *ngFor="let menuItem of menuItems;">
+      <i *ngIf="menuItem.icon" class="icon {{menuItem.icon}}"></i>
+      <img *ngIf="menuItem.iconUrl" src="{{menuItem.iconUrl}}">
+      <a href="{{menuItem.id}}">{{menuItem.name}}</a>
+      <ul *ngIf="menuItem.subItems">
+        <li class="uikit-menu-sub-item" *ngFor="let subItem of menuItem.subItems;">
+          <a href="{{subItem.id}}">{{subItem.name}}</a>
+        </li>
+      </ul>
+    </li>
   </ul>
 </div>

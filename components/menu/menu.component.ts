@@ -7,8 +7,7 @@ import {Component, OnInit, Input} from '@angular/core';
 })
 
 export class MenuComponent implements OnInit {
-
-  //@Input("memuItems") memuItems;
+  @Input() menuItems;
 
   constructor() {}
 
