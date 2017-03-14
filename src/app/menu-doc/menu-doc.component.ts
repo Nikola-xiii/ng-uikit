@@ -1,12 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  selector: 'kit-menu-doc',
+  templateUrl: './menu-doc.component.html',
+  styleUrls: ['./menu-doc.component.scss']
 })
-export class AppComponent {
-  title = 'Angular 2 UIKit';
+export class MenuDocComponent implements OnInit {
 
   menuItems = [
     {
@@ -29,7 +28,9 @@ export class AppComponent {
     }
   ];
 
-  HelloClick() {
-    console.log('Hello from main app');
+  constructor() { }
+
+  ngOnInit() {
   }
+
 }

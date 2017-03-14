@@ -9,11 +9,13 @@ import { SidebarModule } from '../../ng-uikit';
 import { MenuModule } from '../../ng-uikit';
 import { AppComponent } from './app.component';
 import { ButtonDocComponent } from './button-doc/button-doc.component';
+import { MenuDocComponent } from './menu-doc/menu-doc.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ButtonDocComponent,
+    MenuDocComponent,
   ],
   imports: [
     BrowserModule,

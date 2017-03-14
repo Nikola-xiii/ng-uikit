@@ -15,30 +15,35 @@
   padding: 20px 0;
   cursor: pointer;
   font-size: 12px;
-  opacity: 0.6;
 
   a {
     color: #ffffff;
+    display: block;
     text-decoration: none;
+
+    span {
+      opacity: 0.6;
+    }
+
+    &.active::after {
+      position: absolute;
+      content: '';
+      width: 0;
+      height: 0;
+      right: -5px;
+      top: 50%;
+      transform: translateY(-50%);
+      border-top: 7px solid transparent;
+      border-bottom: 7px solid transparent;
+      border-right: 7px solid #ffffff;
+    }
   }
 
   .material-icons {
     display: block;
+    opacity: 0.6;
     margin: 0 auto 12px;
     font-size: 48px;
-  }
-
-  &.active::after {
-    position: absolute;
-    content: '';
-    width: 0;
-    height: 0;
-    right: -5px;
-    top: 50%;
-    transform: translateY(-50%);
-    border-top: 7px solid transparent;
-    border-bottom: 7px solid transparent;
-    border-right: 7px solid #ffffff;
   }
 }
 
