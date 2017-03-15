@@ -1,4 +1,18 @@
-import { Component } from '@angular/core';
+import { Component, Directive, OnInit, ElementRef } from '@angular/core';
+
+declare var Prism: any;
+
+@Directive({
+  selector: '[pCode]'
+})
+export class CodeHighlighter implements OnInit {
+
+  constructor(public el: ElementRef) {}
+
+  ngOnInit() {
+    Prism.highlightElement(this.el.nativeElement);
+  }
+}
 
 @Component({
   selector: 'app-root',

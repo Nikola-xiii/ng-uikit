@@ -3,10 +3,6 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { routing } from './app.routes';
-// import { ButtonModule } from '../../ng-uikit';
-// import { HeaderModule } from '../../ng-uikit';
-// import { SidebarModule } from '../../ng-uikit';
-// import { MenuModule } from '../../ng-uikit';
 import { AppComponent } from './app.component';
 import { NgUIKitModule } from '../../components/ng-uikit.module'
 import { ButtonDocComponent } from './button-doc/button-doc.component';
@@ -23,10 +19,6 @@ import { ReadmeComponent } from './readme/readme.component';
   imports: [
     BrowserModule,
     NgUIKitModule,
-    // ButtonModule,
-    // HeaderModule,
-    // SidebarModule,
-    // MenuModule,
     FormsModule,
     HttpModule,
     routing,
