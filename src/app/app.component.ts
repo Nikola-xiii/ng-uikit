@@ -1,18 +1,5 @@
-import { Component, Directive, OnInit, ElementRef } from '@angular/core';
-
-declare var Prism: any;
-
-@Directive({
-  selector: '[pCode]'
-})
-export class CodeHighlighter implements OnInit {
-
-  constructor(public el: ElementRef) {}
-
-  ngOnInit() {
-    Prism.highlightElement(this.el.nativeElement);
-  }
-}
+import {Component, Directive,ElementRef,OnInit} from '@angular/core';
+import {CommonModule} from '@angular/common';
 
 @Component({
   selector: 'app-root',
@@ -24,20 +11,19 @@ export class AppComponent {
 
   menuItems = [
     {
-      name: 'ReadMe',
+      name: 'Dashboard',
       routerLink: 'readme',
-      icon: 'warning',
+      icon: 'dashboard',
+      subItems: [
+        { name: 'SubItem 1', id: "menu", routerLink: '' },
+      ]
     },
     {
       name: 'Buttons',
       id: "buttons",
       active: true,
       routerLink: 'buttons',
-      icon: 'touch_app',
-      subItems: [
-        { name: 'SubItem 1', id: "menu", routerLink: '' },
-        { name: 'SubItem 2', id: "menu", routerLink: '' }
-      ]
+      icon: 'touch_app'
     },
     {
       name: 'Menu',
@@ -45,6 +31,12 @@ export class AppComponent {
       routerLink: 'menu',
       active: false,
       icon: 'menu',
+      subItems: [
+        { name: 'SubItem 1', id: "menu", routerLink: '' },
+        { name: 'SubItem 2', id: "menu", routerLink: '' },
+        { name: 'SubItem 3', id: "menu", routerLink: '' },
+        { name: 'SubItem 4', id: "menu", routerLink: '' }
+      ]
     }
   ];
 
