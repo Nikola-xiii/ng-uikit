@@ -20,6 +20,11 @@
     opacity: 0.6;
   }
 
+  img {
+    height: 24px;
+    width: auto;
+  }
+
   &:hover {
     .sub-menu {
       display: block;
@@ -65,7 +70,8 @@
   .material-icons {
     display: block;
     opacity: 0.6;
-    margin: 0 auto 8px;
+    height: 24px;
+    margin: 0 auto 12px;
     font-size: 32px;
   }
 }
