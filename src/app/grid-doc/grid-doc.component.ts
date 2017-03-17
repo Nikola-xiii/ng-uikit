@@ -9,13 +9,6 @@ export class GridDocComponent implements OnInit {
 
   constructor() { }
 
-  tableTypes = [
-    'Text',
-    'Action',
-    'Links',
-    'Device'
-  ];
-
   public GridDataRows = [
     {
       id: 11,
@@ -41,6 +34,17 @@ export class GridDocComponent implements OnInit {
     }
   ];
 
+  public GridDataColumns = [
+    {
+      id: [11, 12, 13, 14],
+      name: ['Test1', 'Test3', 'Test3', 'Test4'],
+      email: ['test1@test.com', 'test1@test.com', 'test1@test.com', 'test1@test.com'],
+      vendor: ['LoopMe', 'LoopMe', 'LoopMe', 'LoopMe'],
+      company: ['Home', 'Home', 'Home', 'Home'],
+      action: ['input', 'input', 'input', 'input']
+    }
+  ];
+
   public settings: Object = {
     headers: [
       { key: 'id', name: 'id', sortable: true, type: 'text'},
@@ -49,7 +53,7 @@ export class GridDocComponent implements OnInit {
       { key: 'vendor', name: 'vendor', sortable: true, type: 'text'},
       { key: 'email', name: 'email', sortable: false, type: 'link'},
       { key: 'action', name: '', sortable: false, type: 'action'},
-    ]
+    ],
   };
 
   ngOnInit() {

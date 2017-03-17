@@ -11,7 +11,6 @@ export class GridComponent implements OnInit {
   @Input() GridDataRows: Array<any>;
   @Input() settings: Object;
 
-
   constructor() {}
 
   ngOnInit() {

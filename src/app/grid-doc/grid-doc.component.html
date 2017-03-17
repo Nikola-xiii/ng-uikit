@@ -1,4 +1,49 @@
 <h1>Grid Component</h1>
+<h3>Data array</h3>
+<pre class="language-javascript">
+  <code class="language-javascript">
+    public GridDataRows = [
+    &#123;
+      id: 11,
+      name: 'Test1',
+      email: 'test1@test.com',
+      vendor: 'LoopMe',
+      company: 'Home',
+      action: 'input',
+      action_list: [
+        'remove',
+        'update'
+      ]
+    &#125;,
+    &#123;
+      id: 12,
+      email: 'test2@test.com',
+      vendor: 'LoopMe',
+      company: 'EA Sport',
+      action: 'input',
+      action_list: [
+        'remove',
+      ]
+    &#125;
+  ];
+  </code>
+</pre>
+
+<h3>Grid settings</h3>
+<pre class="language-javascript">
+  <code class="language-javascript">
+    settings: Object = &#123;
+      headers: [
+        &#123; key: 'id', name: 'id', sortable: true, type: 'text'&#125;,
+        &#123; key: 'name', name: 'name', sortable: false, type: 'text'&#125;,
+        &#123; key: 'company', name: 'company', sortable: false, type: 'text'&#125;,
+        &#123; key: 'vendor', name: 'vendor', sortable: true, type: 'text'&#125;,
+        &#123; key: 'email', name: 'email', sortable: false, type: 'link'&#125;,
+        &#123; key: 'action', name: '', sortable: false, type: 'action'&#125;,
+      ],
+    &#125;;
+  </code>
+</pre>
 <uikit-grid [GridDataRows]="GridDataRows" [settings]="settings">
   <!--<uikit-grid-column key="id" su header="User" type=""></uikit-grid-column>-->
 </uikit-grid>
