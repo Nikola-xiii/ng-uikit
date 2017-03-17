@@ -1,13 +1,18 @@
 <table class="uikit-grid">
   <thead>
-    <th></th>
+    <th *ngFor="let Header of settings.headers">
+      {{Header.name}}
+      <uikit-button UIButtonType="secondary" *ngIf="Header.sortable">sort</uikit-button>
+    </th>
   </thead>
   <tbody>
     <tr *ngFor="let GridDataRow of GridDataRows">
       <td>{{GridDataRow.id}}</td>
+      <td>{{GridDataRow.name}}</td>
+      <td>{{GridDataRow.vendor}}</td>
+      <td>{{GridDataRow.company}}</td>
       <td><a href="{{GridDataRow.email}}">{{GridDataRow.email}}</a></td>
       <td><uikit-button UIButtonType="primary">{{GridDataRow.action}}</uikit-button></td>
-      <ng-content></ng-content>
     </tr>
   </tbody>
 </table>
