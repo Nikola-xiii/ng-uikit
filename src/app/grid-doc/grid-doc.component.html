@@ -1,4 +1,7 @@
 <h1>Grid Component</h1>
+<uikit-grid [GridDataRows]="GridDataRows" [settings]="settings">
+  <!--<uikit-grid-column key="id" su header="User" type=""></uikit-grid-column>-->
+</uikit-grid>
 <h3>Data array</h3>
 <pre class="language-javascript">
   <code class="language-javascript">
@@ -15,16 +18,7 @@
         'update'
       ]
     &#125;,
-    &#123;
-      id: 12,
-      email: 'test2@test.com',
-      vendor: 'LoopMe',
-      company: 'EA Sport',
-      action: 'input',
-      action_list: [
-        'remove',
-      ]
-    &#125;
+    ...
   ];
   </code>
 </pre>
@@ -44,6 +38,4 @@
     &#125;;
   </code>
 </pre>
-<uikit-grid [GridDataRows]="GridDataRows" [settings]="settings">
-  <!--<uikit-grid-column key="id" su header="User" type=""></uikit-grid-column>-->
-</uikit-grid>
+

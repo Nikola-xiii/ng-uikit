@@ -16,21 +16,41 @@ export class GridDocComponent implements OnInit {
       email: 'test1@test.com',
       vendor: 'LoopMe',
       company: 'Home',
-      action: 'input',
-      action_list: [
-        'remove',
-        'update'
-      ]
+      action: {
+        name: 'Login',
+        icon: 'input'
+      }
     },
     {
       id: 12,
       email: 'test2@test.com',
       vendor: 'LoopMe',
       company: 'EA Sport',
-      action: 'input',
-      action_list: [
-        'remove',
-      ]
+      action: {
+        name: 'Login',
+        icon: 'input'
+      }
+    },
+    {
+      id: 14,
+      name: 'Test1',
+      email: 'test1@test.com',
+      vendor: 'LoopMe',
+      company: 'Home',
+      action: {
+        name: 'Login',
+        icon: 'input'
+      }
+    },
+    {
+      id: 14,
+      email: 'test2@test.com',
+      vendor: 'LoopMe',
+      company: 'EA Sport',
+      action: {
+        name: 'Login',
+        icon: 'input'
+      }
     }
   ];
 
