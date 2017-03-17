@@ -1,5 +1,4 @@
-import {Component, Directive,ElementRef,OnInit} from '@angular/core';
-import {CommonModule} from '@angular/common';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -11,9 +10,9 @@ export class AppComponent {
 
   menuItems = [
     {
-      name: 'Dashboard',
+      name: 'Readme',
       routerLink: 'readme',
-      icon: 'dashboard',
+      icon: 'assignment_late',
       subItems: [
         { name: 'SubItem 1', id: "menu", routerLink: '' },
       ]

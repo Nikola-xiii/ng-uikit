@@ -9,6 +9,7 @@ import {Component, OnInit, Input} from '@angular/core';
 export class ButtonComponent implements OnInit {
   @Input("UIButtonType") UIButtonType: string;
   @Input("type") type: string;
+  @Input("icon") icon: string;
 
   @Input() disabled: boolean;
 

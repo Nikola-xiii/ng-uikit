@@ -1,8 +1,8 @@
 <table class="uikit-grid">
   <thead>
     <th *ngFor="let Header of settings.headers">
+      <uikit-button class="grid-btn" UIButtonType="icon" icon="arrow_downward" *ngIf="Header.sortable"></uikit-button>
       {{Header.name}}
-      <uikit-button UIButtonType="secondary" *ngIf="Header.sortable">sort</uikit-button>
     </th>
   </thead>
   <tbody>
@@ -10,7 +10,7 @@
       <td *ngFor="let Column of settings.headers">
         <span *ngIf="Column.type == 'text'">{{GridDataRow[Column.key]}}</span>
         <a *ngIf="Column.type == 'link'" href="{{GridDataRow[Column.key]}}">{{GridDataRow[Column.key]}}</a>
-        <uikit-button *ngIf="Column.type == 'action'" UIButtonType="primary">{{GridDataRow[Column.key]}}</uikit-button>
+        <uikit-button *ngIf="Column.type == 'action'" UIButtonType="icon" icon="{{GridDataRow[Column.key]}}"></uikit-button>
       </td>
     </tr>
   </tbody>

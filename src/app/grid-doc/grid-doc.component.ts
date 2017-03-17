@@ -23,7 +23,7 @@ export class GridDocComponent implements OnInit {
       email: 'test1@test.com',
       vendor: 'LoopMe',
       company: 'Home',
-      action: 'login',
+      action: 'input',
       action_list: [
         'remove',
         'update'
@@ -34,7 +34,7 @@ export class GridDocComponent implements OnInit {
       email: 'test2@test.com',
       vendor: 'LoopMe',
       company: 'EA Sport',
-      action: 'login',
+      action: 'input',
       action_list: [
         'remove',
       ]
@@ -48,7 +48,7 @@ export class GridDocComponent implements OnInit {
       { key: 'company', name: 'company', sortable: false, type: 'text'},
       { key: 'vendor', name: 'vendor', sortable: true, type: 'text'},
       { key: 'email', name: 'email', sortable: false, type: 'link'},
-      { key: 'action', name: 'email', sortable: false, type: 'action'},
+      { key: 'action', name: 'action', sortable: false, type: 'action'},
     ]
   };
 

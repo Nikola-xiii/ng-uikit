@@ -1,3 +1,4 @@
 <button class="uikit-button uikit-button-{{UIButtonType}}" type="{{type}}" [attr.disabled]="disabled ? true : null">
+  <i *ngIf="icon" class="material-icons">{{icon}}</i>
   <ng-content></ng-content>
 </button>
