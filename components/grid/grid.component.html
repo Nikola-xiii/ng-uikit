@@ -1,7 +1,7 @@
 <table class="uikit-grid">
   <thead>
     <th *ngFor="let Header of settings.headers">
-      <uikit-button class="grid-btn" UIButtonType="icon" icon="arrow_downward" *ngIf="Header.sortable"></uikit-button>
+      <i *ngIf="Header.sortable" class="material-icons">arrow_downward</i>
       {{Header.name}}
     </th>
   </thead>

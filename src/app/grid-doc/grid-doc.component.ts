@@ -48,7 +48,7 @@ export class GridDocComponent implements OnInit {
       { key: 'company', name: 'company', sortable: false, type: 'text'},
       { key: 'vendor', name: 'vendor', sortable: true, type: 'text'},
       { key: 'email', name: 'email', sortable: false, type: 'link'},
-      { key: 'action', name: 'action', sortable: false, type: 'action'},
+      { key: 'action', name: '', sortable: false, type: 'action'},
     ]
   };
 
