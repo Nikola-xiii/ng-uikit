@@ -7,12 +7,11 @@
   </thead>
   <tbody>
     <tr *ngFor="let GridDataRow of GridDataRows">
-      <td>{{GridDataRow.id}}</td>
-      <td>{{GridDataRow.name}}</td>
-      <td>{{GridDataRow.vendor}}</td>
-      <td>{{GridDataRow.company}}</td>
-      <td><a href="{{GridDataRow.email}}">{{GridDataRow.email}}</a></td>
-      <td><uikit-button UIButtonType="primary">{{GridDataRow.action}}</uikit-button></td>
+      <td *ngFor="let Column of settings.headers">
+        <span *ngIf="Column.type == 'text'">{{GridDataRow[Column.key]}}</span>
+        <a *ngIf="Column.type == 'link'" href="{{GridDataRow[Column.key]}}">{{GridDataRow[Column.key]}}</a>
+        <uikit-button *ngIf="Column.type == 'action'" UIButtonType="primary">{{GridDataRow[Column.key]}}</uikit-button>
+      </td>
     </tr>
   </tbody>
 </table>
