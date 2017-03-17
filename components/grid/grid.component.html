@@ -1,0 +1,13 @@
+<table class="uikit-grid">
+  <thead>
+    <th></th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let GridDataRow of GridDataRows">
+      <td>{{GridDataRow.id}}</td>
+      <td><a href="{{GridDataRow.email}}">{{GridDataRow.email}}</a></td>
+      <td><uikit-button UIButtonType="primary">{{GridDataRow.action}}</uikit-button></td>
+      <ng-content></ng-content>
+    </tr>
+  </tbody>
+</table>

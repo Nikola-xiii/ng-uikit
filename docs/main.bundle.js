@@ -5,6 +5,41 @@ webpackJsonp([1,4],{
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__button_component__ = __webpack_require__(454);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ButtonModule; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var ButtonModule = (function () {
+    function ButtonModule() {
+    }
+    ButtonModule = __decorate([
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["b" /* NgModule */])({
+            imports: [],
+            exports: [__WEBPACK_IMPORTED_MODULE_1__button_component__["a" /* ButtonComponent */]],
+            declarations: [__WEBPACK_IMPORTED_MODULE_1__button_component__["a" /* ButtonComponent */]]
+        }), 
+        __metadata('design:paramtypes', [])
+    ], ButtonModule);
+    return ButtonModule;
+}());
+//# sourceMappingURL=button.module.js.map
+
+/***/ }),
+
+/***/ 303:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ButtonDocComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -25,8 +60,8 @@ var ButtonDocComponent = (function () {
     ButtonDocComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Component */])({
             selector: 'kit-button-doc',
-            template: __webpack_require__(532),
-            styles: [__webpack_require__(523)]
+            template: __webpack_require__(538),
+            styles: [__webpack_require__(527)]
         }), 
         __metadata('design:paramtypes', [])
     ], ButtonDocComponent);
@@ -36,7 +71,68 @@ var ButtonDocComponent = (function () {
 
 /***/ }),
 
-/***/ 303:
+/***/ 304:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GridDocComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var GridDocComponent = (function () {
+    function GridDocComponent() {
+        this.tableTypes = [
+            'Text',
+            'Action',
+            'Links',
+            'Device'
+        ];
+        this.GridDataRows = [
+            {
+                id: 11,
+                email: 'test1@test.com',
+                action: 'login',
+                action_list: [
+                    'remove',
+                    'update'
+                ]
+            },
+            {
+                id: 12,
+                email: 'test2@test.com',
+                action: 'login',
+                action_list: [
+                    'remove',
+                ]
+            }
+        ];
+        this.GridSettings = [];
+    }
+    GridDocComponent.prototype.ngOnInit = function () {
+    };
+    GridDocComponent = __decorate([
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Component */])({
+            selector: 'kit-grid-doc',
+            template: __webpack_require__(539),
+            styles: [__webpack_require__(528)]
+        }), 
+        __metadata('design:paramtypes', [])
+    ], GridDocComponent);
+    return GridDocComponent;
+}());
+//# sourceMappingURL=grid-doc.component.js.map
+
+/***/ }),
+
+/***/ 305:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -80,8 +176,8 @@ var MenuDocComponent = (function () {
     MenuDocComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Component */])({
             selector: 'kit-menu-doc',
-            template: __webpack_require__(533),
-            styles: [__webpack_require__(524)]
+            template: __webpack_require__(540),
+            styles: [__webpack_require__(529)]
         }), 
         __metadata('design:paramtypes', [])
     ], MenuDocComponent);
@@ -91,7 +187,7 @@ var MenuDocComponent = (function () {
 
 /***/ }),
 
-/***/ 304:
+/***/ 306:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -115,8 +211,8 @@ var ReadmeComponent = (function () {
     ReadmeComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Component */])({
             selector: 'kit-readme',
-            template: __webpack_require__(534),
-            styles: [__webpack_require__(525)]
+            template: __webpack_require__(541),
+            styles: [__webpack_require__(530)]
         }), 
         __metadata('design:paramtypes', [])
     ], ReadmeComponent);
@@ -126,7 +222,7 @@ var ReadmeComponent = (function () {
 
 /***/ }),
 
-/***/ 333:
+/***/ 335:
 /***/ (function(module, exports) {
 
 function webpackEmptyContext(req) {
@@ -135,20 +231,20 @@ function webpackEmptyContext(req) {
 webpackEmptyContext.keys = function() { return []; };
 webpackEmptyContext.resolve = webpackEmptyContext;
 module.exports = webpackEmptyContext;
-webpackEmptyContext.id = 333;
+webpackEmptyContext.id = 335;
 
 
 /***/ }),
 
-/***/ 334:
+/***/ 336:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__ = __webpack_require__(422);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_app_module__ = __webpack_require__(462);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__(464);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__ = __webpack_require__(424);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_app_module__ = __webpack_require__(465);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__(467);
 
 
 
@@ -161,7 +257,7 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dyna
 
 /***/ }),
 
-/***/ 452:
+/***/ 454:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -182,22 +278,22 @@ var ButtonComponent = (function () {
     }
     ButtonComponent.prototype.ngOnInit = function () { };
     __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* Input */])("UIButtonType"), 
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["N" /* Input */])("UIButtonType"), 
         __metadata('design:type', String)
     ], ButtonComponent.prototype, "UIButtonType", void 0);
     __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* Input */])("type"), 
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["N" /* Input */])("type"), 
         __metadata('design:type', String)
     ], ButtonComponent.prototype, "type", void 0);
     __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* Input */])(), 
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["N" /* Input */])(), 
         __metadata('design:type', Boolean)
     ], ButtonComponent.prototype, "disabled", void 0);
     ButtonComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Component */])({
             selector: 'uikit-button',
-            template: __webpack_require__(527),
-            styles: [__webpack_require__(518)]
+            template: __webpack_require__(532),
+            styles: [__webpack_require__(521)]
         }), 
         __metadata('design:paramtypes', [])
     ], ButtonComponent);
@@ -207,13 +303,58 @@ var ButtonComponent = (function () {
 
 /***/ }),
 
-/***/ 453:
+/***/ 455:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__button_component__ = __webpack_require__(452);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ButtonModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GridComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var GridComponent = (function () {
+    function GridComponent() {
+    }
+    GridComponent.prototype.ngOnInit = function () {
+    };
+    __decorate([
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["N" /* Input */])(), 
+        __metadata('design:type', Object)
+    ], GridComponent.prototype, "GridDataRows", void 0);
+    __decorate([
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["N" /* Input */])(), 
+        __metadata('design:type', Object)
+    ], GridComponent.prototype, "Settings", void 0);
+    GridComponent = __decorate([
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Component */])({
+            selector: 'uikit-grid',
+            template: __webpack_require__(533),
+            styles: [__webpack_require__(522)]
+        }), 
+        __metadata('design:paramtypes', [])
+    ], GridComponent);
+    return GridComponent;
+}());
+//# sourceMappingURL=grid.component.js.map
+
+/***/ }),
+
+/***/ 456:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__grid_component__ = __webpack_require__(455);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_common__ = __webpack_require__(44);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__button_button_module__ = __webpack_require__(302);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GridModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -225,24 +366,26 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
-var ButtonModule = (function () {
-    function ButtonModule() {
+
+
+var GridModule = (function () {
+    function GridModule() {
     }
-    ButtonModule = __decorate([
+    GridModule = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["b" /* NgModule */])({
-            imports: [],
-            exports: [__WEBPACK_IMPORTED_MODULE_1__button_component__["a" /* ButtonComponent */]],
-            declarations: [__WEBPACK_IMPORTED_MODULE_1__button_component__["a" /* ButtonComponent */]]
+            imports: [__WEBPACK_IMPORTED_MODULE_2__angular_common__["a" /* CommonModule */], __WEBPACK_IMPORTED_MODULE_3__button_button_module__["a" /* ButtonModule */]],
+            exports: [__WEBPACK_IMPORTED_MODULE_1__grid_component__["a" /* GridComponent */]],
+            declarations: [__WEBPACK_IMPORTED_MODULE_1__grid_component__["a" /* GridComponent */]]
         }), 
         __metadata('design:paramtypes', [])
-    ], ButtonModule);
-    return ButtonModule;
+    ], GridModule);
+    return GridModule;
 }());
-//# sourceMappingURL=button.module.js.map
+//# sourceMappingURL=grid.module.js.map
 
 /***/ }),
 
-/***/ 454:
+/***/ 457:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -266,8 +409,8 @@ var HeaderComponent = (function () {
     HeaderComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Component */])({
             selector: 'uikit-header',
-            template: __webpack_require__(528),
-            styles: [__webpack_require__(519)]
+            template: __webpack_require__(534),
+            styles: [__webpack_require__(523)]
         }), 
         __metadata('design:paramtypes', [])
     ], HeaderComponent);
@@ -277,12 +420,12 @@ var HeaderComponent = (function () {
 
 /***/ }),
 
-/***/ 455:
+/***/ 458:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__header_component__ = __webpack_require__(454);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__header_component__ = __webpack_require__(457);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HeaderModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -312,7 +455,7 @@ var HeaderModule = (function () {
 
 /***/ }),
 
-/***/ 456:
+/***/ 459:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -334,14 +477,14 @@ var MenuComponent = (function () {
     MenuComponent.prototype.ngOnInit = function () {
     };
     __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* Input */])(), 
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["N" /* Input */])(), 
         __metadata('design:type', Object)
     ], MenuComponent.prototype, "menuItems", void 0);
     MenuComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Component */])({
             selector: 'uikit-menu',
-            template: __webpack_require__(529),
-            styles: [__webpack_require__(520)]
+            template: __webpack_require__(535),
+            styles: [__webpack_require__(524)]
         }), 
         __metadata('design:paramtypes', [])
     ], MenuComponent);
@@ -351,13 +494,13 @@ var MenuComponent = (function () {
 
 /***/ }),
 
-/***/ 457:
+/***/ 460:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(63);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__menu_component__ = __webpack_require__(456);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(44);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__menu_component__ = __webpack_require__(459);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_router__ = __webpack_require__(296);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MenuModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -378,7 +521,7 @@ var MenuModule = (function () {
     }
     MenuModule = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["b" /* NgModule */])({
-            imports: [__WEBPACK_IMPORTED_MODULE_1__angular_common__["g" /* CommonModule */], __WEBPACK_IMPORTED_MODULE_3__angular_router__["a" /* RouterModule */]],
+            imports: [__WEBPACK_IMPORTED_MODULE_1__angular_common__["a" /* CommonModule */], __WEBPACK_IMPORTED_MODULE_3__angular_router__["a" /* RouterModule */]],
             exports: [__WEBPACK_IMPORTED_MODULE_2__menu_component__["a" /* MenuComponent */]],
             declarations: [__WEBPACK_IMPORTED_MODULE_2__menu_component__["a" /* MenuComponent */]]
         }), 
@@ -390,15 +533,16 @@ var MenuModule = (function () {
 
 /***/ }),
 
-/***/ 458:
+/***/ 461:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__header_header_module__ = __webpack_require__(455);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__sidebar_sidebar_module__ = __webpack_require__(460);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__menu_menu_module__ = __webpack_require__(457);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__button_button_module__ = __webpack_require__(453);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__header_header_module__ = __webpack_require__(458);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__sidebar_sidebar_module__ = __webpack_require__(463);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__menu_menu_module__ = __webpack_require__(460);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__button_button_module__ = __webpack_require__(302);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__grid_grid_module__ = __webpack_require__(456);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NgUIKitModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -414,11 +558,13 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
 var MATERIAL_MODULES = [
     __WEBPACK_IMPORTED_MODULE_1__header_header_module__["a" /* HeaderModule */],
     __WEBPACK_IMPORTED_MODULE_2__sidebar_sidebar_module__["a" /* SidebarModule */],
     __WEBPACK_IMPORTED_MODULE_3__menu_menu_module__["a" /* MenuModule */],
     __WEBPACK_IMPORTED_MODULE_4__button_button_module__["a" /* ButtonModule */],
+    __WEBPACK_IMPORTED_MODULE_5__grid_grid_module__["a" /* GridModule */],
 ];
 var NgUIKitModule = (function () {
     function NgUIKitModule() {
@@ -435,7 +581,7 @@ var NgUIKitModule = (function () {
 
 /***/ }),
 
-/***/ 459:
+/***/ 462:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -459,8 +605,8 @@ var SidebarComponent = (function () {
     SidebarComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Component */])({
             selector: 'uikit-sidebar',
-            template: __webpack_require__(530),
-            styles: [__webpack_require__(521)]
+            template: __webpack_require__(536),
+            styles: [__webpack_require__(525)]
         }), 
         __metadata('design:paramtypes', [])
     ], SidebarComponent);
@@ -470,12 +616,12 @@ var SidebarComponent = (function () {
 
 /***/ }),
 
-/***/ 460:
+/***/ 463:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__sidebar_component__ = __webpack_require__(459);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__sidebar_component__ = __webpack_require__(462);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SidebarModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -505,7 +651,7 @@ var SidebarModule = (function () {
 
 /***/ }),
 
-/***/ 461:
+/***/ 464:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -526,20 +672,19 @@ var AppComponent = (function () {
         this.title = 'Angular 2 UIKit';
         this.menuItems = [
             {
-                name: 'ReadMe',
+                name: 'Dashboard',
                 routerLink: 'readme',
-                icon: 'warning',
+                icon: 'dashboard',
+                subItems: [
+                    { name: 'SubItem 1', id: "menu", routerLink: '' },
+                ]
             },
             {
                 name: 'Buttons',
                 id: "buttons",
                 active: true,
                 routerLink: 'buttons',
-                icon: 'touch_app',
-                subItems: [
-                    { name: 'SubItem 1', id: "menu", routerLink: '' },
-                    { name: 'SubItem 2', id: "menu", routerLink: '' }
-                ]
+                icon: 'touch_app'
             },
             {
                 name: 'Menu',
@@ -547,6 +692,19 @@ var AppComponent = (function () {
                 routerLink: 'menu',
                 active: false,
                 icon: 'menu',
+                subItems: [
+                    { name: 'SubItem 1', id: "menu", routerLink: '' },
+                    { name: 'SubItem 2', id: "menu", routerLink: '' },
+                    { name: 'SubItem 3', id: "menu", routerLink: '' },
+                    { name: 'SubItem 4', id: "menu", routerLink: '' }
+                ]
+            },
+            {
+                name: 'Table grid',
+                id: "buttons",
+                active: true,
+                routerLink: 'grid',
+                icon: 'view_list'
             }
         ];
     }
@@ -556,8 +714,8 @@ var AppComponent = (function () {
     AppComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Component */])({
             selector: 'app-root',
-            template: __webpack_require__(531),
-            styles: [__webpack_require__(522)]
+            template: __webpack_require__(537),
+            styles: [__webpack_require__(526)]
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);
@@ -567,20 +725,22 @@ var AppComponent = (function () {
 
 /***/ }),
 
-/***/ 462:
+/***/ 465:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(126);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(412);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(418);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_routes__ = __webpack_require__(463);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__(461);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_ng_uikit_module__ = __webpack_require__(458);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__button_doc_button_doc_component__ = __webpack_require__(302);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__menu_doc_menu_doc_component__ = __webpack_require__(303);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__readme_readme_component__ = __webpack_require__(304);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(414);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(420);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_routes__ = __webpack_require__(466);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_common__ = __webpack_require__(44);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__app_component__ = __webpack_require__(464);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_ng_uikit_module__ = __webpack_require__(461);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__button_doc_button_doc_component__ = __webpack_require__(303);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__menu_doc_menu_doc_component__ = __webpack_require__(305);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__readme_readme_component__ = __webpack_require__(306);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__grid_doc_grid_doc_component__ = __webpack_require__(304);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -601,30 +761,30 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
+
 var AppModule = (function () {
     function AppModule() {
     }
     AppModule = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["b" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* AppComponent */],
-                __WEBPACK_IMPORTED_MODULE_7__button_doc_button_doc_component__["a" /* ButtonDocComponent */],
-                __WEBPACK_IMPORTED_MODULE_8__menu_doc_menu_doc_component__["a" /* MenuDocComponent */],
-                __WEBPACK_IMPORTED_MODULE_9__readme_readme_component__["a" /* ReadmeComponent */],
+                __WEBPACK_IMPORTED_MODULE_6__app_component__["a" /* AppComponent */],
+                __WEBPACK_IMPORTED_MODULE_8__button_doc_button_doc_component__["a" /* ButtonDocComponent */],
+                __WEBPACK_IMPORTED_MODULE_9__menu_doc_menu_doc_component__["a" /* MenuDocComponent */],
+                __WEBPACK_IMPORTED_MODULE_10__readme_readme_component__["a" /* ReadmeComponent */],
+                __WEBPACK_IMPORTED_MODULE_11__grid_doc_grid_doc_component__["a" /* GridDocComponent */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
-                __WEBPACK_IMPORTED_MODULE_6__components_ng_uikit_module__["a" /* NgUIKitModule */],
-                // ButtonModule,
-                // HeaderModule,
-                // SidebarModule,
-                // MenuModule,
+                __WEBPACK_IMPORTED_MODULE_5__angular_common__["a" /* CommonModule */],
+                __WEBPACK_IMPORTED_MODULE_7__components_ng_uikit_module__["a" /* NgUIKitModule */],
                 __WEBPACK_IMPORTED_MODULE_2__angular_forms__["a" /* FormsModule */],
                 __WEBPACK_IMPORTED_MODULE_3__angular_http__["a" /* HttpModule */],
                 __WEBPACK_IMPORTED_MODULE_4__app_routes__["a" /* routing */],
             ],
             providers: [],
-            bootstrap: [__WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* AppComponent */]]
+            bootstrap: [__WEBPACK_IMPORTED_MODULE_6__app_component__["a" /* AppComponent */]]
         }), 
         __metadata('design:paramtypes', [])
     ], AppModule);
@@ -634,15 +794,17 @@ var AppModule = (function () {
 
 /***/ }),
 
-/***/ 463:
+/***/ 466:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_router__ = __webpack_require__(296);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__button_doc_button_doc_component__ = __webpack_require__(302);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__menu_doc_menu_doc_component__ = __webpack_require__(303);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__readme_readme_component__ = __webpack_require__(304);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__button_doc_button_doc_component__ = __webpack_require__(303);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__menu_doc_menu_doc_component__ = __webpack_require__(305);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__readme_readme_component__ = __webpack_require__(306);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__grid_doc_grid_doc_component__ = __webpack_require__(304);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return routing; });
+
 
 
 
@@ -650,6 +812,7 @@ var AppModule = (function () {
 var routes = [
     { path: 'buttons', component: __WEBPACK_IMPORTED_MODULE_1__button_doc_button_doc_component__["a" /* ButtonDocComponent */] },
     { path: 'menu', component: __WEBPACK_IMPORTED_MODULE_2__menu_doc_menu_doc_component__["a" /* MenuDocComponent */] },
+    { path: 'grid', component: __WEBPACK_IMPORTED_MODULE_4__grid_doc_grid_doc_component__["a" /* GridDocComponent */] },
     { path: 'readme', component: __WEBPACK_IMPORTED_MODULE_3__readme_readme_component__["a" /* ReadmeComponent */] }
 ];
 var routing = __WEBPACK_IMPORTED_MODULE_0__angular_router__["a" /* RouterModule */].forRoot(routes);
@@ -657,7 +820,7 @@ var routing = __WEBPACK_IMPORTED_MODULE_0__angular_router__["a" /* RouterModule 
 
 /***/ }),
 
-/***/ 464:
+/***/ 467:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -673,10 +836,10 @@ var environment = {
 
 /***/ }),
 
-/***/ 518:
+/***/ 521:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(27)();
+exports = module.exports = __webpack_require__(14)();
 // imports
 
 
@@ -691,10 +854,28 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 519:
+/***/ 522:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(27)();
+exports = module.exports = __webpack_require__(14)();
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ 523:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(14)();
 // imports
 
 
@@ -709,15 +890,15 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 520:
+/***/ 524:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(27)();
+exports = module.exports = __webpack_require__(14)();
 // imports
 exports.push([module.i, "@import url(https://fonts.googleapis.com/icon?family=Material+Icons);", ""]);
 
 // module
-exports.push([module.i, ".uikit-menu ul {\n  margin: 0;\n  padding: 0; }\n\n.uikit-menu-item {\n  position: relative;\n  color: #ffffff;\n  list-style-type: none;\n  text-align: center;\n  padding: 20px 0;\n  cursor: pointer;\n  font-size: 12px; }\n  .uikit-menu-item a {\n    color: #ffffff;\n    display: block;\n    text-decoration: none; }\n    .uikit-menu-item a span {\n      opacity: 0.6; }\n    .uikit-menu-item a.active::after {\n      position: absolute;\n      content: '';\n      width: 0;\n      height: 0;\n      right: -5px;\n      top: 50%;\n      -webkit-transform: translateY(-50%);\n              transform: translateY(-50%);\n      border-top: 7px solid transparent;\n      border-bottom: 7px solid transparent;\n      border-right: 7px solid #ffffff; }\n    .uikit-menu-item a:hover .material-icons,\n    .uikit-menu-item a:hover span {\n      opacity: 1; }\n  .uikit-menu-item .material-icons {\n    display: block;\n    opacity: 0.6;\n    margin: 0 auto 12px;\n    font-size: 48px; }\n\n.uikit-menu-sub-item {\n  padding: 5px 0; }\n\n.sub-menu {\n  display: none; }\n", ""]);
+exports.push([module.i, ".uikit-menu .main-menu {\n  margin: 0;\n  padding: 0; }\n\n.uikit-menu-item {\n  position: relative;\n  color: #ffffff;\n  list-style-type: none;\n  text-align: center;\n  padding: 20px 0;\n  cursor: pointer;\n  font-size: 12px; }\n  .uikit-menu-item span {\n    opacity: 0.6; }\n  .uikit-menu-item img {\n    height: 24px;\n    width: auto; }\n  .uikit-menu-item:hover .sub-menu {\n    display: block; }\n  .uikit-menu-item:hover .material-icons,\n  .uikit-menu-item:hover span {\n    opacity: 1; }\n  .uikit-menu-item a {\n    color: #ffffff;\n    display: block;\n    text-decoration: none; }\n    .uikit-menu-item a.active .material-icons,\n    .uikit-menu-item a.active span {\n      opacity: 1; }\n    .uikit-menu-item a.active span {\n      font-weight: 700; }\n    .uikit-menu-item a.active::after {\n      position: absolute;\n      content: '';\n      width: 0;\n      height: 0;\n      z-index: 120;\n      right: -5px;\n      top: 50%;\n      -webkit-transform: translateY(-50%);\n              transform: translateY(-50%);\n      border-top: 7px solid transparent;\n      border-bottom: 7px solid transparent;\n      border-right: 7px solid #ffffff; }\n  .uikit-menu-item .material-icons {\n    display: block;\n    opacity: 0.6;\n    margin: 0 auto 12px;\n    font-size: 32px; }\n\n.sub-menu {\n  display: none;\n  position: absolute;\n  z-index: 100;\n  padding: 10px 1px;\n  background: #fff;\n  box-shadow: 0 1px 4px 1px rgba(150, 150, 150, 0.3);\n  margin: 0;\n  width: 120px;\n  left: 80px;\n  top: 20px; }\n  .sub-menu li {\n    list-style-type: none; }\n  .sub-menu a {\n    color: #7c7c7c;\n    font-size: 10px;\n    text-align: left;\n    padding: 5px 15px; }\n    .sub-menu a span {\n      opacity: 1; }\n    .sub-menu a:hover {\n      color: #fff;\n      background: #b11118; }\n", ""]);
 
 // exports
 
@@ -727,10 +908,10 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 521:
+/***/ 525:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(27)();
+exports = module.exports = __webpack_require__(14)();
 // imports
 
 
@@ -745,10 +926,10 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 522:
+/***/ 526:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(27)();
+exports = module.exports = __webpack_require__(14)();
 // imports
 
 
@@ -763,123 +944,155 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 523:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(27)();
-// imports
-
-
-// module
-exports.push([module.i, "", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
-
-/***/ }),
-
-/***/ 524:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(27)();
-// imports
-
-
-// module
-exports.push([module.i, "", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
-
-/***/ }),
-
-/***/ 525:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(27)();
-// imports
-
-
-// module
-exports.push([module.i, "", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
-
-/***/ }),
-
 /***/ 527:
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-module.exports = "<button class=\"uikit-button uikit-button-{{UIButtonType}}\" type=\"{{type}}\" [attr.disabled]=\"disabled ? true : null\">\n  <ng-content></ng-content>\n</button>\n"
+exports = module.exports = __webpack_require__(14)();
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
 
 /***/ }),
 
 /***/ 528:
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-module.exports = "<header class=\"uikit-header\">\n  <ng-content></ng-content>\n</header>\n"
+exports = module.exports = __webpack_require__(14)();
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
 
 /***/ }),
 
 /***/ 529:
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-module.exports = "<div class=\"uikit-menu\">\n  <ul class=\"main-menu\">\n    <li class=\"uikit-menu-item\" *ngFor=\"let menuItem of menuItems;\">\n      <a routerLink=\"/{{menuItem.routerLink}}\" routerLinkActive=\"active\">\n        <i *ngIf=\"menuItem.icon\" class=\"material-icons\">{{menuItem.icon}}</i>\n        <img *ngIf=\"menuItem.iconUrl\" src=\"{{menuItem.iconUrl}}\">\n        <span>{{menuItem.name}}</span>\n      </a>\n\n      <ul *ngIf=\"menuItem.subItems\" class=\"sub-menu\">\n        <li class=\"uikit-menu-sub-item\" *ngFor=\"let subItem of menuItem.subItems;\">\n          <a routerLink=\"/{{menuItem.routerLink}}\">\n            <span>{{subItem.name}}</span>\n          </a>\n        </li>\n      </ul>\n    </li>\n  </ul>\n</div>\n"
+exports = module.exports = __webpack_require__(14)();
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
 
 /***/ }),
 
 /***/ 530:
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-module.exports = "<aside class=\"uikit-sidebar\">\n  <ng-content></ng-content>\n</aside>\n"
+exports = module.exports = __webpack_require__(14)();
+// imports
 
-/***/ }),
 
-/***/ 531:
-/***/ (function(module, exports) {
+// module
+exports.push([module.i, "", ""]);
 
-module.exports = "<uikit-header>\n  <img src=\"assets/img/logo.svg\" height=\"30\">\n</uikit-header>\n<main>\n  <uikit-sidebar>\n    <uikit-menu [menuItems]=\"menuItems\"></uikit-menu>\n  </uikit-sidebar>\n  <div style=\"padding: 0 20px;\">\n    <router-outlet></router-outlet>\n  </div>\n</main>\n"
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
 
 /***/ }),
 
 /***/ 532:
 /***/ (function(module, exports) {
 
-module.exports = "<h1>Button component</h1>\n<p><strong>UIButtonType:</strong> primary</p>\n<uikit-button UIButtonType=\"primary\" (click)=\"HelloClick()\">{{CreateBTNText}}</uikit-button>\n<uikit-button UIButtonType=\"primary cancel\">Cancel</uikit-button>\n<p><strong>UIButtonType:</strong> primary <strong>[disabled]=\"true\"</strong></p>\n<uikit-button UIButtonType=\"primary\" [disabled]=\"true\" (click)=\"HelloClick()\">{{CreateBTNText}}</uikit-button>\n<uikit-button UIButtonType=\"primary cancel\" [disabled]=\"true\">Cancel</uikit-button>\n<p><strong>UIButtonType:</strong> secondary</p>\n<uikit-button type=\"submit\" UIButtonType=\"secondary\">Create</uikit-button>\n<uikit-button type=\"submit\" UIButtonType=\"secondary cancel\">Create</uikit-button>\n<p><strong>UIButtonType:</strong> primary <strong>[disabled]=\"true\"</strong></p>\n<uikit-button UIButtonType=\"secondary\" [disabled]=\"true\" (click)=\"HelloClick()\">{{CreateBTNText}}</uikit-button>\n<uikit-button UIButtonType=\"secondary cancel\" [disabled]=\"true\">Cancel</uikit-button>\n<h2>Component selector</h2>\n<div>\n  <p>Tag name - <strong>uikit-button</strong></p>\n  <p>Attr - <strong>UIButtonType</strong></p>\n  <p>Values: primary | secondary | cancel</p>\n</div>\n"
+module.exports = "<button class=\"uikit-button uikit-button-{{UIButtonType}}\" type=\"{{type}}\" [attr.disabled]=\"disabled ? true : null\">\n  <ng-content></ng-content>\n</button>\n"
 
 /***/ }),
 
 /***/ 533:
 /***/ (function(module, exports) {
 
-module.exports = "<h1>Menu Components</h1>\n<pre>\n  <code>\n    <span><</span><span>uikit-menu</span><span>></span>\n  </code>\n</pre>\n"
+module.exports = "<table class=\"uikit-grid\">\n  <thead>\n    <th></th>\n  </thead>\n  <tbody>\n    <tr *ngFor=\"let GridDataRow of GridDataRows\">\n      <td>{{GridDataRow.id}}</td>\n      <td><a href=\"{{GridDataRow.email}}\">{{GridDataRow.email}}</a></td>\n      <td><uikit-button UIButtonType=\"primary\">{{GridDataRow.action}}</uikit-button></td>\n      <ng-content></ng-content>\n    </tr>\n  </tbody>\n</table>\n"
 
 /***/ }),
 
 /***/ 534:
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  readme works!\n</p>\n"
+module.exports = "<header class=\"uikit-header\">\n  <ng-content></ng-content>\n</header>\n"
 
 /***/ }),
 
-/***/ 552:
+/***/ 535:
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"uikit-menu\">\n  <ul class=\"main-menu\">\n    <li class=\"uikit-menu-item\" *ngFor=\"let menuItem of menuItems;\">\n      <a routerLink=\"/{{menuItem.routerLink}}\" routerLinkActive=\"active\">\n        <i *ngIf=\"menuItem.icon\" class=\"material-icons\">{{menuItem.icon}}</i>\n        <img *ngIf=\"menuItem.iconUrl\" src=\"{{menuItem.iconUrl}}\">\n        <span>{{menuItem.name}}</span>\n      </a>\n\n      <ul *ngIf=\"menuItem.subItems\" class=\"sub-menu\">\n        <li class=\"uikit-menu-sub-item\" *ngFor=\"let subItem of menuItem.subItems;\">\n          <a routerLink=\"/{{menuItem.routerLink}}\">\n            <span>{{subItem.name}}</span>\n          </a>\n        </li>\n      </ul>\n    </li>\n  </ul>\n</div>\n"
+
+/***/ }),
+
+/***/ 536:
+/***/ (function(module, exports) {
+
+module.exports = "<aside class=\"uikit-sidebar\">\n  <ng-content></ng-content>\n</aside>\n"
+
+/***/ }),
+
+/***/ 537:
+/***/ (function(module, exports) {
+
+module.exports = "<uikit-header>\n  <img src=\"assets/img/logo.svg\" height=\"30\">\n</uikit-header>\n<main>\n  <uikit-sidebar>\n    <uikit-menu [menuItems]=\"menuItems\"></uikit-menu>\n  </uikit-sidebar>\n  <div style=\"padding: 0 20px;\">\n    <router-outlet></router-outlet>\n  </div>\n</main>\n"
+
+/***/ }),
+
+/***/ 538:
+/***/ (function(module, exports) {
+
+module.exports = "<h1>Button component</h1>\n<p><strong>UIButtonType:</strong> primary</p>\n<uikit-button UIButtonType=\"primary\" (click)=\"HelloClick()\">{{CreateBTNText}}</uikit-button>\n<uikit-button UIButtonType=\"primary cancel\">Cancel</uikit-button>\n<p><strong>UIButtonType:</strong> primary <strong>[disabled]=\"true\"</strong></p>\n<uikit-button UIButtonType=\"primary\" [disabled]=\"true\" (click)=\"HelloClick()\">{{CreateBTNText}}</uikit-button>\n<uikit-button UIButtonType=\"primary cancel\" [disabled]=\"true\">Cancel</uikit-button>\n<p><strong>UIButtonType:</strong> secondary</p>\n<uikit-button type=\"submit\" UIButtonType=\"secondary\">Create</uikit-button>\n<uikit-button type=\"submit\" UIButtonType=\"secondary cancel\">Create</uikit-button>\n<p><strong>UIButtonType:</strong> primary <strong>[disabled]=\"true\"</strong></p>\n<uikit-button UIButtonType=\"secondary\" [disabled]=\"true\" (click)=\"HelloClick()\">{{CreateBTNText}}</uikit-button>\n<uikit-button UIButtonType=\"secondary cancel\" [disabled]=\"true\">Cancel</uikit-button>\n<h2>Component selector</h2>\n<div>\n  <p>Tag name - <strong>uikit-button</strong></p>\n  <p>Attr - <strong>UIButtonType</strong></p>\n  <p>Values: primary | secondary | cancel</p>\n</div>\n"
+
+/***/ }),
+
+/***/ 539:
+/***/ (function(module, exports) {
+
+module.exports = "<uikit-grid [GridDataRows]=\"GridDataRows\" [Settings]=\"Settings\">\n  <!--<uikit-grid-column key=\"id\" su header=\"User\" type=\"\"></uikit-grid-column>-->\n</uikit-grid>\n"
+
+/***/ }),
+
+/***/ 540:
+/***/ (function(module, exports) {
+
+module.exports = "<h1>Menu Components</h1>\n<pre class=\"language-javascript\">\n  <code class=\"language-javascript\">\n    menuItems = [\n      &#123;\n        name: 'Dashboard',\n        routerLink: 'readme',\n        icon: 'dashboard',\n        subItems: [\n          &#123; name: 'SubItem 1', id: \"menu\", routerLink: '' &#125;,\n        ]\n      &#125;\n      ...\n    ]\n  </code>\n</pre>\n"
+
+/***/ }),
+
+/***/ 541:
+/***/ (function(module, exports) {
+
+module.exports = "<h1>LoopMe Angular 2 UIKit</h1>\n<h2>Install</h2>\n<pre class=\"language-bash\">\n  <code class=\"language-bash\">\n  npm install nikola-xiii/ng-uikit\n  </code>\n</pre>\n<h2>Include and use</h2>\n<p>Import NgModule</p>\n<pre class=\"language-javascript\">\n  <code class=\"language-javascript\">\n    import &#123; NgUIKitModule &#125; from 'ng-uikit/components/ng-uikit.module';\n\n    @NgModule(&#123;\n      ...\n      imports: [\n      ...,\n      NgUIKitModule,\n    ]&#125;);\n  </code>\n</pre>\n"
+
+/***/ }),
+
+/***/ 559:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(334);
+module.exports = __webpack_require__(336);
 
 
 /***/ })
 
-},[552]);
+},[559]);
 //# sourceMappingURL=main.bundle.js.map

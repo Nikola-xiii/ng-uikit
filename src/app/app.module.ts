@@ -4,12 +4,12 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { routing } from './app.routes';
 import { CommonModule } from '@angular/common';
-import { AppComponent } from './app.component';
+import { AppComponent} from './app.component';
 import { NgUIKitModule } from '../../components/ng-uikit.module'
 import { ButtonDocComponent } from './button-doc/button-doc.component';
 import { MenuDocComponent } from './menu-doc/menu-doc.component';
 import { ReadmeComponent } from './readme/readme.component';
-import { PrismComponent } from './prism/prism.component';
+import { GridDocComponent } from './grid-doc/grid-doc.component';
 
 @NgModule({
   declarations: [
@@ -17,10 +17,11 @@ import { PrismComponent } from './prism/prism.component';
     ButtonDocComponent,
     MenuDocComponent,
     ReadmeComponent,
-    PrismComponent
+    GridDocComponent
   ],
   imports: [
     BrowserModule,
+    CommonModule,
     NgUIKitModule,
     FormsModule,
     HttpModule,

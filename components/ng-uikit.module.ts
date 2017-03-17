@@ -3,6 +3,7 @@ import { HeaderModule } from './header/header.module';
 import { SidebarModule } from './sidebar/sidebar.module';
 import { MenuModule } from './menu/menu.module';
 import { ButtonModule } from './button/button.module';
+import { GridModule } from './grid/grid.module';
 
 
 var MATERIAL_MODULES = [
@@ -10,6 +11,7 @@ var MATERIAL_MODULES = [
   SidebarModule,
   MenuModule,
   ButtonModule,
+  GridModule,
 ];
 
 @NgModule({

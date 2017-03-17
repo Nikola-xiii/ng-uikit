@@ -1,17 +1,21 @@
 <h1>LoopMe Angular 2 UIKit</h1>
 <h2>Install</h2>
-<code>
+<pre class="language-bash">
+  <code class="language-bash">
   npm install nikola-xiii/ng-uikit
-</code>
+  </code>
+</pre>
 <h2>Include and use</h2>
-<p>Import file</p>
-<textarea class="code">
-import { NgUIKitModule } from 'ng-uikit/components/ng-uikit.module';
+<p>Import NgModule</p>
+<pre class="language-javascript">
+  <code class="language-javascript">
+    import &#123; NgUIKitModule &#125; from 'ng-uikit/components/ng-uikit.module';
 
-@NgModule({
-...
-imports: [
-...,
-NgUIKitModule,
-]});
-  </textarea>
+    @NgModule(&#123;
+      ...
+      imports: [
+      ...,
+      NgUIKitModule,
+    ]&#125;);
+  </code>
+</pre>

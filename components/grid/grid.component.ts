@@ -8,6 +8,10 @@ import {Component, OnInit, Input} from '@angular/core';
 
 export class GridComponent implements OnInit {
 
+  @Input() GridDataRows: Array<any>;
+  @Input() Settings: Object;
+
+
   constructor() {}
 
   ngOnInit() {

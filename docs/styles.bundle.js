@@ -1,6 +1,6 @@
 webpackJsonp([2,4],{
 
-/***/ 27:
+/***/ 14:
 /***/ (function(module, exports) {
 
 /*
@@ -57,16 +57,16 @@ module.exports = function() {
 
 /***/ }),
 
-/***/ 336:
+/***/ 338:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(517);
+var content = __webpack_require__(520);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // add the styles to the DOM
-var update = __webpack_require__(550)(content, {});
+var update = __webpack_require__(557)(content, {});
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
@@ -84,22 +84,22 @@ if(false) {
 
 /***/ }),
 
-/***/ 517:
+/***/ 520:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(27)();
+exports = module.exports = __webpack_require__(14)();
 // imports
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i);", ""]);
 
 // module
-exports.push([module.i, "html {\n  width: 100%;\n  height: 100%; }\n\nbody {\n  margin: 0;\n  padding: 0;\n  position: relative;\n  font-family: 'Open Sans', serif;\n  font-size: 14px;\n  background-color: #fcfcfc;\n  width: 100%;\n  height: 100%; }\n", ""]);
+exports.push([module.i, "html {\n  width: 100%;\n  height: 100%; }\n\nbody {\n  margin: 0;\n  padding: 0;\n  position: relative;\n  font-family: 'Open Sans', serif;\n  font-size: 14px;\n  width: 100%;\n  height: 100%; }\n\ntextarea.code {\n  width: 550px;\n  height: 150px;\n  font-size: 16px; }\n", ""]);
 
 // exports
 
 
 /***/ }),
 
-/***/ 550:
+/***/ 557:
 /***/ (function(module, exports) {
 
 /*
@@ -352,13 +352,13 @@ function updateLink(linkElement, obj) {
 
 /***/ }),
 
-/***/ 554:
+/***/ 561:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(336);
+module.exports = __webpack_require__(338);
 
 
 /***/ })
 
-},[554]);
+},[561]);
 //# sourceMappingURL=styles.bundle.js.map

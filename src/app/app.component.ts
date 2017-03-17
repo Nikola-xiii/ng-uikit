@@ -37,6 +37,13 @@ export class AppComponent {
         { name: 'SubItem 3', id: "menu", routerLink: '' },
         { name: 'SubItem 4', id: "menu", routerLink: '' }
       ]
+    },
+    {
+      name: 'Table grid',
+      id: "buttons",
+      active: true,
+      routerLink: 'grid',
+      icon: 'view_list'
     }
   ];
 
