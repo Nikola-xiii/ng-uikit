@@ -855,7 +855,8 @@ var routes = [
     { path: 'buttons', component: __WEBPACK_IMPORTED_MODULE_1__button_doc_button_doc_component__["a" /* ButtonDocComponent */] },
     { path: 'menu', component: __WEBPACK_IMPORTED_MODULE_2__menu_doc_menu_doc_component__["a" /* MenuDocComponent */] },
     { path: 'grid', component: __WEBPACK_IMPORTED_MODULE_4__grid_doc_grid_doc_component__["a" /* GridDocComponent */] },
-    { path: 'readme', component: __WEBPACK_IMPORTED_MODULE_3__readme_readme_component__["a" /* ReadmeComponent */] }
+    { path: 'readme', component: __WEBPACK_IMPORTED_MODULE_3__readme_readme_component__["a" /* ReadmeComponent */] },
+    { path: '', redirectTo: 'readme', pathMatch: 'full' },
 ];
 var routing = __WEBPACK_IMPORTED_MODULE_0__angular_router__["a" /* RouterModule */].forRoot(routes);
 //# sourceMappingURL=app.routes.js.map
@@ -1117,7 +1118,7 @@ module.exports = "<h1>Grid Component</h1>\n<pre class=\"language-markup\">\n  <c
 /***/ 545:
 /***/ (function(module, exports) {
 
-module.exports = "<h1>Menu Components</h1>\n<h2>Basic tag</h2>\n<pre class=\"language-markup\">\n  <code class=\"language-markup\">\n    &lt;uikit-menu [menuItems]=\"menuItems\"&gt;&lt;/uikit-menu&gt;\n  </code>\n</pre>\n<div style=\"background: #000; width: 75px; padding: 0 5px;\">\n  <uikit-menu [menuItems]=\"menuItems\"></uikit-menu>\n</div>\n<h2>Array Menu Items</h2>\n<pre class=\"language-javascript\">\n  <code class=\"language-javascript\">\n    menuItems = [\n      &#123;\n        name: 'Menu',\n        id: \"done\",\n        active: true,\n        routerLink: '',\n        icon: 'touch_app',\n        subItems: [\n          &#123; name: 'SubItem 1', id: \"menu\", routerLink: '' &#125;,\n          &#123; name: 'SubItem 2', id: \"menu\", routerLink: '' &#125;,\n        ]\n      &#125;\n      ...\n    ]\n  </code>\n</pre>\n"
+module.exports = "<h1>Menu Components</h1>\n<h2>Basic tag</h2>\n<pre class=\"language-markup\">\n  <code class=\"language-markup\">\n    &lt;uikit-menu [menuItems]=\"menuItems\"&gt;&lt;/uikit-menu&gt;\n  </code>\n</pre>\n<div style=\"background: #000; width: 75px; padding: 0 5px;\">\n  <uikit-menu [menuItems]=\"menuItems\"></uikit-menu>\n</div>\n<h2>Array Menu Items</h2>\n<pre class=\"language-javascript\">\n  <code class=\"language-javascript\">\n    menuItems = [\n      &#123;\n        name: 'Menu',\n        id: \"done\",\n        active: true,\n        routerLink: '',\n        icon: 'touch_app',\n        subItems: [\n          &#123; name: 'SubItem 1', id: \"menu\", routerLink: '' &#125;,\n          &#123; name: 'SubItem 2', id: \"menu\", routerLink: '' &#125;,\n        ]\n      &#125;\n      ...\n    ]\n  </code>\n</pre>\n<p>Name for icon field <a href=\"https://www.materialpalette.com/icons\">see here</a></p>\n"
 
 /***/ }),
 
