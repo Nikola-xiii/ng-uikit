@@ -9,22 +9,15 @@ export class MenuDocComponent implements OnInit {
 
   menuItems = [
     {
-      name: 'Buttons',
-      id: "buttons",
+      name: 'Menu',
+      id: "done",
       active: true,
-      routerLink: 'buttons',
+      routerLink: '',
       icon: 'touch_app',
       subItems: [
         { name: 'SubItem 1', id: "menu", routerLink: '' },
         { name: 'SubItem 2', id: "menu", routerLink: '' }
       ]
-    },
-    {
-      name: 'Menu',
-      id: "menu",
-      routerLink: 'menu',
-      active: false,
-      icon: 'reorder',
     }
   ];
 

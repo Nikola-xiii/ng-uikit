@@ -1,7 +1,10 @@
 <h1>Grid Component</h1>
-<uikit-grid [GridDataRows]="GridDataRows" [settings]="settings">
-  <!--<uikit-grid-column key="id" su header="User" type=""></uikit-grid-column>-->
-</uikit-grid>
+<pre class="language-markup">
+  <code class="language-markup">
+    &lt;uikit-grid [GridDataRows]="GridDataRows" [settings]="settings"&gt;&lt;/uikit-grid&gt;
+  </code>
+</pre>
+<uikit-grid [GridDataRows]="GridDataRows" [settings]="settings"></uikit-grid>
 <h3>Data array Row format</h3>
 <pre class="language-javascript">
   <code class="language-javascript">
@@ -12,11 +15,7 @@
       email: 'test1@test.com',
       vendor: 'LoopMe',
       company: 'Home',
-      action: 'input',
-      action_list: [
-        'remove',
-        'update'
-      ]
+      action: 'input'
     &#125;,
     ...
   ];
@@ -38,6 +37,11 @@
     &#125;;
   </code>
 </pre>
+<pre class="language-markup">
+  <code class="language-markup">
+    &lt;uikit-grid [GridDataColumns]="GridDataColumns" [settings]="settings"&gt;&lt;/uikit-grid&gt;
+  </code>
+</pre>
 <uikit-grid [GridDataColumns]="GridDataColumns" [settings]="settings"></uikit-grid>
 <h3>Data array Column format</h3>
 <pre class="language-javascript">
@@ -52,5 +56,21 @@
         action: ['input', 'input', 'input', 'input']
       &#125;
     ];
+  </code>
+</pre>
+
+<h3>Grid settings</h3>
+<pre class="language-javascript">
+  <code class="language-javascript">
+    settings: Object = &#123;
+      headers: [
+        &#123; key: 'id', name: 'id', sortable: true, type: 'text'&#125;,
+        &#123; key: 'name', name: 'name', sortable: false, type: 'text'&#125;,
+        &#123; key: 'company', name: 'company', sortable: false, type: 'text'&#125;,
+        &#123; key: 'vendor', name: 'vendor', sortable: true, type: 'text'&#125;,
+        &#123; key: 'email', name: 'email', sortable: false, type: 'link'&#125;,
+        &#123; key: 'action', name: '', sortable: false, type: 'action'&#125;,
+      ],
+    &#125;;
   </code>
 </pre>

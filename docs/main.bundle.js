@@ -190,22 +190,15 @@ var MenuDocComponent = (function () {
     function MenuDocComponent() {
         this.menuItems = [
             {
-                name: 'Buttons',
-                id: "buttons",
+                name: 'Menu',
+                id: "done",
                 active: true,
-                routerLink: 'buttons',
+                routerLink: '',
                 icon: 'touch_app',
                 subItems: [
                     { name: 'SubItem 1', id: "menu", routerLink: '' },
                     { name: 'SubItem 2', id: "menu", routerLink: '' }
                 ]
-            },
-            {
-                name: 'Menu',
-                id: "menu",
-                routerLink: 'menu',
-                active: false,
-                icon: 'reorder',
             }
         ];
     }
@@ -722,7 +715,7 @@ var AppComponent = (function () {
         this.menuItems = [
             {
                 name: 'Readme',
-                routerLink: '/',
+                routerLink: '/readme',
                 icon: 'assignment_late',
                 subItems: [
                     { name: 'SubItem 1', id: "menu", routerLink: '' },
@@ -732,13 +725,13 @@ var AppComponent = (function () {
                 name: 'Buttons',
                 id: "buttons",
                 active: true,
-                routerLink: 'buttons',
+                routerLink: '/buttons',
                 icon: 'touch_app'
             },
             {
                 name: 'Menu',
                 id: "menu",
-                routerLink: 'menu',
+                routerLink: '/menu',
                 active: false,
                 icon: 'menu',
                 subItems: [
@@ -752,7 +745,7 @@ var AppComponent = (function () {
                 name: 'Table grid',
                 id: "buttons",
                 active: true,
-                routerLink: 'grid',
+                routerLink: '/grid',
                 icon: 'view_list'
             }
         ];
@@ -862,7 +855,7 @@ var routes = [
     { path: 'buttons', component: __WEBPACK_IMPORTED_MODULE_1__button_doc_button_doc_component__["a" /* ButtonDocComponent */] },
     { path: 'menu', component: __WEBPACK_IMPORTED_MODULE_2__menu_doc_menu_doc_component__["a" /* MenuDocComponent */] },
     { path: 'grid', component: __WEBPACK_IMPORTED_MODULE_4__grid_doc_grid_doc_component__["a" /* GridDocComponent */] },
-    { path: '**', component: __WEBPACK_IMPORTED_MODULE_3__readme_readme_component__["a" /* ReadmeComponent */] }
+    { path: 'readme', component: __WEBPACK_IMPORTED_MODULE_3__readme_readme_component__["a" /* ReadmeComponent */] }
 ];
 var routing = __WEBPACK_IMPORTED_MODULE_0__angular_router__["a" /* RouterModule */].forRoot(routes);
 //# sourceMappingURL=app.routes.js.map
@@ -1110,21 +1103,21 @@ module.exports = "<uikit-header>\n  <img src=\"assets/img/logo.svg\" height=\"30
 /***/ 543:
 /***/ (function(module, exports) {
 
-module.exports = "<h1>Button component</h1>\n<p><strong>UIButtonType:</strong> primary</p>\n<uikit-button UIButtonType=\"primary\" (click)=\"HelloClick()\">{{CreateBTNText}}</uikit-button>\n<uikit-button UIButtonType=\"primary cancel\">Cancel</uikit-button>\n<uikit-button UIButtonType=\"primary\" icon=\"assignment_late\"></uikit-button>\n<p><strong>UIButtonType:</strong> primary <strong>[disabled]=\"true\"</strong></p>\n<uikit-button UIButtonType=\"primary\" [disabled]=\"true\" (click)=\"HelloClick()\">{{CreateBTNText}}</uikit-button>\n<uikit-button UIButtonType=\"primary cancel\" [disabled]=\"true\">Cancel</uikit-button>\n<p><strong>UIButtonType:</strong> secondary</p>\n<uikit-button type=\"submit\" UIButtonType=\"secondary\">Create</uikit-button>\n<uikit-button type=\"submit\" UIButtonType=\"secondary cancel\">Create</uikit-button>\n<p><strong>UIButtonType:</strong> primary <strong>[disabled]=\"true\"</strong></p>\n<uikit-button UIButtonType=\"secondary\" [disabled]=\"true\" (click)=\"HelloClick()\">{{CreateBTNText}}</uikit-button>\n<uikit-button UIButtonType=\"secondary cancel\" [disabled]=\"true\">Cancel</uikit-button>\n<h2>Component selector</h2>\n<div>\n  <p>Tag name - <strong>uikit-button</strong></p>\n  <p>Attr - <strong>UIButtonType</strong></p>\n  <p>Values: primary | secondary | cancel</p>\n</div>\n"
+module.exports = "<h1>Button component</h1>\n<h2>Markup</h2>\n<pre class=\"language-markup\">\n  <code class=\"language-markup\">\n    &lt;uikit-button UIButtonType=\"UIButtonType\"&gt;&lt;/uikit-button&gt;\n  </code>\n</pre>\n<p><strong>UIButtonType:</strong> primary</p>\n<uikit-button UIButtonType=\"primary\" (click)=\"HelloClick()\">{{CreateBTNText}}</uikit-button>\n<uikit-button UIButtonType=\"primary cancel\">Cancel</uikit-button>\n<uikit-button UIButtonType=\"primary\" icon=\"assignment_late\"></uikit-button>\n<p><strong>UIButtonType:</strong> primary <strong>[disabled]=\"true\"</strong></p>\n<uikit-button UIButtonType=\"primary\" [disabled]=\"true\" (click)=\"HelloClick()\">{{CreateBTNText}}</uikit-button>\n<uikit-button UIButtonType=\"primary cancel\" [disabled]=\"true\">Cancel</uikit-button>\n<p><strong>UIButtonType:</strong> secondary</p>\n<uikit-button type=\"submit\" UIButtonType=\"secondary\">Create</uikit-button>\n<uikit-button type=\"submit\" UIButtonType=\"secondary cancel\">Create</uikit-button>\n<p><strong>UIButtonType:</strong> primary <strong>[disabled]=\"true\"</strong></p>\n<uikit-button UIButtonType=\"secondary\" [disabled]=\"true\" (click)=\"HelloClick()\">{{CreateBTNText}}</uikit-button>\n<uikit-button UIButtonType=\"secondary cancel\" [disabled]=\"true\">Cancel</uikit-button>\n<h2>Component selector</h2>\n<div>\n  <p>Tag name - <strong>uikit-button</strong></p>\n  <p>Attr - <strong>UIButtonType</strong></p>\n  <p>Values: primary | secondary | icon</p>\n</div>\n"
 
 /***/ }),
 
 /***/ 544:
 /***/ (function(module, exports) {
 
-module.exports = "<h1>Grid Component</h1>\n<uikit-grid [GridDataRows]=\"GridDataRows\" [settings]=\"settings\">\n  <!--<uikit-grid-column key=\"id\" su header=\"User\" type=\"\"></uikit-grid-column>-->\n</uikit-grid>\n<h3>Data array Row format</h3>\n<pre class=\"language-javascript\">\n  <code class=\"language-javascript\">\n    public GridDataRows = [\n    &#123;\n      id: 11,\n      name: 'Test1',\n      email: 'test1@test.com',\n      vendor: 'LoopMe',\n      company: 'Home',\n      action: 'input',\n      action_list: [\n        'remove',\n        'update'\n      ]\n    &#125;,\n    ...\n  ];\n  </code>\n</pre>\n\n<h3>Grid settings</h3>\n<pre class=\"language-javascript\">\n  <code class=\"language-javascript\">\n    settings: Object = &#123;\n      headers: [\n        &#123; key: 'id', name: 'id', sortable: true, type: 'text'&#125;,\n        &#123; key: 'name', name: 'name', sortable: false, type: 'text'&#125;,\n        &#123; key: 'company', name: 'company', sortable: false, type: 'text'&#125;,\n        &#123; key: 'vendor', name: 'vendor', sortable: true, type: 'text'&#125;,\n        &#123; key: 'email', name: 'email', sortable: false, type: 'link'&#125;,\n        &#123; key: 'action', name: '', sortable: false, type: 'action'&#125;,\n      ],\n    &#125;;\n  </code>\n</pre>\n<uikit-grid [GridDataColumns]=\"GridDataColumns\" [settings]=\"settings\"></uikit-grid>\n<h3>Data array Column format</h3>\n<pre class=\"language-javascript\">\n  <code class=\"language-javascript\">\n    GridDataColumns = [\n      &#123;\n        id: [11, 12, 13, 14],\n        name: ['Test1', 'Test2', 'Test3', 'Test4'],\n        email: ['test1@test.com', 'test2@test.com', 'test3@test.com', 'test4@test.com'],\n        vendor: ['LoopMe', '', 'EA', 'LoopMe'],\n        company: ['LoopMe', 'LoopMe', 'LoopMe', 'LoopMe'],\n        action: ['input', 'input', 'input', 'input']\n      &#125;\n    ];\n  </code>\n</pre>\n"
+module.exports = "<h1>Grid Component</h1>\n<pre class=\"language-markup\">\n  <code class=\"language-markup\">\n    &lt;uikit-grid [GridDataRows]=\"GridDataRows\" [settings]=\"settings\"&gt;&lt;/uikit-grid&gt;\n  </code>\n</pre>\n<uikit-grid [GridDataRows]=\"GridDataRows\" [settings]=\"settings\"></uikit-grid>\n<h3>Data array Row format</h3>\n<pre class=\"language-javascript\">\n  <code class=\"language-javascript\">\n    public GridDataRows = [\n    &#123;\n      id: 11,\n      name: 'Test1',\n      email: 'test1@test.com',\n      vendor: 'LoopMe',\n      company: 'Home',\n      action: 'input'\n    &#125;,\n    ...\n  ];\n  </code>\n</pre>\n\n<h3>Grid settings</h3>\n<pre class=\"language-javascript\">\n  <code class=\"language-javascript\">\n    settings: Object = &#123;\n      headers: [\n        &#123; key: 'id', name: 'id', sortable: true, type: 'text'&#125;,\n        &#123; key: 'name', name: 'name', sortable: false, type: 'text'&#125;,\n        &#123; key: 'company', name: 'company', sortable: false, type: 'text'&#125;,\n        &#123; key: 'vendor', name: 'vendor', sortable: true, type: 'text'&#125;,\n        &#123; key: 'email', name: 'email', sortable: false, type: 'link'&#125;,\n        &#123; key: 'action', name: '', sortable: false, type: 'action'&#125;,\n      ],\n    &#125;;\n  </code>\n</pre>\n<pre class=\"language-markup\">\n  <code class=\"language-markup\">\n    &lt;uikit-grid [GridDataColumns]=\"GridDataColumns\" [settings]=\"settings\"&gt;&lt;/uikit-grid&gt;\n  </code>\n</pre>\n<uikit-grid [GridDataColumns]=\"GridDataColumns\" [settings]=\"settings\"></uikit-grid>\n<h3>Data array Column format</h3>\n<pre class=\"language-javascript\">\n  <code class=\"language-javascript\">\n    GridDataColumns = [\n      &#123;\n        id: [11, 12, 13, 14],\n        name: ['Test1', 'Test2', 'Test3', 'Test4'],\n        email: ['test1@test.com', 'test2@test.com', 'test3@test.com', 'test4@test.com'],\n        vendor: ['LoopMe', '', 'EA', 'LoopMe'],\n        company: ['LoopMe', 'LoopMe', 'LoopMe', 'LoopMe'],\n        action: ['input', 'input', 'input', 'input']\n      &#125;\n    ];\n  </code>\n</pre>\n\n<h3>Grid settings</h3>\n<pre class=\"language-javascript\">\n  <code class=\"language-javascript\">\n    settings: Object = &#123;\n      headers: [\n        &#123; key: 'id', name: 'id', sortable: true, type: 'text'&#125;,\n        &#123; key: 'name', name: 'name', sortable: false, type: 'text'&#125;,\n        &#123; key: 'company', name: 'company', sortable: false, type: 'text'&#125;,\n        &#123; key: 'vendor', name: 'vendor', sortable: true, type: 'text'&#125;,\n        &#123; key: 'email', name: 'email', sortable: false, type: 'link'&#125;,\n        &#123; key: 'action', name: '', sortable: false, type: 'action'&#125;,\n      ],\n    &#125;;\n  </code>\n</pre>\n"
 
 /***/ }),
 
 /***/ 545:
 /***/ (function(module, exports) {
 
-module.exports = "<h1>Menu Components</h1>\n<pre class=\"language-javascript\">\n  <code class=\"language-javascript\">\n    menuItems = [\n      &#123;\n        name: 'Dashboard',\n        routerLink: 'readme',\n        icon: 'dashboard',\n        subItems: [\n          &#123; name: 'SubItem 1', id: \"menu\", routerLink: '' &#125;,\n        ]\n      &#125;\n      ...\n    ]\n  </code>\n</pre>\n"
+module.exports = "<h1>Menu Components</h1>\n<h2>Basic tag</h2>\n<pre class=\"language-markup\">\n  <code class=\"language-markup\">\n    &lt;uikit-menu [menuItems]=\"menuItems\"&gt;&lt;/uikit-menu&gt;\n  </code>\n</pre>\n<div style=\"background: #000; width: 75px; padding: 0 5px;\">\n  <uikit-menu [menuItems]=\"menuItems\"></uikit-menu>\n</div>\n<h2>Array Menu Items</h2>\n<pre class=\"language-javascript\">\n  <code class=\"language-javascript\">\n    menuItems = [\n      &#123;\n        name: 'Menu',\n        id: \"done\",\n        active: true,\n        routerLink: '',\n        icon: 'touch_app',\n        subItems: [\n          &#123; name: 'SubItem 1', id: \"menu\", routerLink: '' &#125;,\n          &#123; name: 'SubItem 2', id: \"menu\", routerLink: '' &#125;,\n        ]\n      &#125;\n      ...\n    ]\n  </code>\n</pre>\n"
 
 /***/ }),
 
