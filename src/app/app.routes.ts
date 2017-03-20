@@ -8,7 +8,8 @@ const routes: Routes = [
   { path: 'buttons', component: ButtonDocComponent },
   { path: 'menu', component: MenuDocComponent },
   { path: 'grid', component: GridDocComponent },
-  { path: 'readme', component: ReadmeComponent }
+  { path: 'readme', component: ReadmeComponent },
+  { path: '', redirectTo: 'readme', pathMatch: 'full' },
 ];
 
 export const routing = RouterModule.forRoot(routes);
