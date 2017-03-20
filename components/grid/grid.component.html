@@ -13,5 +13,14 @@
         <uikit-button *ngIf="column.type == 'action'" UIButtonType="icon" icon="{{GridDataRow[column.key].icon}}"></uikit-button>
       </td>
     </tr>
+    <template [ngIf]="GridDataColumns">
+      <tr *ngFor="let GridDataColumn of GridDataColumns.id; let i = index;">
+        <td *ngFor="let column of settings.headers">
+          <span *ngIf="column.type == 'text'">{{GridDataColumns[column.key][i]}}</span>
+          <a *ngIf="column.type == 'link'" href="{{GridDataColumns[column.key][i]}}">{{GridDataColumns[column.key][i]}}</a>
+          <uikit-button *ngIf="column.type == 'action'" UIButtonType="icon" icon="{{GridDataColumns[column.key][i]}}"></uikit-button>
+        </td>
+      </tr>
+    </template>
   </tbody>
 </table>

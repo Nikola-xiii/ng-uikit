@@ -11,7 +11,7 @@ export class AppComponent {
   menuItems = [
     {
       name: 'Readme',
-      routerLink: 'readme',
+      routerLink: '/',
       icon: 'assignment_late',
       subItems: [
         { name: 'SubItem 1', id: "menu", routerLink: '' },

@@ -8,8 +8,13 @@ import {Component, OnInit, Input} from '@angular/core';
 
 export class GridComponent implements OnInit {
 
-  @Input() GridDataRows: Array<any>;
+  @Input() GridDataRows: Array<any> = [];
+  @Input() GridDataColumns: Object;
   @Input() settings: Object;
+
+  RebuildToRow(DataColumns) {
+
+  }
 
   constructor() {}
 
