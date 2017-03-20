@@ -19,9 +19,12 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "kit",
       "styles": [
+        "../node_modules/prismjs/themes/prism-twilight.css",
         "styles.scss"
       ],
-      "scripts": [],
+      "scripts": [
+        "../node_modules/prismjs/"
+      ],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",

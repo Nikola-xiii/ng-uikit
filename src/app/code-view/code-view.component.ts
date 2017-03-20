@@ -1,5 +1,6 @@
 import { Component, OnInit, Input} from '@angular/core';
-import {Prism} from './prism.loader';
+declare var Prism: any;
+import 'prismjs/prism';
 
 @Component({
   selector: 'code-view',
