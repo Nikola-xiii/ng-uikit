@@ -6,6 +6,7 @@ webpackJsonp([1,4],{
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__button_component__ = __webpack_require__(454);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_common__ = __webpack_require__(33);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ButtonModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -18,12 +19,13 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
+
 var ButtonModule = (function () {
     function ButtonModule() {
     }
     ButtonModule = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["b" /* NgModule */])({
-            imports: [],
+            imports: [__WEBPACK_IMPORTED_MODULE_2__angular_common__["a" /* CommonModule */]],
             exports: [__WEBPACK_IMPORTED_MODULE_1__button_component__["a" /* ButtonComponent */]],
             declarations: [__WEBPACK_IMPORTED_MODULE_1__button_component__["a" /* ButtonComponent */]]
         }), 
@@ -89,32 +91,70 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 var GridDocComponent = (function () {
     function GridDocComponent() {
-        this.tableTypes = [
-            'Text',
-            'Action',
-            'Links',
-            'Device'
-        ];
         this.GridDataRows = [
             {
                 id: 11,
+                name: 'Test1',
                 email: 'test1@test.com',
-                action: 'login',
-                action_list: [
-                    'remove',
-                    'update'
-                ]
+                vendor: 'LoopMe',
+                company: 'Home',
+                action: {
+                    name: 'Login',
+                    icon: 'input'
+                }
             },
             {
                 id: 12,
                 email: 'test2@test.com',
-                action: 'login',
-                action_list: [
-                    'remove',
-                ]
+                vendor: 'LoopMe',
+                company: 'EA Sport',
+                action: {
+                    name: 'Login',
+                    icon: 'input'
+                }
+            },
+            {
+                id: 14,
+                name: 'Test1',
+                email: 'test1@test.com',
+                vendor: 'LoopMe',
+                company: 'Home',
+                action: {
+                    name: 'Login',
+                    icon: 'input'
+                }
+            },
+            {
+                id: 14,
+                email: 'test2@test.com',
+                vendor: 'LoopMe',
+                company: 'EA Sport',
+                action: {
+                    name: 'Login',
+                    icon: 'input'
+                }
             }
         ];
-        this.GridSettings = [];
+        this.GridDataColumns = [
+            {
+                id: [11, 12, 13, 14],
+                name: ['Test1', 'Test3', 'Test3', 'Test4'],
+                email: ['test1@test.com', 'test1@test.com', 'test1@test.com', 'test1@test.com'],
+                vendor: ['LoopMe', 'LoopMe', 'LoopMe', 'LoopMe'],
+                company: ['Home', 'Home', 'Home', 'Home'],
+                action: ['input', 'input', 'input', 'input']
+            }
+        ];
+        this.settings = {
+            headers: [
+                { key: 'id', name: 'id', sortable: true, type: 'text' },
+                { key: 'name', name: 'name', sortable: false, type: 'text' },
+                { key: 'company', name: 'company', sortable: false, type: 'text' },
+                { key: 'vendor', name: 'vendor', sortable: true, type: 'text' },
+                { key: 'email', name: 'email', sortable: false, type: 'link' },
+                { key: 'action', name: '', sortable: false, type: 'action' },
+            ],
+        };
     }
     GridDocComponent.prototype.ngOnInit = function () {
     };
@@ -286,6 +326,10 @@ var ButtonComponent = (function () {
         __metadata('design:type', String)
     ], ButtonComponent.prototype, "type", void 0);
     __decorate([
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["N" /* Input */])("icon"), 
+        __metadata('design:type', String)
+    ], ButtonComponent.prototype, "icon", void 0);
+    __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["N" /* Input */])(), 
         __metadata('design:type', Boolean)
     ], ButtonComponent.prototype, "disabled", void 0);
@@ -331,12 +375,12 @@ var GridComponent = (function () {
     __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["N" /* Input */])(), 
         __metadata('design:type', Object)
-    ], GridComponent.prototype, "Settings", void 0);
+    ], GridComponent.prototype, "settings", void 0);
     GridComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Component */])({
             selector: 'uikit-grid',
             template: __webpack_require__(533),
-            styles: [__webpack_require__(522)]
+            styles: [__webpack_require__(522)],
         }), 
         __metadata('design:paramtypes', [])
     ], GridComponent);
@@ -352,7 +396,7 @@ var GridComponent = (function () {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__grid_component__ = __webpack_require__(455);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_common__ = __webpack_require__(44);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_common__ = __webpack_require__(33);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__button_button_module__ = __webpack_require__(302);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GridModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -499,7 +543,7 @@ var MenuComponent = (function () {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(44);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(33);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__menu_component__ = __webpack_require__(459);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_router__ = __webpack_require__(296);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MenuModule; });
@@ -672,9 +716,9 @@ var AppComponent = (function () {
         this.title = 'Angular 2 UIKit';
         this.menuItems = [
             {
-                name: 'Dashboard',
+                name: 'Readme',
                 routerLink: 'readme',
-                icon: 'dashboard',
+                icon: 'assignment_late',
                 subItems: [
                     { name: 'SubItem 1', id: "menu", routerLink: '' },
                 ]
@@ -734,7 +778,7 @@ var AppComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(414);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(420);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_routes__ = __webpack_require__(466);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_common__ = __webpack_require__(44);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_common__ = __webpack_require__(33);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__app_component__ = __webpack_require__(464);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_ng_uikit_module__ = __webpack_require__(461);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__button_doc_button_doc_component__ = __webpack_require__(303);
@@ -841,10 +885,10 @@ var environment = {
 
 exports = module.exports = __webpack_require__(14)();
 // imports
-
+exports.push([module.i, "@import url(https://fonts.googleapis.com/icon?family=Material+Icons);", ""]);
 
 // module
-exports.push([module.i, ".uikit-button {\n  min-width: 80px;\n  padding: 4px 15px;\n  font-family: \"Open Sans\", sans-serif;\n  text-transform: uppercase;\n  border-radius: 3px;\n  border: 1px solid;\n  font-size: 10px;\n  line-height: 1.4;\n  font-weight: 700; }\n  .uikit-button[disabled] {\n    opacity: .5; }\n  .uikit-button-primary {\n    background: #B11118;\n    border-color: #8A070C;\n    color: #fff;\n    font-weight: bold; }\n    .uikit-button-primary:hover {\n      background: #8A070C;\n      cursor: pointer; }\n    .uikit-button-primary.cancel {\n      background: #F4F4F4;\n      border-color: #D0D0D0;\n      color: #7D7D7D; }\n      .uikit-button-primary.cancel:hover {\n        background: #D0D0D0;\n        cursor: pointer; }\n  .uikit-button-secondary {\n    background: #fff;\n    border-color: #B11118;\n    color: #B11118;\n    font-weight: 400; }\n    .uikit-button-secondary:hover {\n      background: #8A070C;\n      color: #fff;\n      cursor: pointer; }\n    .uikit-button-secondary.cancel {\n      background: #fff;\n      border-color: #D0D0D0;\n      color: #7D7D7D; }\n      .uikit-button-secondary.cancel:hover {\n        background: #D0D0D0;\n        cursor: pointer; }\n", ""]);
+exports.push([module.i, ":host {\n  display: inline-block; }\n\n.uikit-button {\n  min-width: 80px;\n  padding: 4px 15px;\n  font-family: \"Open Sans\", sans-serif;\n  text-transform: uppercase;\n  border-radius: 3px;\n  border: 1px solid;\n  font-size: 10px;\n  line-height: 1.4;\n  font-weight: 700; }\n  .uikit-button[disabled] {\n    opacity: .5; }\n  .uikit-button-icon {\n    padding: 0;\n    background: transparent;\n    border: 0;\n    cursor: pointer;\n    min-width: inherit;\n    text-align: left;\n    line-height: 1;\n    vertical-align: text-top; }\n    .uikit-button-icon .material-icons {\n      color: #7d7d7d;\n      font-size: 15px;\n      height: 100%; }\n    .uikit-button-icon:hover .material-icons {\n      color: #000; }\n  .uikit-button-primary {\n    background: #B11118;\n    border-color: #8A070C;\n    color: #fff;\n    font-weight: bold; }\n    .uikit-button-primary:hover {\n      background: #8A070C;\n      cursor: pointer; }\n    .uikit-button-primary.cancel {\n      background: #F4F4F4;\n      border-color: #D0D0D0;\n      color: #7D7D7D; }\n      .uikit-button-primary.cancel:hover {\n        background: #D0D0D0;\n        cursor: pointer; }\n  .uikit-button-secondary {\n    background: #fff;\n    border-color: #B11118;\n    color: #B11118;\n    font-weight: 400; }\n    .uikit-button-secondary:hover {\n      background: #8A070C;\n      color: #fff;\n      cursor: pointer; }\n    .uikit-button-secondary.cancel {\n      background: #fff;\n      border-color: #D0D0D0;\n      color: #7D7D7D; }\n      .uikit-button-secondary.cancel:hover {\n        background: #D0D0D0;\n        cursor: pointer; }\n", ""]);
 
 // exports
 
@@ -859,10 +903,10 @@ module.exports = module.exports.toString();
 
 exports = module.exports = __webpack_require__(14)();
 // imports
-
+exports.push([module.i, "@import url(https://fonts.googleapis.com/icon?family=Material+Icons);", ""]);
 
 // module
-exports.push([module.i, "", ""]);
+exports.push([module.i, ":host {\n  display: block; }\n\n.uikit-grid {\n  width: 100%;\n  border-collapse: collapse;\n  padding: 20px 0; }\n  .uikit-grid th {\n    border-bottom: 1px solid #D0D0D0;\n    position: relative;\n    text-align: left;\n    padding: 5px 0;\n    font-weight: 400;\n    text-transform: uppercase; }\n    .uikit-grid th .material-icons {\n      font-size: 12px;\n      color: #010101;\n      vertical-align: text-top; }\n  .uikit-grid tr {\n    border-bottom: 1px solid #D0D0D0; }\n  .uikit-grid td {\n    font-size: 12px;\n    line-height: 17px;\n    padding: 5px 0;\n    color: #323232; }\n    .uikit-grid td a {\n      color: #b11118; }\n      .uikit-grid td a:hover {\n        text-decoration: none; }\n  .uikit-grid th {\n    color: #8d8d8d;\n    font-size: 9px;\n    line-height: 13px; }\n", ""]);
 
 // exports
 
@@ -916,7 +960,7 @@ exports = module.exports = __webpack_require__(14)();
 
 
 // module
-exports.push([module.i, ".uikit-sidebar {\n  width: 75px;\n  padding: 0 5px;\n  background: #b11118;\n  height: 100%; }\n", ""]);
+exports.push([module.i, ".uikit-sidebar {\n  width: 75px;\n  padding: 0 5px;\n  background: #b11118;\n  height: 100vh; }\n", ""]);
 
 // exports
 
@@ -934,7 +978,7 @@ exports = module.exports = __webpack_require__(14)();
 
 
 // module
-exports.push([module.i, "main {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  position: relative;\n  width: 100%;\n  height: calc(100% - 40px); }\n\napp-root {\n  height: 100%;\n  position: relative;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex; }\n", ""]);
+exports.push([module.i, "main {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  position: relative;\n  width: 100%;\n  height: calc(100vh - 40px); }\n\napp-root {\n  height: 100%;\n  position: relative;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex; }\n\n.content {\n  padding: 0 20px;\n  width: 100%;\n  overflow-y: scroll; }\n", ""]);
 
 // exports
 
@@ -970,7 +1014,7 @@ exports = module.exports = __webpack_require__(14)();
 
 
 // module
-exports.push([module.i, "", ""]);
+exports.push([module.i, "\n", ""]);
 
 // exports
 
@@ -1019,14 +1063,14 @@ module.exports = module.exports.toString();
 /***/ 532:
 /***/ (function(module, exports) {
 
-module.exports = "<button class=\"uikit-button uikit-button-{{UIButtonType}}\" type=\"{{type}}\" [attr.disabled]=\"disabled ? true : null\">\n  <ng-content></ng-content>\n</button>\n"
+module.exports = "<button class=\"uikit-button uikit-button-{{UIButtonType}}\" type=\"{{type}}\" [attr.disabled]=\"disabled ? true : null\">\n  <i *ngIf=\"icon\" class=\"material-icons\">{{icon}}</i>\n  <ng-content></ng-content>\n</button>\n"
 
 /***/ }),
 
 /***/ 533:
 /***/ (function(module, exports) {
 
-module.exports = "<table class=\"uikit-grid\">\n  <thead>\n    <th></th>\n  </thead>\n  <tbody>\n    <tr *ngFor=\"let GridDataRow of GridDataRows\">\n      <td>{{GridDataRow.id}}</td>\n      <td><a href=\"{{GridDataRow.email}}\">{{GridDataRow.email}}</a></td>\n      <td><uikit-button UIButtonType=\"primary\">{{GridDataRow.action}}</uikit-button></td>\n      <ng-content></ng-content>\n    </tr>\n  </tbody>\n</table>\n"
+module.exports = "<table class=\"uikit-grid\">\n  <thead>\n    <th *ngFor=\"let Header of settings.headers\">\n      <i *ngIf=\"Header.sortable\" class=\"material-icons\">arrow_downward</i>\n      {{Header.name}}\n    </th>\n  </thead>\n  <tbody>\n    <tr *ngFor=\"let GridDataRow of GridDataRows\">\n      <td *ngFor=\"let column of settings.headers\">\n        <span *ngIf=\"column.type == 'text'\">{{GridDataRow[column.key]}}</span>\n        <a *ngIf=\"column.type == 'link'\" href=\"{{GridDataRow[column.key]}}\">{{GridDataRow[column.key]}}</a>\n        <uikit-button *ngIf=\"column.type == 'action'\" UIButtonType=\"icon\" icon=\"{{GridDataRow[column.key].icon}}\"></uikit-button>\n      </td>\n    </tr>\n  </tbody>\n</table>\n"
 
 /***/ }),
 
@@ -1054,21 +1098,21 @@ module.exports = "<aside class=\"uikit-sidebar\">\n  <ng-content></ng-content>\n
 /***/ 537:
 /***/ (function(module, exports) {
 
-module.exports = "<uikit-header>\n  <img src=\"assets/img/logo.svg\" height=\"30\">\n</uikit-header>\n<main>\n  <uikit-sidebar>\n    <uikit-menu [menuItems]=\"menuItems\"></uikit-menu>\n  </uikit-sidebar>\n  <div style=\"padding: 0 20px;\">\n    <router-outlet></router-outlet>\n  </div>\n</main>\n"
+module.exports = "<uikit-header>\n  <img src=\"assets/img/logo.svg\" height=\"30\">\n</uikit-header>\n<main>\n  <uikit-sidebar>\n    <uikit-menu [menuItems]=\"menuItems\"></uikit-menu>\n  </uikit-sidebar>\n  <div class=\"content\">\n    <router-outlet></router-outlet>\n  </div>\n</main>\n"
 
 /***/ }),
 
 /***/ 538:
 /***/ (function(module, exports) {
 
-module.exports = "<h1>Button component</h1>\n<p><strong>UIButtonType:</strong> primary</p>\n<uikit-button UIButtonType=\"primary\" (click)=\"HelloClick()\">{{CreateBTNText}}</uikit-button>\n<uikit-button UIButtonType=\"primary cancel\">Cancel</uikit-button>\n<p><strong>UIButtonType:</strong> primary <strong>[disabled]=\"true\"</strong></p>\n<uikit-button UIButtonType=\"primary\" [disabled]=\"true\" (click)=\"HelloClick()\">{{CreateBTNText}}</uikit-button>\n<uikit-button UIButtonType=\"primary cancel\" [disabled]=\"true\">Cancel</uikit-button>\n<p><strong>UIButtonType:</strong> secondary</p>\n<uikit-button type=\"submit\" UIButtonType=\"secondary\">Create</uikit-button>\n<uikit-button type=\"submit\" UIButtonType=\"secondary cancel\">Create</uikit-button>\n<p><strong>UIButtonType:</strong> primary <strong>[disabled]=\"true\"</strong></p>\n<uikit-button UIButtonType=\"secondary\" [disabled]=\"true\" (click)=\"HelloClick()\">{{CreateBTNText}}</uikit-button>\n<uikit-button UIButtonType=\"secondary cancel\" [disabled]=\"true\">Cancel</uikit-button>\n<h2>Component selector</h2>\n<div>\n  <p>Tag name - <strong>uikit-button</strong></p>\n  <p>Attr - <strong>UIButtonType</strong></p>\n  <p>Values: primary | secondary | cancel</p>\n</div>\n"
+module.exports = "<h1>Button component</h1>\n<p><strong>UIButtonType:</strong> primary</p>\n<uikit-button UIButtonType=\"primary\" (click)=\"HelloClick()\">{{CreateBTNText}}</uikit-button>\n<uikit-button UIButtonType=\"primary cancel\">Cancel</uikit-button>\n<uikit-button UIButtonType=\"primary\" icon=\"assignment_late\"></uikit-button>\n<p><strong>UIButtonType:</strong> primary <strong>[disabled]=\"true\"</strong></p>\n<uikit-button UIButtonType=\"primary\" [disabled]=\"true\" (click)=\"HelloClick()\">{{CreateBTNText}}</uikit-button>\n<uikit-button UIButtonType=\"primary cancel\" [disabled]=\"true\">Cancel</uikit-button>\n<p><strong>UIButtonType:</strong> secondary</p>\n<uikit-button type=\"submit\" UIButtonType=\"secondary\">Create</uikit-button>\n<uikit-button type=\"submit\" UIButtonType=\"secondary cancel\">Create</uikit-button>\n<p><strong>UIButtonType:</strong> primary <strong>[disabled]=\"true\"</strong></p>\n<uikit-button UIButtonType=\"secondary\" [disabled]=\"true\" (click)=\"HelloClick()\">{{CreateBTNText}}</uikit-button>\n<uikit-button UIButtonType=\"secondary cancel\" [disabled]=\"true\">Cancel</uikit-button>\n<h2>Component selector</h2>\n<div>\n  <p>Tag name - <strong>uikit-button</strong></p>\n  <p>Attr - <strong>UIButtonType</strong></p>\n  <p>Values: primary | secondary | cancel</p>\n</div>\n"
 
 /***/ }),
 
 /***/ 539:
 /***/ (function(module, exports) {
 
-module.exports = "<uikit-grid [GridDataRows]=\"GridDataRows\" [Settings]=\"Settings\">\n  <!--<uikit-grid-column key=\"id\" su header=\"User\" type=\"\"></uikit-grid-column>-->\n</uikit-grid>\n"
+module.exports = "<h1>Grid Component</h1>\n<uikit-grid [GridDataRows]=\"GridDataRows\" [settings]=\"settings\">\n  <!--<uikit-grid-column key=\"id\" su header=\"User\" type=\"\"></uikit-grid-column>-->\n</uikit-grid>\n<h3>Data array</h3>\n<pre class=\"language-javascript\">\n  <code class=\"language-javascript\">\n    public GridDataRows = [\n    &#123;\n      id: 11,\n      name: 'Test1',\n      email: 'test1@test.com',\n      vendor: 'LoopMe',\n      company: 'Home',\n      action: 'input',\n      action_list: [\n        'remove',\n        'update'\n      ]\n    &#125;,\n    ...\n  ];\n  </code>\n</pre>\n\n<h3>Grid settings</h3>\n<pre class=\"language-javascript\">\n  <code class=\"language-javascript\">\n    settings: Object = &#123;\n      headers: [\n        &#123; key: 'id', name: 'id', sortable: true, type: 'text'&#125;,\n        &#123; key: 'name', name: 'name', sortable: false, type: 'text'&#125;,\n        &#123; key: 'company', name: 'company', sortable: false, type: 'text'&#125;,\n        &#123; key: 'vendor', name: 'vendor', sortable: true, type: 'text'&#125;,\n        &#123; key: 'email', name: 'email', sortable: false, type: 'link'&#125;,\n        &#123; key: 'action', name: '', sortable: false, type: 'action'&#125;,\n      ],\n    &#125;;\n  </code>\n</pre>\n\n"
 
 /***/ }),
 

@@ -92,7 +92,7 @@ exports = module.exports = __webpack_require__(14)();
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i);", ""]);
 
 // module
-exports.push([module.i, "html {\n  width: 100%;\n  height: 100%; }\n\nbody {\n  margin: 0;\n  padding: 0;\n  position: relative;\n  font-family: 'Open Sans', serif;\n  font-size: 14px;\n  width: 100%;\n  height: 100%; }\n\ntextarea.code {\n  width: 550px;\n  height: 150px;\n  font-size: 16px; }\n", ""]);
+exports.push([module.i, "html {\n  width: 100%;\n  height: 100%; }\n\nbody {\n  margin: 0;\n  padding: 0;\n  position: relative;\n  font-family: 'Open Sans', serif;\n  font-size: 14px;\n  width: 100%;\n  height: 100%; }\n\nmain {\n  width: 100%; }\n", ""]);
 
 // exports
 
