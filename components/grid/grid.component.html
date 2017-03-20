@@ -6,13 +6,15 @@
     </th>
   </thead>
   <tbody>
-    <tr *ngFor="let GridDataRow of GridDataRows">
-      <td *ngFor="let column of settings.headers">
-        <span *ngIf="column.type == 'text'">{{GridDataRow[column.key]}}</span>
-        <a *ngIf="column.type == 'link'" href="{{GridDataRow[column.key]}}">{{GridDataRow[column.key]}}</a>
-        <uikit-button *ngIf="column.type == 'action'" UIButtonType="icon" icon="{{GridDataRow[column.key].icon}}"></uikit-button>
-      </td>
-    </tr>
+    <template [ngIf]="GridDataRows">
+      <tr *ngFor="let GridDataRow of GridDataRows">
+        <td *ngFor="let column of settings.headers">
+          <span *ngIf="column.type == 'text'">{{GridDataRow[column.key]}}</span>
+          <a *ngIf="column.type == 'link'" href="{{GridDataRow[column.key]}}">{{GridDataRow[column.key]}}</a>
+          <uikit-button *ngIf="column.type == 'action'" UIButtonType="icon" icon="{{GridDataRow[column.key].icon}}"></uikit-button>
+        </td>
+      </tr>
+    </template>
     <template [ngIf]="GridDataColumns">
       <tr *ngFor="let GridDataColumn of GridDataColumns.id; let i = index;">
         <td *ngFor="let column of settings.headers">

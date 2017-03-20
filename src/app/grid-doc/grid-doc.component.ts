@@ -58,7 +58,7 @@ export class GridDocComponent implements OnInit {
     id: [11, 12, 13, 14],
     name: ['Test1', 'Test2', 'Test3', 'Test4'],
     email: ['test1@test.com', 'test2@test.com', 'test3@test.com', 'test4@test.com'],
-    vendor: ['LoopMe', 'DataArt', 'EA', 'LoopMe'],
+    vendor: ['LoopMe', '', 'EA', 'LoopMe'],
     company: ['LoopMe', 'LoopMe', 'LoopMe', 'LoopMe'],
     action: ['input', 'input', 'input', 'input']
   };
