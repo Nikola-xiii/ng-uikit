@@ -1,28 +1,31 @@
 @import "../settings/uikit.settings";
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 
-// Basic colors for UIkit
+// Basic colors for button
 $red: #B11118;
 $red-darker: #8A070C;
-
 $grey: #F4F4F4;
 $grey-dark: #7D7D7D;
 $grey-darker: #D0D0D0;
+$black: #000;
 
-:host {
-  display: inline-block;
-}
+// Size
+$uikit-button-width: 80px;
+$uikit-button-font-size: 10px;
+$uikit-button-padding: 4px 15px;
+$uikit-button-icon-size: 15px;
+$uikit-button-border-radius: 3px;
 
 %uikit-button {
-  min-width: 80px;
-  padding: 4px 15px;
+  min-width: $uikit-button-width;
+  padding: $uikit-button-padding;
   font-family: $font-root-family;
   text-transform: uppercase;
-  border-radius: 3px;
+  border-radius: $uikit-button-border-radius;
   border: 1px solid;
-  font-size: 10px;
+  font-size: $uikit-button-font-size;
   line-height: 1.4;
-  font-weight: 700;
+  font-weight: $font-bold;
 
   &[disabled] {
     opacity: .5;
@@ -31,8 +34,8 @@ $grey-darker: #D0D0D0;
 
 %uikit-button-icon {
   padding: 0;
-  background: transparent;
   border: 0;
+  background: transparent;
   cursor: pointer;
   min-width: inherit;
   text-align: left;
@@ -40,14 +43,14 @@ $grey-darker: #D0D0D0;
   vertical-align: text-top;
 
   .material-icons {
-    color: #7d7d7d;
-    font-size: 15px;
-    height: 100%;
+    display: block;
+    color: $grey-dark;
+    font-size: $uikit-button-icon-size;
   }
 
   &:hover {
     .material-icons {
-      color: #000;
+      color: $black;
     }
   }
 }
@@ -56,7 +59,7 @@ $grey-darker: #D0D0D0;
   background: $red;
   border-color: $red-darker;
   color: $white;
-  font-weight: bold;
+  font-weight: $font-bold;
 
   &:hover {
     background: $red-darker;
@@ -79,7 +82,7 @@ $grey-darker: #D0D0D0;
   background: $white;
   border-color: $red;
   color: $red;
-  font-weight: 400;
+  font-weight: $font-regular;
 
   &:hover {
     background: $red-darker;
