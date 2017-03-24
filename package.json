@@ -9,7 +9,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "lib-css": "components/ng-uikit.scss -o components/"
+    "lib-css": "node-sass components/ng-uikit.scss -o components/"
   },
   "private": true,
   "dependencies": {
