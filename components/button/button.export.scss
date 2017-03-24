@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 
 // Basic colors for button
+//---------------------------------------------------------------------------------------------------------------------
 $red: #B11118;
 $red-darker: #8A070C;
 $grey: #F4F4F4;
@@ -10,11 +11,12 @@ $grey-darker: #D0D0D0;
 $black: #000;
 
 // Size
-$uikit-button-width: 80px;
-$uikit-button-font-size: 10px;
-$uikit-button-padding: 4px 15px;
-$uikit-button-icon-size: 15px;
-$uikit-button-border-radius: 3px;
+//---------------------------------------------------------------------------------------------------------------------
+$uikit-button-width: 80px !default;
+$uikit-button-font-size: 10px !default;
+$uikit-button-padding: 4px 15px !default;
+$uikit-button-icon-size: 15px !default;
+$uikit-button-border-radius: 3px !default;
 
 %uikit-button {
   min-width: $uikit-button-width;
