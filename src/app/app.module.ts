@@ -5,7 +5,7 @@ import { HttpModule } from '@angular/http';
 import { routing } from './app.routes';
 import { CommonModule } from '@angular/common';
 import { AppComponent} from './app.component';
-import { NgUIKitModule } from '../../components/ng-uikit.module'
+import { NgUIKitModule } from '../components/ng-uikit.module'
 import { ButtonDocComponent } from './button-doc/button-doc.component';
 import { MenuDocComponent } from './menu-doc/menu-doc.component';
 import { ReadmeComponent } from './readme/readme.component';
