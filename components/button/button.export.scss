@@ -14,7 +14,7 @@ $black: #000;
 //---------------------------------------------------------------------------------------------------------------------
 $uikit-button-width: 80px !default;
 $uikit-button-font-size: 10px !default;
-$uikit-button-padding: 4px 15px !default;
+$uikit-button-padding: 4px 0 !default;
 $uikit-button-icon-size: 15px !default;
 $uikit-button-border-radius: 3px !default;
 
@@ -22,7 +22,7 @@ $uikit-button-border-radius: 3px !default;
 // uikit button main pseudo class
 //---------------------------------------------------------------------------------------------------------------------
 %uikit-button {
-  min-width: $uikit-button-width;
+  width: $uikit-button-width;
   padding: $uikit-button-padding;
   font-family: $font-root-family;
   text-transform: uppercase;

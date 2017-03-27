@@ -6,7 +6,7 @@ $red: #b11118;
 // Box-sizing for sidebar
 //----------------------------------------------------------------------------------------------------------------------
 
-$uikit-sidebar-height: 100vh !default;
+$uikit-sidebar-height: calc(100vh - 40px) !default;
 $ukit-sidebar-width: 85px !default;
 
 
