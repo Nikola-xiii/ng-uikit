@@ -4,136 +4,10 @@ webpackJsonp([1,5],{
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_router__ = __webpack_require__(57);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__button_doc_button_doc_component__ = __webpack_require__(58);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__menu_doc_menu_doc_component__ = __webpack_require__(60);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__readme_readme_component__ = __webpack_require__(61);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__grid_doc_grid_doc_component__ = __webpack_require__(59);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return routing; });
-
-
-
-
-
-var routes = [
-    { path: 'buttons', component: __WEBPACK_IMPORTED_MODULE_1__button_doc_button_doc_component__["a" /* ButtonDocComponent */] },
-    { path: 'menu', component: __WEBPACK_IMPORTED_MODULE_2__menu_doc_menu_doc_component__["a" /* MenuDocComponent */] },
-    { path: 'grid', component: __WEBPACK_IMPORTED_MODULE_4__grid_doc_grid_doc_component__["a" /* GridDocComponent */] },
-    { path: 'readme', component: __WEBPACK_IMPORTED_MODULE_3__readme_readme_component__["a" /* ReadmeComponent */] },
-    { path: '', redirectTo: 'readme', pathMatch: 'full' },
-];
-var routing = __WEBPACK_IMPORTED_MODULE_0__angular_router__["a" /* RouterModule */].forRoot(routes);
-//# sourceMappingURL=app.routes.js.map
-
-/***/ }),
-
-/***/ 101:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ButtonComponent; });
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-var ButtonComponent = (function () {
-    function ButtonComponent() {
-    }
-    ButtonComponent.prototype.ngOnInit = function () { };
-    return ButtonComponent;
-}());
-__decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Input */])("UIButtonType"),
-    __metadata("design:type", String)
-], ButtonComponent.prototype, "UIButtonType", void 0);
-__decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Input */])("type"),
-    __metadata("design:type", String)
-], ButtonComponent.prototype, "type", void 0);
-__decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Input */])("icon"),
-    __metadata("design:type", String)
-], ButtonComponent.prototype, "icon", void 0);
-__decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Input */])(),
-    __metadata("design:type", Boolean)
-], ButtonComponent.prototype, "disabled", void 0);
-ButtonComponent = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
-        selector: 'uikit-button',
-        template: __webpack_require__(183),
-        styles: [__webpack_require__(171)]
-    })
-], ButtonComponent);
-
-//# sourceMappingURL=button.component.js.map
-
-/***/ }),
-
-/***/ 102:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GridComponent; });
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-var GridComponent = (function () {
-    function GridComponent() {
-        this.GridDataRows = [];
-    }
-    GridComponent.prototype.ngOnInit = function () {
-    };
-    return GridComponent;
-}());
-__decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Input */])(),
-    __metadata("design:type", Object)
-], GridComponent.prototype, "GridDataRows", void 0);
-__decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Input */])(),
-    __metadata("design:type", Object)
-], GridComponent.prototype, "GridDataColumns", void 0);
-__decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Input */])(),
-    __metadata("design:type", Object)
-], GridComponent.prototype, "settings", void 0);
-GridComponent = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
-        selector: 'uikit-grid',
-        template: __webpack_require__(184),
-        styles: [__webpack_require__(172)],
-    }),
-    __metadata("design:paramtypes", [])
-], GridComponent);
-
-//# sourceMappingURL=grid.component.js.map
-
-/***/ }),
-
-/***/ 103:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__grid_component__ = __webpack_require__(102);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__grid_component__ = __webpack_require__(99);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_common__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__button_button_module__ = __webpack_require__(62);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__button_button_module__ = __webpack_require__(58);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GridModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -162,7 +36,7 @@ GridModule = __decorate([
 
 /***/ }),
 
-/***/ 104:
+/***/ 101:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -188,8 +62,8 @@ var HeaderComponent = (function () {
 HeaderComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
         selector: 'uikit-header',
-        template: __webpack_require__(185),
-        styles: [__webpack_require__(173)]
+        template: __webpack_require__(179),
+        styles: [__webpack_require__(168)]
     }),
     __metadata("design:paramtypes", [])
 ], HeaderComponent);
@@ -198,12 +72,12 @@ HeaderComponent = __decorate([
 
 /***/ }),
 
-/***/ 105:
+/***/ 102:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__header_component__ = __webpack_require__(104);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__header_component__ = __webpack_require__(101);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HeaderModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -230,7 +104,7 @@ HeaderModule = __decorate([
 
 /***/ }),
 
-/***/ 106:
+/***/ 103:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -260,8 +134,8 @@ __decorate([
 MenuComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
         selector: 'uikit-menu',
-        template: __webpack_require__(186),
-        styles: [__webpack_require__(174)]
+        template: __webpack_require__(180),
+        styles: [__webpack_require__(169)]
     }),
     __metadata("design:paramtypes", [])
 ], MenuComponent);
@@ -270,13 +144,13 @@ MenuComponent = __decorate([
 
 /***/ }),
 
-/***/ 107:
+/***/ 104:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__menu_component__ = __webpack_require__(106);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__menu_component__ = __webpack_require__(103);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_router__ = __webpack_require__(57);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MenuModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -306,16 +180,16 @@ MenuModule = __decorate([
 
 /***/ }),
 
-/***/ 108:
+/***/ 105:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__header_header_module__ = __webpack_require__(105);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__sidebar_sidebar_module__ = __webpack_require__(110);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__menu_menu_module__ = __webpack_require__(107);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__button_button_module__ = __webpack_require__(62);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__grid_grid_module__ = __webpack_require__(103);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__header_header_module__ = __webpack_require__(102);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__sidebar_sidebar_module__ = __webpack_require__(107);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__menu_menu_module__ = __webpack_require__(104);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__button_button_module__ = __webpack_require__(58);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__grid_grid_module__ = __webpack_require__(100);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NgUIKitModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -351,7 +225,7 @@ NgUIKitModule = __decorate([
 
 /***/ }),
 
-/***/ 109:
+/***/ 106:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -377,8 +251,8 @@ var SidebarComponent = (function () {
 SidebarComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
         selector: 'uikit-sidebar',
-        template: __webpack_require__(187),
-        styles: [__webpack_require__(175)]
+        template: __webpack_require__(181),
+        styles: [__webpack_require__(170)]
     }),
     __metadata("design:paramtypes", [])
 ], SidebarComponent);
@@ -387,12 +261,12 @@ SidebarComponent = __decorate([
 
 /***/ }),
 
-/***/ 110:
+/***/ 107:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__sidebar_component__ = __webpack_require__(109);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__sidebar_component__ = __webpack_require__(106);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SidebarModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -419,6 +293,170 @@ SidebarModule = __decorate([
 
 /***/ }),
 
+/***/ 108:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+var AppComponent = (function () {
+    function AppComponent() {
+        this.title = 'Angular 2 UIKit';
+        this.menuItems = [
+            {
+                name: 'Readme',
+                routerLink: '/readme',
+                icon: 'assignment_late',
+                subItems: [
+                    { name: 'SubItem 1', id: "menu", routerLink: '' },
+                ]
+            },
+            {
+                name: 'Buttons',
+                id: "buttons",
+                active: true,
+                routerLink: '/buttons',
+                icon: 'touch_app'
+            },
+            {
+                name: 'Menu',
+                id: "menu",
+                routerLink: '/menu',
+                active: false,
+                icon: 'menu',
+                subItems: [
+                    { name: 'SubItem 1', id: "menu", routerLink: '' },
+                    { name: 'SubItem 2', id: "menu", routerLink: '' },
+                    { name: 'SubItem 3', id: "menu", routerLink: '' },
+                    { name: 'SubItem 4', id: "menu", routerLink: '' }
+                ]
+            },
+            {
+                name: 'Table grid',
+                id: "buttons",
+                active: true,
+                routerLink: '/grid',
+                icon: 'view_list'
+            }
+        ];
+    }
+    AppComponent.prototype.HelloClick = function () {
+        console.log('Hello from main app');
+    };
+    return AppComponent;
+}());
+AppComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
+        selector: 'app-root',
+        template: __webpack_require__(183),
+        styles: [__webpack_require__(171)]
+    })
+], AppComponent);
+
+//# sourceMappingURL=app.component.js.map
+
+/***/ }),
+
+/***/ 109:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(95);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(96);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_routes__ = __webpack_require__(110);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_common__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__app_component__ = __webpack_require__(108);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_ng_uikit_module__ = __webpack_require__(105);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__button_doc_button_doc_component__ = __webpack_require__(59);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__menu_doc_menu_doc_component__ = __webpack_require__(61);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__readme_readme_component__ = __webpack_require__(62);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__grid_doc_grid_doc_component__ = __webpack_require__(60);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+
+
+
+
+
+
+
+
+var AppModule = (function () {
+    function AppModule() {
+    }
+    return AppModule;
+}());
+AppModule = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["b" /* NgModule */])({
+        declarations: [
+            __WEBPACK_IMPORTED_MODULE_6__app_component__["a" /* AppComponent */],
+            __WEBPACK_IMPORTED_MODULE_8__button_doc_button_doc_component__["a" /* ButtonDocComponent */],
+            __WEBPACK_IMPORTED_MODULE_9__menu_doc_menu_doc_component__["a" /* MenuDocComponent */],
+            __WEBPACK_IMPORTED_MODULE_10__readme_readme_component__["a" /* ReadmeComponent */],
+            __WEBPACK_IMPORTED_MODULE_11__grid_doc_grid_doc_component__["a" /* GridDocComponent */]
+        ],
+        imports: [
+            __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
+            __WEBPACK_IMPORTED_MODULE_5__angular_common__["a" /* CommonModule */],
+            __WEBPACK_IMPORTED_MODULE_7__components_ng_uikit_module__["a" /* NgUIKitModule */],
+            __WEBPACK_IMPORTED_MODULE_2__angular_forms__["a" /* FormsModule */],
+            __WEBPACK_IMPORTED_MODULE_3__angular_http__["a" /* HttpModule */],
+            __WEBPACK_IMPORTED_MODULE_4__app_routes__["a" /* routing */],
+        ],
+        providers: [],
+        bootstrap: [__WEBPACK_IMPORTED_MODULE_6__app_component__["a" /* AppComponent */]]
+    })
+], AppModule);
+
+//# sourceMappingURL=app.module.js.map
+
+/***/ }),
+
+/***/ 110:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_router__ = __webpack_require__(57);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__button_doc_button_doc_component__ = __webpack_require__(59);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__menu_doc_menu_doc_component__ = __webpack_require__(61);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__readme_readme_component__ = __webpack_require__(62);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__grid_doc_grid_doc_component__ = __webpack_require__(60);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return routing; });
+
+
+
+
+
+var routes = [
+    { path: 'buttons', component: __WEBPACK_IMPORTED_MODULE_1__button_doc_button_doc_component__["a" /* ButtonDocComponent */] },
+    { path: 'menu', component: __WEBPACK_IMPORTED_MODULE_2__menu_doc_menu_doc_component__["a" /* MenuDocComponent */] },
+    { path: 'grid', component: __WEBPACK_IMPORTED_MODULE_4__grid_doc_grid_doc_component__["a" /* GridDocComponent */] },
+    { path: 'readme', component: __WEBPACK_IMPORTED_MODULE_3__readme_readme_component__["a" /* ReadmeComponent */] },
+    { path: '', redirectTo: 'readme', pathMatch: 'full' },
+];
+var routing = __WEBPACK_IMPORTED_MODULE_0__angular_router__["a" /* RouterModule */].forRoot(routes);
+//# sourceMappingURL=app.routes.js.map
+
+/***/ }),
+
 /***/ 111:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -441,96 +479,6 @@ var environment = {
 
 exports = module.exports = __webpack_require__(5)();
 // imports
-
-
-// module
-exports.push([module.i, "main {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  position: relative;\n  width: 100%;\n  height: calc(100vh - 40px); }\n\napp-root {\n  height: calc(100vh - 40px);\n  position: relative;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex; }\n\n.content {\n  padding: 0 20px;\n  height: calc(100vh - 40px);\n  width: calc(100% - 85px);\n  overflow-y: scroll; }\n\nuikit-sidebar uikit-button {\n  position: absolute;\n  bottom: 5px;\n  left: 2px; }\n", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
-
-/***/ }),
-
-/***/ 167:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(5)();
-// imports
-
-
-// module
-exports.push([module.i, "", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
-
-/***/ }),
-
-/***/ 168:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(5)();
-// imports
-
-
-// module
-exports.push([module.i, "\n", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
-
-/***/ }),
-
-/***/ 169:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(5)();
-// imports
-
-
-// module
-exports.push([module.i, "", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
-
-/***/ }),
-
-/***/ 170:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(5)();
-// imports
-
-
-// module
-exports.push([module.i, "", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
-
-/***/ }),
-
-/***/ 171:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(5)();
-// imports
 exports.push([module.i, "@import url(https://fonts.googleapis.com/icon?family=Material+Icons);", ""]);
 
 // module
@@ -544,7 +492,7 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 172:
+/***/ 167:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(5)();
@@ -562,7 +510,7 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 173:
+/***/ 168:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(5)();
@@ -580,7 +528,7 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 174:
+/***/ 169:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(5)();
@@ -598,7 +546,7 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 175:
+/***/ 170:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(5)();
@@ -616,73 +564,163 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 178:
-/***/ (function(module, exports) {
+/***/ 171:
+/***/ (function(module, exports, __webpack_require__) {
 
-module.exports = "<uikit-header>\n  <img src=\"assets/img/logo.svg\" height=\"30\">\n  <uikit-button UIButtonType=\"secondary\">Logout</uikit-button>\n</uikit-header>\n<main>\n  <uikit-sidebar>\n    <uikit-menu [menuItems]=\"menuItems\"></uikit-menu>\n    <uikit-button UIButtonType=\"secondary\" icon=\"open_in_new\">Admin mode</uikit-button>\n  </uikit-sidebar>\n  <div class=\"content\">\n    <router-outlet></router-outlet>\n  </div>\n</main>\n"
+exports = module.exports = __webpack_require__(5)();
+// imports
 
-/***/ }),
 
-/***/ 179:
-/***/ (function(module, exports) {
+// module
+exports.push([module.i, "main {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  position: relative;\n  width: 100%;\n  height: calc(100vh - 40px); }\n\napp-root {\n  height: calc(100vh - 40px);\n  position: relative;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex; }\n\n.content {\n  padding: 0 20px;\n  height: calc(100vh - 40px);\n  width: calc(100% - 85px);\n  overflow-y: scroll; }\n\nuikit-sidebar uikit-button {\n  position: absolute;\n  bottom: 5px;\n  left: 2px; }\n", ""]);
 
-module.exports = "<h1>Button component</h1>\n<h2>Markup</h2>\n<pre class=\"language-markup\">\n  <code class=\"language-markup\">\n    &lt;uikit-button UIButtonType=\"UIButtonType\"&gt;&lt;/uikit-button&gt;\n  </code>\n</pre>\n<p><strong>UIButtonType:</strong> primary</p>\n<uikit-button UIButtonType=\"primary\">{{CreateBTNText}}</uikit-button>\n<uikit-button UIButtonType=\"primary cancel\">Cancel</uikit-button>\n<uikit-button UIButtonType=\"secondary\" icon=\"open_in_new\">Admin mode</uikit-button>\n<p><strong>UIButtonType:</strong> primary <strong>[disabled]=\"true\"</strong></p>\n<uikit-button UIButtonType=\"primary\" [disabled]=\"true\">{{CreateBTNText}}</uikit-button>\n<uikit-button UIButtonType=\"primary cancel\" [disabled]=\"true\">Cancel</uikit-button>\n<p><strong>UIButtonType:</strong> secondary</p>\n<uikit-button type=\"submit\" UIButtonType=\"secondary\">Create</uikit-button>\n<uikit-button type=\"submit\" UIButtonType=\"secondary cancel\">Create</uikit-button>\n<p><strong>UIButtonType:</strong> primary <strong>[disabled]=\"true\"</strong></p>\n<uikit-button UIButtonType=\"secondary\" [disabled]=\"true\">{{CreateBTNText}}</uikit-button>\n<uikit-button UIButtonType=\"secondary cancel\" [disabled]=\"true\">Cancel</uikit-button>\n<h2>Component selector</h2>\n<div>\n  <p>Tag name - <strong>uikit-button</strong></p>\n  <p>Attr - <strong>UIButtonType</strong></p>\n  <p>Values: primary | secondary | icon</p>\n</div>\n"
+// exports
 
-/***/ }),
 
-/***/ 180:
-/***/ (function(module, exports) {
-
-module.exports = "<h1>Grid Component</h1>\n<pre class=\"language-markup\">\n  <code class=\"language-markup\">\n    &lt;uikit-grid [GridDataRows]=\"GridDataRows\" [settings]=\"settings\"&gt;&lt;/uikit-grid&gt;\n  </code>\n</pre>\n<uikit-grid [GridDataRows]=\"GridDataRows\" [settings]=\"settings\"></uikit-grid>\n<h3>Data array Row format</h3>\n<pre class=\"language-javascript\">\n  <code class=\"language-javascript\">\n    public GridDataRows = [\n    &#123;\n      id: 11,\n      name: 'Test1',\n      email: 'test1@test.com',\n      vendor: 'LoopMe',\n      company: 'Home',\n      action: 'input'\n    &#125;,\n    ...\n  ];\n  </code>\n</pre>\n\n<h3>Grid settings</h3>\n<pre class=\"language-javascript\">\n  <code class=\"language-javascript\">\n    settings: Object = &#123;\n      headers: [\n        &#123; key: 'id', name: 'id', sortable: true, type: 'text'&#125;,\n        &#123; key: 'name', name: 'name', sortable: false, type: 'text'&#125;,\n        &#123; key: 'company', name: 'company', sortable: false, type: 'text'&#125;,\n        &#123; key: 'vendor', name: 'vendor', sortable: true, type: 'text'&#125;,\n        &#123; key: 'email', name: 'email', sortable: false, type: 'link'&#125;,\n        &#123; key: 'action', name: '', sortable: false, type: 'action'&#125;,\n      ],\n    &#125;;\n  </code>\n</pre>\n<pre class=\"language-markup\">\n  <code class=\"language-markup\">\n    &lt;uikit-grid [GridDataColumns]=\"GridDataColumns\" [settings]=\"settings\"&gt;&lt;/uikit-grid&gt;\n  </code>\n</pre>\n<uikit-grid [GridDataColumns]=\"GridDataColumns\" [settings]=\"settings\"></uikit-grid>\n<h3>Data array Column format</h3>\n<pre class=\"language-javascript\">\n  <code class=\"language-javascript\">\n    GridDataColumns = [\n      &#123;\n        id: [11, 12, 13, 14],\n        name: ['Test1', 'Test2', 'Test3', 'Test4'],\n        email: ['test1@test.com', 'test2@test.com', 'test3@test.com', 'test4@test.com'],\n        vendor: ['LoopMe', '', 'EA', 'LoopMe'],\n        company: ['LoopMe', 'LoopMe', 'LoopMe', 'LoopMe'],\n        action: ['input', 'input', 'input', 'input']\n      &#125;\n    ];\n  </code>\n</pre>\n\n<h3>Grid settings</h3>\n<pre class=\"language-javascript\">\n  <code class=\"language-javascript\">\n    settings: Object = &#123;\n      headers: [\n        &#123; key: 'id', name: 'id', sortable: true, type: 'text'&#125;,\n        &#123; key: 'name', name: 'name', sortable: false, type: 'text'&#125;,\n        &#123; key: 'company', name: 'company', sortable: false, type: 'text'&#125;,\n        &#123; key: 'vendor', name: 'vendor', sortable: true, type: 'text'&#125;,\n        &#123; key: 'email', name: 'email', sortable: false, type: 'link'&#125;,\n        &#123; key: 'action', name: '', sortable: false, type: 'action'&#125;,\n      ],\n    &#125;;\n  </code>\n</pre>\n"
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 181:
-/***/ (function(module, exports) {
+/***/ 172:
+/***/ (function(module, exports, __webpack_require__) {
 
-module.exports = "<h1>Menu Components</h1>\n<h2>Basic tag</h2>\n<pre class=\"language-markup\">\n  <code class=\"language-markup\">\n    &lt;uikit-menu [menuItems]=\"menuItems\"&gt;&lt;/uikit-menu&gt;\n  </code>\n</pre>\n<div style=\"background: #000; width: 85px;\">\n  <uikit-menu [menuItems]=\"menuItems\"></uikit-menu>\n</div>\n<h2>Array Menu Items</h2>\n<pre class=\"language-javascript\">\n  <code class=\"language-javascript\">\n    menuItems = [\n      &#123;\n        name: 'Menu',\n        id: \"done\",\n        active: true,\n        routerLink: '',\n        icon: 'touch_app',\n        subItems: [\n          &#123; name: 'SubItem 1', id: \"menu\", routerLink: '' &#125;,\n          &#123; name: 'SubItem 2', id: \"menu\", routerLink: '' &#125;,\n        ]\n      &#125;\n      ...\n    ]\n  </code>\n</pre>\n<p>Name for icon field <a href=\"https://www.materialpalette.com/icons\">see here</a></p>\n"
+exports = module.exports = __webpack_require__(5)();
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 182:
-/***/ (function(module, exports) {
+/***/ 173:
+/***/ (function(module, exports, __webpack_require__) {
 
-module.exports = "<h1>LoopMe Angular 2 UIKit</h1>\n<h2>Install</h2>\n<pre class=\"language-bash\">\n  <code class=\"language-bash\">\n  npm install nikola-xiii/ng-uikit\n  </code>\n</pre>\n<h2>Include and use</h2>\n<p>Import NgModule</p>\n<pre class=\"language-javascript\">\n  <code class=\"language-javascript\">\n  import &#123; NgUIKitModule &#125; from 'ng-uikit/components/ng-uikit.module';\n  </code>\n</pre>\n<pre class=\"language-javascript\">\n  <code class=\"language-javascript\">\n    import &#123; NgUIKitModule &#125; from 'ng-uikit/components/ng-uikit.module';\n\n    @NgModule(&#123;\n      ...\n      imports: [\n      ...,\n      NgUIKitModule,\n    ]&#125;);\n  </code>\n</pre>\n"
+exports = module.exports = __webpack_require__(5)();
+// imports
+
+
+// module
+exports.push([module.i, "\n", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 183:
+/***/ 174:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(5)();
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ 175:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(5)();
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ 177:
 /***/ (function(module, exports) {
 
 module.exports = "<button class=\"uikit-button uikit-button-{{UIButtonType}}\" type=\"{{type}}\" [attr.disabled]=\"disabled ? true : null\">\n  <i *ngIf=\"icon\" class=\"material-icons\">{{icon}}</i>\n  <ng-content></ng-content>\n</button>\n"
 
 /***/ }),
 
-/***/ 184:
+/***/ 178:
 /***/ (function(module, exports) {
 
 module.exports = "<table class=\"uikit-grid\">\n  <thead>\n    <th *ngFor=\"let Header of settings.headers\">\n      <i *ngIf=\"Header.sortable\" class=\"material-icons\">arrow_downward</i>\n      {{Header.name}}\n    </th>\n  </thead>\n  <tbody>\n    <ng-template [ngIf]=\"GridDataRows\">\n      <tr *ngFor=\"let GridDataRow of GridDataRows\">\n        <td *ngFor=\"let column of settings.headers\">\n          <span *ngIf=\"column.type == 'text'\">{{GridDataRow[column.key]}}</span>\n          <a *ngIf=\"column.type == 'link'\" href=\"{{GridDataRow[column.key]}}\">{{GridDataRow[column.key]}}</a>\n          <uikit-button *ngIf=\"column.type == 'action'\" UIButtonType=\"icon\" icon=\"{{GridDataRow[column.key].icon}}\"></uikit-button>\n        </td>\n      </tr>\n    </ng-template>\n    <ng-template [ngIf]=\"GridDataColumns\">\n      <tr *ngFor=\"let GridDataColumn of GridDataColumns.id; let i = index;\">\n        <td *ngFor=\"let column of settings.headers\">\n          <span *ngIf=\"column.type == 'text'\">{{GridDataColumns[column.key][i]}}</span>\n          <a *ngIf=\"column.type == 'link'\" href=\"{{GridDataColumns[column.key][i]}}\">{{GridDataColumns[column.key][i]}}</a>\n          <uikit-button *ngIf=\"column.type == 'action'\" UIButtonType=\"icon\" icon=\"{{GridDataColumns[column.key][i]}}\"></uikit-button>\n        </td>\n      </tr>\n    </ng-template>\n  </tbody>\n</table>\n"
 
 /***/ }),
 
-/***/ 185:
+/***/ 179:
 /***/ (function(module, exports) {
 
 module.exports = "<header class=\"uikit-header\">\n  <ng-content></ng-content>\n</header>\n"
 
 /***/ }),
 
-/***/ 186:
+/***/ 180:
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"uikit-menu\">\n  <ul class=\"main-menu\">\n    <li class=\"uikit-menu-item\" *ngFor=\"let menuItem of menuItems;\">\n      <a routerLink=\"/{{menuItem.routerLink}}\" routerLinkActive=\"active\">\n        <i *ngIf=\"menuItem.icon\" class=\"material-icons\">{{menuItem.icon}}</i>\n        <img *ngIf=\"menuItem.iconUrl\" src=\"{{menuItem.iconUrl}}\">\n        <span>{{menuItem.name}}</span>\n      </a>\n\n      <ul *ngIf=\"menuItem.subItems\" class=\"sub-menu\">\n        <li class=\"uikit-menu-sub-item\" *ngFor=\"let subItem of menuItem.subItems;\">\n          <a routerLink=\"/{{menuItem.routerLink}}\">\n            <span>{{subItem.name}}</span>\n          </a>\n        </li>\n      </ul>\n    </li>\n  </ul>\n</div>\n"
 
 /***/ }),
 
-/***/ 187:
+/***/ 181:
 /***/ (function(module, exports) {
 
 module.exports = "<aside class=\"uikit-sidebar\">\n  <ng-content></ng-content>\n</aside>\n"
+
+/***/ }),
+
+/***/ 183:
+/***/ (function(module, exports) {
+
+module.exports = "<uikit-header>\n  <img src=\"assets/img/logo.svg\" height=\"30\">\n  <uikit-button UIButtonType=\"secondary\">Logout</uikit-button>\n</uikit-header>\n<main>\n  <uikit-sidebar>\n    <uikit-menu [menuItems]=\"menuItems\"></uikit-menu>\n    <uikit-button UIButtonType=\"secondary\" icon=\"open_in_new\">Admin mode</uikit-button>\n  </uikit-sidebar>\n  <div class=\"content\">\n    <router-outlet></router-outlet>\n  </div>\n</main>\n"
+
+/***/ }),
+
+/***/ 184:
+/***/ (function(module, exports) {
+
+module.exports = "<h1>Button component</h1>\n<h2>Markup</h2>\n<pre class=\"language-markup\">\n  <code class=\"language-markup\">\n    &lt;uikit-button UIButtonType=\"UIButtonType\"&gt;&lt;/uikit-button&gt;\n  </code>\n</pre>\n<p><strong>UIButtonType:</strong> primary</p>\n<uikit-button UIButtonType=\"primary\">{{CreateBTNText}}</uikit-button>\n<uikit-button UIButtonType=\"primary cancel\">Cancel</uikit-button>\n<uikit-button UIButtonType=\"secondary\" icon=\"open_in_new\">Admin mode</uikit-button>\n<p><strong>UIButtonType:</strong> primary <strong>[disabled]=\"true\"</strong></p>\n<uikit-button UIButtonType=\"primary\" [disabled]=\"true\">{{CreateBTNText}}</uikit-button>\n<uikit-button UIButtonType=\"primary cancel\" [disabled]=\"true\">Cancel</uikit-button>\n<p><strong>UIButtonType:</strong> secondary</p>\n<uikit-button type=\"submit\" UIButtonType=\"secondary\">Create</uikit-button>\n<uikit-button type=\"submit\" UIButtonType=\"secondary cancel\">Create</uikit-button>\n<p><strong>UIButtonType:</strong> primary <strong>[disabled]=\"true\"</strong></p>\n<uikit-button UIButtonType=\"secondary\" [disabled]=\"true\">{{CreateBTNText}}</uikit-button>\n<uikit-button UIButtonType=\"secondary cancel\" [disabled]=\"true\">Cancel</uikit-button>\n<h2>Component selector</h2>\n<div>\n  <p>Tag name - <strong>uikit-button</strong></p>\n  <p>Attr - <strong>UIButtonType</strong></p>\n  <p>Values: primary | secondary | icon</p>\n</div>\n"
+
+/***/ }),
+
+/***/ 185:
+/***/ (function(module, exports) {
+
+module.exports = "<h1>Grid Component</h1>\n<pre class=\"language-markup\">\n  <code class=\"language-markup\">\n    &lt;uikit-grid [GridDataRows]=\"GridDataRows\" [settings]=\"settings\"&gt;&lt;/uikit-grid&gt;\n  </code>\n</pre>\n<uikit-grid [GridDataRows]=\"GridDataRows\" [settings]=\"settings\"></uikit-grid>\n<h3>Data array Row format</h3>\n<pre class=\"language-javascript\">\n  <code class=\"language-javascript\">\n    public GridDataRows = [\n    &#123;\n      id: 11,\n      name: 'Test1',\n      email: 'test1@test.com',\n      vendor: 'LoopMe',\n      company: 'Home',\n      action: 'input'\n    &#125;,\n    ...\n  ];\n  </code>\n</pre>\n\n<h3>Grid settings</h3>\n<pre class=\"language-javascript\">\n  <code class=\"language-javascript\">\n    settings: Object = &#123;\n      headers: [\n        &#123; key: 'id', name: 'id', sortable: true, type: 'text'&#125;,\n        &#123; key: 'name', name: 'name', sortable: false, type: 'text'&#125;,\n        &#123; key: 'company', name: 'company', sortable: false, type: 'text'&#125;,\n        &#123; key: 'vendor', name: 'vendor', sortable: true, type: 'text'&#125;,\n        &#123; key: 'email', name: 'email', sortable: false, type: 'link'&#125;,\n        &#123; key: 'action', name: '', sortable: false, type: 'action'&#125;,\n      ],\n    &#125;;\n  </code>\n</pre>\n<pre class=\"language-markup\">\n  <code class=\"language-markup\">\n    &lt;uikit-grid [GridDataColumns]=\"GridDataColumns\" [settings]=\"settings\"&gt;&lt;/uikit-grid&gt;\n  </code>\n</pre>\n<uikit-grid [GridDataColumns]=\"GridDataColumns\" [settings]=\"settings\"></uikit-grid>\n<h3>Data array Column format</h3>\n<pre class=\"language-javascript\">\n  <code class=\"language-javascript\">\n    GridDataColumns = [\n      &#123;\n        id: [11, 12, 13, 14],\n        name: ['Test1', 'Test2', 'Test3', 'Test4'],\n        email: ['test1@test.com', 'test2@test.com', 'test3@test.com', 'test4@test.com'],\n        vendor: ['LoopMe', '', 'EA', 'LoopMe'],\n        company: ['LoopMe', 'LoopMe', 'LoopMe', 'LoopMe'],\n        action: ['input', 'input', 'input', 'input']\n      &#125;\n    ];\n  </code>\n</pre>\n\n<h3>Grid settings</h3>\n<pre class=\"language-javascript\">\n  <code class=\"language-javascript\">\n    settings: Object = &#123;\n      headers: [\n        &#123; key: 'id', name: 'id', sortable: true, type: 'text'&#125;,\n        &#123; key: 'name', name: 'name', sortable: false, type: 'text'&#125;,\n        &#123; key: 'company', name: 'company', sortable: false, type: 'text'&#125;,\n        &#123; key: 'vendor', name: 'vendor', sortable: true, type: 'text'&#125;,\n        &#123; key: 'email', name: 'email', sortable: false, type: 'link'&#125;,\n        &#123; key: 'action', name: '', sortable: false, type: 'action'&#125;,\n      ],\n    &#125;;\n  </code>\n</pre>\n"
+
+/***/ }),
+
+/***/ 186:
+/***/ (function(module, exports) {
+
+module.exports = "<h1>Menu Components</h1>\n<h2>Basic tag</h2>\n<pre class=\"language-markup\">\n  <code class=\"language-markup\">\n    &lt;uikit-menu [menuItems]=\"menuItems\"&gt;&lt;/uikit-menu&gt;\n  </code>\n</pre>\n<div style=\"background: #000; width: 85px;\">\n  <uikit-menu [menuItems]=\"menuItems\"></uikit-menu>\n</div>\n<h2>Array Menu Items</h2>\n<pre class=\"language-javascript\">\n  <code class=\"language-javascript\">\n    menuItems = [\n      &#123;\n        name: 'Menu',\n        id: \"done\",\n        active: true,\n        routerLink: '',\n        icon: 'touch_app',\n        subItems: [\n          &#123; name: 'SubItem 1', id: \"menu\", routerLink: '' &#125;,\n          &#123; name: 'SubItem 2', id: \"menu\", routerLink: '' &#125;,\n        ]\n      &#125;\n      ...\n    ]\n  </code>\n</pre>\n<p>Name for icon field <a href=\"https://www.materialpalette.com/icons\">see here</a></p>\n"
+
+/***/ }),
+
+/***/ 187:
+/***/ (function(module, exports) {
+
+module.exports = "<h1>LoopMe Angular 2 UIKit</h1>\n<h2>Install</h2>\n<pre class=\"language-bash\">\n  <code class=\"language-bash\">\n  npm install nikola-xiii/ng-uikit\n  </code>\n</pre>\n<h2>Include and use</h2>\n<p>Import NgModule</p>\n<pre class=\"language-javascript\">\n  <code class=\"language-javascript\">\n  import &#123; NgUIKitModule &#125; from 'ng-uikit/components/ng-uikit.module';\n  </code>\n</pre>\n<pre class=\"language-javascript\">\n  <code class=\"language-javascript\">\n    import &#123; NgUIKitModule &#125; from 'ng-uikit/components/ng-uikit.module';\n\n    @NgModule(&#123;\n      ...\n      imports: [\n      ...,\n      NgUIKitModule,\n    ]&#125;);\n  </code>\n</pre>\n"
 
 /***/ }),
 
@@ -695,6 +733,40 @@ module.exports = __webpack_require__(89);
 /***/ }),
 
 /***/ 58:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__button_component__ = __webpack_require__(98);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_common__ = __webpack_require__(13);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ButtonModule; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+var ButtonModule = (function () {
+    function ButtonModule() {
+    }
+    return ButtonModule;
+}());
+ButtonModule = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["b" /* NgModule */])({
+        imports: [__WEBPACK_IMPORTED_MODULE_2__angular_common__["a" /* CommonModule */]],
+        exports: [__WEBPACK_IMPORTED_MODULE_1__button_component__["a" /* ButtonComponent */]],
+        declarations: [__WEBPACK_IMPORTED_MODULE_1__button_component__["a" /* ButtonComponent */]]
+    })
+], ButtonModule);
+
+//# sourceMappingURL=button.module.js.map
+
+/***/ }),
+
+/***/ 59:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -721,8 +793,8 @@ var ButtonDocComponent = (function () {
 ButtonDocComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
         selector: 'kit-button-doc',
-        template: __webpack_require__(179),
-        styles: [__webpack_require__(167)]
+        template: __webpack_require__(184),
+        styles: [__webpack_require__(172)]
     }),
     __metadata("design:paramtypes", [])
 ], ButtonDocComponent);
@@ -731,7 +803,7 @@ ButtonDocComponent = __decorate([
 
 /***/ }),
 
-/***/ 59:
+/***/ 60:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -819,8 +891,8 @@ var GridDocComponent = (function () {
 GridDocComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
         selector: 'kit-grid-doc',
-        template: __webpack_require__(180),
-        styles: [__webpack_require__(168)]
+        template: __webpack_require__(185),
+        styles: [__webpack_require__(173)]
     }),
     __metadata("design:paramtypes", [])
 ], GridDocComponent);
@@ -829,7 +901,7 @@ GridDocComponent = __decorate([
 
 /***/ }),
 
-/***/ 60:
+/***/ 61:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -868,8 +940,8 @@ var MenuDocComponent = (function () {
 MenuDocComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
         selector: 'kit-menu-doc',
-        template: __webpack_require__(181),
-        styles: [__webpack_require__(169)]
+        template: __webpack_require__(186),
+        styles: [__webpack_require__(174)]
     }),
     __metadata("design:paramtypes", [])
 ], MenuDocComponent);
@@ -878,7 +950,7 @@ MenuDocComponent = __decorate([
 
 /***/ }),
 
-/***/ 61:
+/***/ 62:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -904,47 +976,13 @@ var ReadmeComponent = (function () {
 ReadmeComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
         selector: 'kit-readme',
-        template: __webpack_require__(182),
-        styles: [__webpack_require__(170)]
+        template: __webpack_require__(187),
+        styles: [__webpack_require__(175)]
     }),
     __metadata("design:paramtypes", [])
 ], ReadmeComponent);
 
 //# sourceMappingURL=readme.component.js.map
-
-/***/ }),
-
-/***/ 62:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__button_component__ = __webpack_require__(101);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_common__ = __webpack_require__(13);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ButtonModule; });
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
-
-
-var ButtonModule = (function () {
-    function ButtonModule() {
-    }
-    return ButtonModule;
-}());
-ButtonModule = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["b" /* NgModule */])({
-        imports: [__WEBPACK_IMPORTED_MODULE_2__angular_common__["a" /* CommonModule */]],
-        exports: [__WEBPACK_IMPORTED_MODULE_1__button_component__["a" /* ButtonComponent */]],
-        declarations: [__WEBPACK_IMPORTED_MODULE_1__button_component__["a" /* ButtonComponent */]]
-    })
-], ButtonModule);
-
-//# sourceMappingURL=button.module.js.map
 
 /***/ }),
 
@@ -969,7 +1007,7 @@ webpackEmptyContext.id = 88;
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__ = __webpack_require__(97);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_app_module__ = __webpack_require__(99);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_app_module__ = __webpack_require__(109);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__(111);
 
 
@@ -988,69 +1026,48 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dyna
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppComponent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ButtonComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
 
-var AppComponent = (function () {
-    function AppComponent() {
-        this.title = 'Angular 2 UIKit';
-        this.menuItems = [
-            {
-                name: 'Readme',
-                routerLink: '/readme',
-                icon: 'assignment_late',
-                subItems: [
-                    { name: 'SubItem 1', id: "menu", routerLink: '' },
-                ]
-            },
-            {
-                name: 'Buttons',
-                id: "buttons",
-                active: true,
-                routerLink: '/buttons',
-                icon: 'touch_app'
-            },
-            {
-                name: 'Menu',
-                id: "menu",
-                routerLink: '/menu',
-                active: false,
-                icon: 'menu',
-                subItems: [
-                    { name: 'SubItem 1', id: "menu", routerLink: '' },
-                    { name: 'SubItem 2', id: "menu", routerLink: '' },
-                    { name: 'SubItem 3', id: "menu", routerLink: '' },
-                    { name: 'SubItem 4', id: "menu", routerLink: '' }
-                ]
-            },
-            {
-                name: 'Table grid',
-                id: "buttons",
-                active: true,
-                routerLink: '/grid',
-                icon: 'view_list'
-            }
-        ];
+var ButtonComponent = (function () {
+    function ButtonComponent() {
     }
-    AppComponent.prototype.HelloClick = function () {
-        console.log('Hello from main app');
-    };
-    return AppComponent;
+    ButtonComponent.prototype.ngOnInit = function () { };
+    return ButtonComponent;
 }());
-AppComponent = __decorate([
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Input */])("UIButtonType"),
+    __metadata("design:type", String)
+], ButtonComponent.prototype, "UIButtonType", void 0);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Input */])("type"),
+    __metadata("design:type", String)
+], ButtonComponent.prototype, "type", void 0);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Input */])("icon"),
+    __metadata("design:type", String)
+], ButtonComponent.prototype, "icon", void 0);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Input */])(),
+    __metadata("design:type", Boolean)
+], ButtonComponent.prototype, "disabled", void 0);
+ButtonComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
-        selector: 'app-root',
-        template: __webpack_require__(178),
+        selector: 'uikit-button',
+        template: __webpack_require__(177),
         styles: [__webpack_require__(166)]
     })
-], AppComponent);
+], ButtonComponent);
 
-//# sourceMappingURL=app.component.js.map
+//# sourceMappingURL=button.component.js.map
 
 /***/ }),
 
@@ -1058,65 +1075,50 @@ AppComponent = __decorate([
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(95);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(96);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_routes__ = __webpack_require__(100);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_common__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__app_component__ = __webpack_require__(98);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_ng_uikit_module__ = __webpack_require__(108);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__button_doc_button_doc_component__ = __webpack_require__(58);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__menu_doc_menu_doc_component__ = __webpack_require__(60);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__readme_readme_component__ = __webpack_require__(61);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__grid_doc_grid_doc_component__ = __webpack_require__(59);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GridComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
 
-
-
-
-
-
-
-
-
-
-
-
-var AppModule = (function () {
-    function AppModule() {
+var GridComponent = (function () {
+    function GridComponent() {
+        this.GridDataRows = [];
     }
-    return AppModule;
+    GridComponent.prototype.RebuildToRow = function (DataColumns) {
+    };
+    GridComponent.prototype.ngOnInit = function () {
+    };
+    return GridComponent;
 }());
-AppModule = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["b" /* NgModule */])({
-        declarations: [
-            __WEBPACK_IMPORTED_MODULE_6__app_component__["a" /* AppComponent */],
-            __WEBPACK_IMPORTED_MODULE_8__button_doc_button_doc_component__["a" /* ButtonDocComponent */],
-            __WEBPACK_IMPORTED_MODULE_9__menu_doc_menu_doc_component__["a" /* MenuDocComponent */],
-            __WEBPACK_IMPORTED_MODULE_10__readme_readme_component__["a" /* ReadmeComponent */],
-            __WEBPACK_IMPORTED_MODULE_11__grid_doc_grid_doc_component__["a" /* GridDocComponent */]
-        ],
-        imports: [
-            __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
-            __WEBPACK_IMPORTED_MODULE_5__angular_common__["a" /* CommonModule */],
-            __WEBPACK_IMPORTED_MODULE_7__components_ng_uikit_module__["a" /* NgUIKitModule */],
-            __WEBPACK_IMPORTED_MODULE_2__angular_forms__["a" /* FormsModule */],
-            __WEBPACK_IMPORTED_MODULE_3__angular_http__["a" /* HttpModule */],
-            __WEBPACK_IMPORTED_MODULE_4__app_routes__["a" /* routing */],
-        ],
-        providers: [],
-        bootstrap: [__WEBPACK_IMPORTED_MODULE_6__app_component__["a" /* AppComponent */]]
-    })
-], AppModule);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Input */])(),
+    __metadata("design:type", Object)
+], GridComponent.prototype, "GridDataRows", void 0);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Input */])(),
+    __metadata("design:type", Object)
+], GridComponent.prototype, "GridDataColumns", void 0);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Input */])(),
+    __metadata("design:type", Object)
+], GridComponent.prototype, "settings", void 0);
+GridComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
+        selector: 'uikit-grid',
+        template: __webpack_require__(178),
+        styles: [__webpack_require__(167)],
+    }),
+    __metadata("design:paramtypes", [])
+], GridComponent);
 
-//# sourceMappingURL=app.module.js.map
+//# sourceMappingURL=grid.component.js.map
 
 /***/ })
 
