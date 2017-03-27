@@ -6,7 +6,7 @@
     </th>
   </thead>
   <tbody>
-    <template [ngIf]="GridDataRows">
+    <ng-template [ngIf]="GridDataRows">
       <tr *ngFor="let GridDataRow of GridDataRows">
         <td *ngFor="let column of settings.headers">
           <span *ngIf="column.type == 'text'">{{GridDataRow[column.key]}}</span>
@@ -14,8 +14,8 @@
           <uikit-button *ngIf="column.type == 'action'" UIButtonType="icon" icon="{{GridDataRow[column.key].icon}}"></uikit-button>
         </td>
       </tr>
-    </template>
-    <template [ngIf]="GridDataColumns">
+    </ng-template>
+    <ng-template [ngIf]="GridDataColumns">
       <tr *ngFor="let GridDataColumn of GridDataColumns.id; let i = index;">
         <td *ngFor="let column of settings.headers">
           <span *ngIf="column.type == 'text'">{{GridDataColumns[column.key][i]}}</span>
@@ -23,6 +23,6 @@
           <uikit-button *ngIf="column.type == 'action'" UIButtonType="icon" icon="{{GridDataColumns[column.key][i]}}"></uikit-button>
         </td>
       </tr>
-    </template>
+    </ng-template>
   </tbody>
 </table>
