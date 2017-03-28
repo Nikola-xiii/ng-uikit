@@ -20,6 +20,22 @@
     }
   }
 
+  .progress {
+    display: inline-block;
+    width: 70px;
+    height: 7px;
+    border-radius: 28px;
+    background-color: #f7f7f7;
+    border: solid 1px #e2e2e2;
+
+    div {
+      border-radius: 28px;
+      height: 7px;
+      margin-right: 5px;
+      background-color: #1e7836;
+    }
+  }
+
   tr {
     border-bottom: 1px solid #D0D0D0;
   }

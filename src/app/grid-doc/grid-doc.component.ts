@@ -15,16 +15,18 @@ export class GridDocComponent implements OnInit {
       name: 'Test1',
       email: 'test1@test.com',
       vendor: 'LoopMe',
+      done: 44,
       company: 'Home',
       action: {
         name: 'Login',
         icon: 'input',
-      }
+      },
     },
     {
       id: 12,
       email: 'test2@test.com',
       vendor: 'LoopMe',
+      done: 34,
       company: 'EA Sport',
       action: {
         name: 'Login',
@@ -37,6 +39,7 @@ export class GridDocComponent implements OnInit {
       email: 'test1@test.com',
       vendor: 'LoopMe',
       company: 'Home',
+      done: 54,
       action: {
         name: 'Login',
         icon: 'input'
@@ -47,6 +50,7 @@ export class GridDocComponent implements OnInit {
       email: 'test2@test.com',
       vendor: 'LoopMe',
       company: 'EA Sport',
+      done: 11,
       action: {
         name: 'Login',
         icon: 'input'
@@ -69,6 +73,7 @@ export class GridDocComponent implements OnInit {
       { key: 'name', name: 'name', sortable: false, type: 'text'},
       { key: 'company', name: 'company', sortable: false, type: 'text'},
       { key: 'vendor', name: 'vendor', sortable: true, type: 'text'},
+      { key: 'done', name: 'done, %', sortable: false, type: 'progress'},
       { key: 'email', name: 'email', sortable: false, type: 'link'},
       { key: 'action', name: '', sortable: false, type: 'action'},
     ],

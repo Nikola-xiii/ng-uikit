@@ -12,6 +12,12 @@
           <span *ngIf="column.type == 'text'">{{GridDataRow[column.key]}}</span>
           <a *ngIf="column.type == 'link'" href="{{GridDataRow[column.key]}}">{{GridDataRow[column.key]}}</a>
           <uikit-button *ngIf="column.type == 'action'" (click)="GetRow(GridDataRow, GridDataRow[column.key].name)" UIButtonType="icon" icon="{{GridDataRow[column.key].icon}}"></uikit-button>
+          <div *ngIf="column.type == 'progress'">
+            <div class="progress">
+              <div [ngStyle]="{width: GridDataRow[column.key] + 'px'}"></div>
+            </div>
+            <span>{{GridDataRow[column.key]}}%</span>
+          </div>
         </td>
       </tr>
     </ng-template>
