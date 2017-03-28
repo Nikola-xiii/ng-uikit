@@ -18,7 +18,7 @@ export class GridDocComponent implements OnInit {
       company: 'Home',
       action: {
         name: 'Login',
-        icon: 'input'
+        icon: 'input',
       }
     },
     {

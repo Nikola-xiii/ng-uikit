@@ -5,6 +5,8 @@
 //---------------------------------------------------------------------------------------------------------------------
 $red: #B11118;
 $red-darker: #8A070C;
+$orange: #f6a623;
+$orange-darker: #d5890c;
 $grey: #F4F4F4;
 $grey-dark: #7D7D7D;
 $grey-darker: #D0D0D0;
@@ -28,12 +30,17 @@ $uikit-button-border-radius: 3px !default;
   text-transform: uppercase;
   border-radius: $uikit-button-border-radius;
   border: 1px solid;
+  outline: none;
   font-size: $uikit-button-font-size;
   line-height: 1.4;
   font-weight: $font-bold;
 
   &[disabled] {
     opacity: .5;
+  }
+
+  &:hover {
+    cursor: pointer;
   }
 }
 
@@ -68,7 +75,6 @@ $uikit-button-border-radius: 3px !default;
 
   &:hover {
     background: $red-darker;
-    cursor: pointer;
   }
 
   &.cancel {
@@ -78,7 +84,6 @@ $uikit-button-border-radius: 3px !default;
 
     &:hover {
       background: $grey-darker;
-      cursor: pointer;
     }
   }
 }
@@ -99,6 +104,16 @@ $uikit-button-border-radius: 3px !default;
     display: block;
   }
 
+  &.orange {
+    background: $orange;
+    color: $white;
+    border-color: $orange-darker;
+
+    &:hover {
+      background: $orange-darker;
+    }
+  }
+
   &.cancel {
     background: $white;
     border-color: $grey-darker;
@@ -106,7 +121,21 @@ $uikit-button-border-radius: 3px !default;
 
     &:hover {
       background: $grey-darker;
-      cursor: pointer;
     }
+  }
+}
+
+%uikit-button-plus {
+  background: transparent;
+  width: auto;
+  padding: 0;
+  border: 0;
+  color: $red;
+
+  .material-icons {
+    margin-right: 2px;
+    vertical-align: bottom;
+    font-size: 14px;
+    line-height: 1;
   }
 }

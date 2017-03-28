@@ -12,7 +12,7 @@ export class GridComponent implements OnInit {
   @Input() GridDataColumns: Object;
   @Input() settings: Object;
 
-  RebuildToRow(DataColumns) {
+  GetRow(row) {
 
   }
 

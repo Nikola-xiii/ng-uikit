@@ -18,4 +18,8 @@
   &-secondary {
     @extend %uikit-button-secondary;
   }
+
+  &-plus {
+    @extend %uikit-button-plus;
+  }
 }
