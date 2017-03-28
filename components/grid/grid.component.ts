@@ -1,4 +1,4 @@
-import {Component, OnInit, Input} from '@angular/core';
+import {Component, OnInit, Input, Output, EventEmitter} from '@angular/core';
 
 @Component({
   selector: 'uikit-grid',
@@ -7,16 +7,24 @@ import {Component, OnInit, Input} from '@angular/core';
 })
 
 export class GridComponent implements OnInit {
-
   @Input() GridDataRows: Array<any> = [];
   @Input() GridDataColumns: Object;
   @Input() settings: Object;
+  @Output() gridAction = new EventEmitter();
 
-  GetRow(row) {
+  public actionData:object;
 
+  GetRow(row: object, action: string) {
+    this.actionData = {
+      action: action,
+      row: row
+    };
+
+    this.gridAction.emit(this.actionData);
   }
 
-  constructor() {}
+  constructor() {
+  }
 
   ngOnInit() {
   }

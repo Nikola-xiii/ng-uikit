@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GridDocComponent implements OnInit {
 
-  constructor() { }
+  constructor() {}
 
   public GridDataRows = [
     {
@@ -28,7 +28,7 @@ export class GridDocComponent implements OnInit {
       company: 'EA Sport',
       action: {
         name: 'Login',
-        icon: 'input'
+        icon: 'input',
       }
     },
     {
@@ -74,7 +74,12 @@ export class GridDocComponent implements OnInit {
     ],
   };
 
+  public action: object;
+
   ngOnInit() {
   }
 
+  getActionGrid(actionData) {
+    console.log(actionData, 'Parent')
+  }
 }

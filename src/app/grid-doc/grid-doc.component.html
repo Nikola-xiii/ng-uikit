@@ -1,10 +1,10 @@
 <h1>Grid Component</h1>
 <pre class="language-markup">
   <code class="language-markup">
-    &lt;uikit-grid [GridDataRows]="GridDataRows" [settings]="settings"&gt;&lt;/uikit-grid&gt;
+    &lt;uikit-grid [GridDataRows]="GridDataRows" (action)="getActionGrid($event)" [settings]="settings"&gt;&lt;/uikit-grid&gt;
   </code>
 </pre>
-<uikit-grid [GridDataRows]="GridDataRows" [settings]="settings"></uikit-grid>
+<uikit-grid [GridDataRows]="GridDataRows" (gridAction)="getActionGrid($event)" [settings]="settings"></uikit-grid>
 <h3>Data array Row format</h3>
 <pre class="language-javascript">
   <code class="language-javascript">
