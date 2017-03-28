@@ -664,7 +664,7 @@ module.exports = "<button class=\"uikit-button uikit-button-{{UIButtonType}}\" t
 /***/ 178:
 /***/ (function(module, exports) {
 
-module.exports = "<table class=\"uikit-grid\">\n  <thead>\n    <th *ngFor=\"let Header of settings.headers\">\n      <i *ngIf=\"Header.sortable\" class=\"material-icons\">arrow_downward</i>\n      {{Header.name}}\n    </th>\n  </thead>\n  <tbody>\n    <ng-template [ngIf]=\"GridDataRows\">\n      <tr *ngFor=\"let GridDataRow of GridDataRows\">\n        <td *ngFor=\"let column of settings.headers\">\n          <span *ngIf=\"column.type == 'text'\">{{GridDataRow[column.key]}}</span>\n          <a *ngIf=\"column.type == 'link'\" href=\"{{GridDataRow[column.key]}}\">{{GridDataRow[column.key]}}</a>\n          <uikit-button *ngIf=\"column.type == 'action'\" UIButtonType=\"icon\" icon=\"{{GridDataRow[column.key].icon}}\"></uikit-button>\n        </td>\n      </tr>\n    </ng-template>\n    <ng-template [ngIf]=\"GridDataColumns\">\n      <tr *ngFor=\"let GridDataColumn of GridDataColumns.id; let i = index;\">\n        <td *ngFor=\"let column of settings.headers\">\n          <span *ngIf=\"column.type == 'text'\">{{GridDataColumns[column.key][i]}}</span>\n          <a *ngIf=\"column.type == 'link'\" href=\"{{GridDataColumns[column.key][i]}}\">{{GridDataColumns[column.key][i]}}</a>\n          <uikit-button *ngIf=\"column.type == 'action'\" UIButtonType=\"icon\" icon=\"{{GridDataColumns[column.key][i]}}\"></uikit-button>\n        </td>\n      </tr>\n    </ng-template>\n  </tbody>\n</table>\n"
+module.exports = "<table class=\"uikit-grid\">\n  <thead>\n    <th *ngFor=\"let Header of settings.headers\">\n      <i *ngIf=\"Header.sortable\" class=\"material-icons\">arrow_downward</i>\n      {{Header.name}}\n    </th>\n  </thead>\n  <tbody>\n    <ng-template [ngIf]=\"GridDataRows\">\n      <tr *ngFor=\"let GridDataRow of GridDataRows\">\n        <td *ngFor=\"let column of settings.headers\">\n          <span *ngIf=\"column.type == 'text'\">{{GridDataRow[column.key]}}</span>\n          <a *ngIf=\"column.type == 'link'\" href=\"{{GridDataRow[column.key]}}\">{{GridDataRow[column.key]}}</a>\n          <uikit-button *ngIf=\"column.type == 'action'\" (click)=\"GetRow(GridDataRow, GridDataRow[column.key].name)\" UIButtonType=\"icon\" icon=\"{{GridDataRow[column.key].icon}}\"></uikit-button>\n        </td>\n      </tr>\n    </ng-template>\n    <ng-template [ngIf]=\"GridDataColumns\">\n      <tr *ngFor=\"let GridDataColumn of GridDataColumns.id; let i = index;\">\n        <td *ngFor=\"let column of settings.headers\">\n          <span *ngIf=\"column.type == 'text'\">{{GridDataColumns[column.key][i]}}</span>\n          <a *ngIf=\"column.type == 'link'\" href=\"{{GridDataColumns[column.key][i]}}\">{{GridDataColumns[column.key][i]}}</a>\n          <uikit-button *ngIf=\"column.type == 'action'\" UIButtonType=\"icon\" icon=\"{{GridDataColumns[column.key][i]}}\"></uikit-button>\n        </td>\n      </tr>\n    </ng-template>\n  </tbody>\n</table>\n"
 
 /***/ }),
 
@@ -706,7 +706,7 @@ module.exports = "<h1>Button component</h1>\n<h2>Markup</h2>\n<pre class=\"langu
 /***/ 185:
 /***/ (function(module, exports) {
 
-module.exports = "<h1>Grid Component</h1>\n<pre class=\"language-markup\">\n  <code class=\"language-markup\">\n    &lt;uikit-grid [GridDataRows]=\"GridDataRows\" [settings]=\"settings\"&gt;&lt;/uikit-grid&gt;\n  </code>\n</pre>\n<uikit-grid [GridDataRows]=\"GridDataRows\" [settings]=\"settings\"></uikit-grid>\n<h3>Data array Row format</h3>\n<pre class=\"language-javascript\">\n  <code class=\"language-javascript\">\n    public GridDataRows = [\n    &#123;\n      id: 11,\n      name: 'Test1',\n      email: 'test1@test.com',\n      vendor: 'LoopMe',\n      company: 'Home',\n      action: 'input'\n    &#125;,\n    ...\n  ];\n  </code>\n</pre>\n\n<h3>Grid settings</h3>\n<pre class=\"language-javascript\">\n  <code class=\"language-javascript\">\n    settings: Object = &#123;\n      headers: [\n        &#123; key: 'id', name: 'id', sortable: true, type: 'text'&#125;,\n        &#123; key: 'name', name: 'name', sortable: false, type: 'text'&#125;,\n        &#123; key: 'company', name: 'company', sortable: false, type: 'text'&#125;,\n        &#123; key: 'vendor', name: 'vendor', sortable: true, type: 'text'&#125;,\n        &#123; key: 'email', name: 'email', sortable: false, type: 'link'&#125;,\n        &#123; key: 'action', name: '', sortable: false, type: 'action'&#125;,\n      ],\n    &#125;;\n  </code>\n</pre>\n<pre class=\"language-markup\">\n  <code class=\"language-markup\">\n    &lt;uikit-grid [GridDataColumns]=\"GridDataColumns\" [settings]=\"settings\"&gt;&lt;/uikit-grid&gt;\n  </code>\n</pre>\n<uikit-grid [GridDataColumns]=\"GridDataColumns\" [settings]=\"settings\"></uikit-grid>\n<h3>Data array Column format</h3>\n<pre class=\"language-javascript\">\n  <code class=\"language-javascript\">\n    GridDataColumns = [\n      &#123;\n        id: [11, 12, 13, 14],\n        name: ['Test1', 'Test2', 'Test3', 'Test4'],\n        email: ['test1@test.com', 'test2@test.com', 'test3@test.com', 'test4@test.com'],\n        vendor: ['LoopMe', '', 'EA', 'LoopMe'],\n        company: ['LoopMe', 'LoopMe', 'LoopMe', 'LoopMe'],\n        action: ['input', 'input', 'input', 'input']\n      &#125;\n    ];\n  </code>\n</pre>\n\n<h3>Grid settings</h3>\n<pre class=\"language-javascript\">\n  <code class=\"language-javascript\">\n    settings: Object = &#123;\n      headers: [\n        &#123; key: 'id', name: 'id', sortable: true, type: 'text'&#125;,\n        &#123; key: 'name', name: 'name', sortable: false, type: 'text'&#125;,\n        &#123; key: 'company', name: 'company', sortable: false, type: 'text'&#125;,\n        &#123; key: 'vendor', name: 'vendor', sortable: true, type: 'text'&#125;,\n        &#123; key: 'email', name: 'email', sortable: false, type: 'link'&#125;,\n        &#123; key: 'action', name: '', sortable: false, type: 'action'&#125;,\n      ],\n    &#125;;\n  </code>\n</pre>\n"
+module.exports = "<h1>Grid Component</h1>\n<pre class=\"language-markup\">\n  <code class=\"language-markup\">\n    &lt;uikit-grid [GridDataRows]=\"GridDataRows\" (action)=\"getActionGrid($event)\" [settings]=\"settings\"&gt;&lt;/uikit-grid&gt;\n  </code>\n</pre>\n<uikit-grid [GridDataRows]=\"GridDataRows\" (gridAction)=\"getActionGrid($event)\" [settings]=\"settings\"></uikit-grid>\n<h3>Data array Row format</h3>\n<pre class=\"language-javascript\">\n  <code class=\"language-javascript\">\n    public GridDataRows = [\n    &#123;\n      id: 11,\n      name: 'Test1',\n      email: 'test1@test.com',\n      vendor: 'LoopMe',\n      company: 'Home',\n      action: 'input'\n    &#125;,\n    ...\n  ];\n  </code>\n</pre>\n\n<h3>Grid settings</h3>\n<pre class=\"language-javascript\">\n  <code class=\"language-javascript\">\n    settings: Object = &#123;\n      headers: [\n        &#123; key: 'id', name: 'id', sortable: true, type: 'text'&#125;,\n        &#123; key: 'name', name: 'name', sortable: false, type: 'text'&#125;,\n        &#123; key: 'company', name: 'company', sortable: false, type: 'text'&#125;,\n        &#123; key: 'vendor', name: 'vendor', sortable: true, type: 'text'&#125;,\n        &#123; key: 'email', name: 'email', sortable: false, type: 'link'&#125;,\n        &#123; key: 'action', name: '', sortable: false, type: 'action'&#125;,\n      ],\n    &#125;;\n  </code>\n</pre>\n<pre class=\"language-markup\">\n  <code class=\"language-markup\">\n    &lt;uikit-grid [GridDataColumns]=\"GridDataColumns\" [settings]=\"settings\"&gt;&lt;/uikit-grid&gt;\n  </code>\n</pre>\n<uikit-grid [GridDataColumns]=\"GridDataColumns\" [settings]=\"settings\"></uikit-grid>\n<h3>Data array Column format</h3>\n<pre class=\"language-javascript\">\n  <code class=\"language-javascript\">\n    GridDataColumns = [\n      &#123;\n        id: [11, 12, 13, 14],\n        name: ['Test1', 'Test2', 'Test3', 'Test4'],\n        email: ['test1@test.com', 'test2@test.com', 'test3@test.com', 'test4@test.com'],\n        vendor: ['LoopMe', '', 'EA', 'LoopMe'],\n        company: ['LoopMe', 'LoopMe', 'LoopMe', 'LoopMe'],\n        action: ['input', 'input', 'input', 'input']\n      &#125;\n    ];\n  </code>\n</pre>\n\n<h3>Grid settings</h3>\n<pre class=\"language-javascript\">\n  <code class=\"language-javascript\">\n    settings: Object = &#123;\n      headers: [\n        &#123; key: 'id', name: 'id', sortable: true, type: 'text'&#125;,\n        &#123; key: 'name', name: 'name', sortable: false, type: 'text'&#125;,\n        &#123; key: 'company', name: 'company', sortable: false, type: 'text'&#125;,\n        &#123; key: 'vendor', name: 'vendor', sortable: true, type: 'text'&#125;,\n        &#123; key: 'email', name: 'email', sortable: false, type: 'link'&#125;,\n        &#123; key: 'action', name: '', sortable: false, type: 'action'&#125;,\n      ],\n    &#125;;\n  </code>\n</pre>\n"
 
 /***/ }),
 
@@ -840,7 +840,7 @@ var GridDocComponent = (function () {
                 company: 'EA Sport',
                 action: {
                     name: 'Login',
-                    icon: 'input'
+                    icon: 'input',
                 }
             },
             {
@@ -885,6 +885,9 @@ var GridDocComponent = (function () {
         };
     }
     GridDocComponent.prototype.ngOnInit = function () {
+    };
+    GridDocComponent.prototype.getActionGrid = function (actionData) {
+        console.log(actionData, 'Parent');
     };
     return GridDocComponent;
 }());
@@ -1090,8 +1093,14 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var GridComponent = (function () {
     function GridComponent() {
         this.GridDataRows = [];
+        this.gridAction = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["r" /* EventEmitter */]();
     }
-    GridComponent.prototype.GetRow = function (row) {
+    GridComponent.prototype.GetRow = function (row, action) {
+        this.actionData = {
+            action: action,
+            row: row
+        };
+        this.gridAction.emit(this.actionData);
     };
     GridComponent.prototype.ngOnInit = function () {
     };
@@ -1109,6 +1118,10 @@ __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Input */])(),
     __metadata("design:type", Object)
 ], GridComponent.prototype, "settings", void 0);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["v" /* Output */])(),
+    __metadata("design:type", Object)
+], GridComponent.prototype, "gridAction", void 0);
 GridComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
         selector: 'uikit-grid',
