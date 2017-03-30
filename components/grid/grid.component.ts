@@ -8,8 +8,8 @@ import {Component, OnInit, Input, Output, EventEmitter} from '@angular/core';
 
 export class GridComponent implements OnInit {
   @Input() GridDataRows: Array<any> = [];
-  @Input() GridDataColumns: Object;
-  @Input() settings: Object;
+  @Input() GridDataColumns;
+  @Input() settings;
   @Output() gridAction = new EventEmitter();
 
   public actionData:object;
