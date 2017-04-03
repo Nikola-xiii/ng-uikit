@@ -43,6 +43,13 @@ export class AppComponent {
       active: true,
       routerLink: '/grid',
       icon: 'view_list'
+    },
+    {
+      name: 'Text input',
+      id: "input",
+      active: true,
+      routerLink: '/input',
+      icon: 'space_bar'
     }
   ];
 

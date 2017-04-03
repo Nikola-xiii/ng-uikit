@@ -10,6 +10,7 @@ export class ButtonComponent implements OnInit {
   @Input("UIButtonType") UIButtonType: string;
   @Input("type") type: string;
   @Input("icon") icon: string;
+  @Input("size") size: string = "80px";
 
   @Input() disabled: boolean;
 

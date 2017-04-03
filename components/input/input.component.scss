@@ -1,0 +1,5 @@
+@import "input.export";
+
+.uikit-input {
+  @extend %uikit-header;
+}
