@@ -1,12 +1,7 @@
 <uikit-header>
-  <img src="assets/img/logo.svg" height="30">
-  <uikit-button UIButtonType="secondary">Logout</uikit-button>
+  <img src="assets/img/logo.svg" height="23">
+  <uikit-menu [menuItems]="menuItems"></uikit-menu>
 </uikit-header>
 <main>
-  <uikit-sidebar>
-    <uikit-menu [menuItems]="menuItems"></uikit-menu>
-  </uikit-sidebar>
-  <div class="content">
-    <router-outlet></router-outlet>
-  </div>
+  <router-outlet></router-outlet>
 </main>

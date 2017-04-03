@@ -1,27 +1,20 @@
 main {
-  display: flex;
   position: relative;
-  width: 100%;
+  display: block;
   height: calc(100vh - 40px);
 }
 
-app-root {
-  height: calc(100vh - 40px);
-  position: relative;
-  display: flex;
-}
+uikit-header {
+  uikit-menu {
+    margin-left: 40px;
+  }
 
-.content {
-  padding: 0 20px;
-  height: calc(100vh - 40px);
-  width: calc(100% - 85px);
-  overflow-y: scroll;
-}
-
-uikit-sidebar {
   uikit-button {
-    position: absolute;
-    bottom: 5px;
-    left: 2px;
+    display: flex;
   }
 }
+
+uikit-content {
+  display: none;
+}
+

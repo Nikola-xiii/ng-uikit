@@ -10,8 +10,9 @@ $grey: #7c7c7c;
 // Box-sizing for menu
 //----------------------------------------------------------------------------------------------------------------------
 
-$uikit-menu-item-padding: 20px 0;
-$uikit-menu-item-fontsize: 12px;
+$uikit-menu-item-padding: 12px 25px;
+$uikit-menu-item-margin: 0 20px;
+$uikit-menu-item-fontsize: 11px;
 
 %uikit-menu {
   .main-menu {
@@ -22,69 +23,35 @@ $uikit-menu-item-fontsize: 12px;
 
 %uikit-menu-item {
   position: relative;
+  display: inline-block;
   color: $white;
   list-style-type: none;
   text-align: center;
-  padding: $uikit-menu-item-padding;
   cursor: pointer;
   font-size: $uikit-menu-item-fontsize;
-
-  span {
-    opacity: .6;
-  }
-
-  img {
-    height: 24px;
-    width: auto;
-  }
 
   &:hover {
     .sub-menu {
       display: block;
-    }
-
-    .material-icons,
-    span {
-      opacity: 1;
     }
   }
 
   a {
     color: $white;
     display: block;
+    opacity: .7;
+    line-height: 1.36364;
+    padding: $uikit-menu-item-padding;
     text-decoration: none;
 
-    &.active {
-      .material-icons,
-      span {
-        opacity: 1;
-      }
-
-      span {
-        font-weight: 700;
-      }
-
-      &::after {
-        position: absolute;
-        content: '';
-        width: 0;
-        height: 0;
-        z-index: 120;
-        right: 0;
-        top: 50%;
-        transform: translateY(-50%);
-        border-top: 7px solid transparent;
-        border-bottom: 7px solid transparent;
-        border-right: 7px solid $white;
-      }
+    &:hover {
+      opacity: 1;
     }
-  }
 
-  .material-icons {
-    display: block;
-    opacity: 0.6;
-    margin: 0 auto 12px;
-    font-size: 32px;
+    &.active {
+      opacity: 1;
+      font-weight: 700;
+    }
   }
 }
 
@@ -92,42 +59,23 @@ $uikit-menu-item-fontsize: 12px;
   display: none;
   position: absolute;
   z-index: 100;
-  padding: 10px 1px;
+  padding: 5px 0;
   background: $white;
   box-shadow: 0 1px 4px 1px rgba(150, 150, 150, 0.3);
   margin: 0;
-  width: 120px;
-  left: 85px;
-  top: 20px;
-
-  &::after {
-    position: absolute;
-    content: '';
-    width: 0;
-    height: 0;
-    z-index: 120;
-    left: -7px;
-    top: 30.5px;
-    transform: translateY(-50%);
-    border-top: 7px solid transparent;
-    border-bottom: 7px solid transparent;
-    border-right: 7px solid $white;
-  }
+  width: 140px;
+  left: 0;
+  top: 35px;
 
   li {
     list-style-type: none;
   }
 
   a {
-    color: $grey;
+    color: $red;
     font-size: 10px;
     text-align: left;
-    padding: 5px 15px;
-
-    span {
-      opacity: 1;
-      font-weight: 400;
-    }
+    opacity: 1;
 
     &:hover {
       color: $white;

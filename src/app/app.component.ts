@@ -12,7 +12,6 @@ export class AppComponent {
     {
       name: 'Readme',
       routerLink: '/readme',
-      icon: 'assignment_late',
       subItems: [
         { name: 'SubItem 1', id: "menu", routerLink: '' },
       ]
@@ -21,15 +20,13 @@ export class AppComponent {
       name: 'Buttons',
       id: "buttons",
       active: true,
-      routerLink: '/buttons',
-      icon: 'touch_app'
+      routerLink: '/buttons'
     },
     {
       name: 'Menu',
       id: "menu",
       routerLink: '/menu',
       active: false,
-      icon: 'menu',
       subItems: [
         { name: 'SubItem 1', id: "menu", routerLink: '' },
         { name: 'SubItem 2', id: "menu", routerLink: '' },
@@ -41,15 +38,13 @@ export class AppComponent {
       name: 'Table grid',
       id: "buttons",
       active: true,
-      routerLink: '/grid',
-      icon: 'view_list'
+      routerLink: '/grid'
     },
     {
       name: 'Text input',
       id: "input",
       active: true,
-      routerLink: '/input',
-      icon: 'space_bar'
+      routerLink: '/input'
     }
   ];
 

@@ -1,17 +1,11 @@
 <div class="uikit-menu">
   <ul class="main-menu">
     <li class="uikit-menu-item" *ngFor="let menuItem of menuItems;">
-      <a routerLink="/{{menuItem.routerLink}}" routerLinkActive="active">
-        <i *ngIf="menuItem.icon" class="material-icons">{{menuItem.icon}}</i>
-        <img *ngIf="menuItem.iconUrl" src="{{menuItem.iconUrl}}">
-        <span>{{menuItem.name}}</span>
-      </a>
+      <a routerLink="/{{menuItem.routerLink}}" routerLinkActive="active">{{menuItem.name}}</a>
 
       <ul *ngIf="menuItem.subItems" class="sub-menu">
         <li class="uikit-menu-sub-item" *ngFor="let subItem of menuItem.subItems;">
-          <a routerLink="/{{menuItem.routerLink}}">
-            <span>{{subItem.name}}</span>
-          </a>
+          <a routerLink="/{{menuItem.routerLink}}">{{subItem.name}}</a>
         </li>
       </ul>
     </li>

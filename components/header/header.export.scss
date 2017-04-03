@@ -5,7 +5,7 @@ $uikit-header-color: #b11118 !default;
 // Box size setting
 //---------------------------------------------------------------------------------------------------------------------
 $uikit-header-height: 40px !default;
-$uikit-header-padding:  0 5px !default;
+$uikit-header-padding:  0 10px !default;
 
 
 %uikit-header {
@@ -13,7 +13,6 @@ $uikit-header-padding:  0 5px !default;
   display: flex;
   align-items: center;
   box-sizing: border-box;
-  justify-content: space-between;
   height: $uikit-header-height;
   padding: $uikit-header-padding;
   z-index: 9999;

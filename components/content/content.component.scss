@@ -1,0 +1,9 @@
+@import "content.export";
+
+:host {
+  display: block;
+}
+
+.uikit-content {
+  @extend %uikit-content;
+}
