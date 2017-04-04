@@ -9,11 +9,7 @@ export class ButtonDocComponent implements OnInit {
 
   CreateBTNText = "Create";
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit() {
-  }
-
-
-
+  ngOnInit() {}
 }

@@ -1,0 +1,20 @@
+@import "../settings/uikit.settings";
+@import "layouts.export";
+
+.uikit-header {
+  @extend %uikit-header;
+}
+
+main {
+  position: relative;
+  display: flex;
+  height: calc(100vh - 40px);
+}
+
+.uikit-content {
+  @extend %uikit-content;
+}
+
+.uikit-sidebar {
+  @extend %uikit-sidebar;
+}

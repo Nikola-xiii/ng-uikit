@@ -1,0 +1,56 @@
+// Colors for header
+//---------------------------------------------------------------------------------------------------------------------
+$uikit-header-color: #b11118 !default;
+
+// Box size setting
+//---------------------------------------------------------------------------------------------------------------------
+$uikit-header-height: 40px !default;
+$uikit-header-padding:  0 10px !default;
+
+
+%uikit-header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  height: $uikit-header-height;
+  padding: $uikit-header-padding;
+  z-index: 9999;
+  background-color: $uikit-header-color;
+}
+
+// Colors for sidebar
+//----------------------------------------------------------------------------------------------------------------------
+$sidebar-color: #353535 !default;
+$sidebar-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+
+// Box-sizing for sidebar
+//----------------------------------------------------------------------------------------------------------------------
+
+$uikit-sidebar-height: calc(100vh - 40px) !default;
+$ukit-sidebar-width: 203px !default;
+
+%uikit-sidebar {
+  width: $ukit-sidebar-width;
+  background: $sidebar-color;
+  box-shadow: $sidebar-box-shadow;
+  height: $uikit-sidebar-height;
+}
+
+
+// Colors for content block
+//----------------------------------------------------------------------------------------------------------------------
+$sidebar-color: #353535 !default;
+$sidebar-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+
+// Box-sizing for content block
+//----------------------------------------------------------------------------------------------------------------------
+
+$uikit-content-padding: 18px;
+
+%uikit-content {
+  padding: $uikit-content-padding;
+  display: block;
+  flex: 100%;
+  overflow-y: scroll;
+}
