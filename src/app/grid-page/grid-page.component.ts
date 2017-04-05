@@ -1,11 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'kit-grid-doc',
-  templateUrl: './grid-doc.component.html',
-  styleUrls: ['./grid-doc.component.scss']
+  selector: 'uikit-grid-page',
+  templateUrl: './grid-page.component.html'
 })
-export class GridDocComponent implements OnInit {
+export class GridPage implements OnInit {
 
   constructor() {}
 

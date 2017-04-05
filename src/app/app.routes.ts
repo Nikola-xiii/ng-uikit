@@ -1,16 +1,16 @@
 import { RouterModule, Routes } from '@angular/router';
-import { ButtonDocComponent } from './button-doc/button-doc.component';
-import { MenuDocComponent } from './menu-doc/menu-doc.component';
-import { ReadmeComponent } from './readme/readme.component';
-import { GridDocComponent } from './grid-doc/grid-doc.component'
-import { InputPageComponent } from './input-page/input-page.component'
+import { ButtonPage } from './button-page/button-page.component';
+import { MenuPage } from './menu-page/menu-page.component';
+import { ReadmePage} from './readme/readme.component';
+import { GridPage } from './grid-page/grid-page.component'
+import { InputPage } from './input-page/input-page.component'
 
 const routes: Routes = [
-  { path: 'buttons', component: ButtonDocComponent },
-  { path: 'menu', component: MenuDocComponent },
-  { path: 'grid', component: GridDocComponent },
-  { path: 'readme', component: ReadmeComponent },
-  { path: 'input', component: InputPageComponent },
+  { path: 'buttons', component: ButtonPage },
+  { path: 'menu', component: MenuPage },
+  { path: 'grid', component: GridPage },
+  { path: 'readme', component: ReadmePage },
+  { path: 'input', component: InputPage },
   { path: '', redirectTo: 'readme', pathMatch: 'full' },
 ];
 

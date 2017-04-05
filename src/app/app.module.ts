@@ -6,20 +6,20 @@ import { routing } from './app.routes';
 import { CommonModule } from '@angular/common';
 import { AppComponent} from './app.component';
 import { NgUIKitModule } from '../../components/ng-uikit.module'
-import { ButtonDocComponent } from './button-doc/button-doc.component';
-import { MenuDocComponent } from './menu-doc/menu-doc.component';
-import { ReadmeComponent } from './readme/readme.component';
-import { GridDocComponent } from './grid-doc/grid-doc.component';
-import { InputPageComponent } from './input-page/input-page.component';
+import { ButtonPage } from './button-page/button-page.component';
+import { MenuPage } from './menu-page/menu-page.component';
+import { ReadmePage } from './readme/readme.component';
+import { GridPage } from './grid-page/grid-page.component';
+import { InputPage } from './input-page/input-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ButtonDocComponent,
-    MenuDocComponent,
-    ReadmeComponent,
-    GridDocComponent,
-    InputPageComponent
+    ButtonPage,
+    MenuPage,
+    ReadmePage,
+    GridPage,
+    InputPage
   ],
   imports: [
     BrowserModule,

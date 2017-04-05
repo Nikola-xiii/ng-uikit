@@ -1,11 +1,10 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'kit-readme',
-  templateUrl: './readme.component.html',
-  styleUrls: ['./readme.component.scss']
+  selector: 'uikit-readme',
+  templateUrl: './readme.component.html'
 })
-export class ReadmeComponent implements OnInit {
+export class ReadmePage implements OnInit {
 
   constructor() { }
 

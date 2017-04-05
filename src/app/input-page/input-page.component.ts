@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'kit-input-page',
+  selector: 'uikit-input-page',
   templateUrl: './input-page.component.html',
   styleUrls: ['./input-page.component.scss']
 })
-export class InputPageComponent implements OnInit {
+export class InputPage implements OnInit {
 
   constructor() { }
 

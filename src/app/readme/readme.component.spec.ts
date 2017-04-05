@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ReadmeComponent } from './readme.component';
+import { ReadmePage } from './readme.component';
 
 describe('ReadmeComponent', () => {
-  let component: ReadmeComponent;
-  let fixture: ComponentFixture<ReadmeComponent>;
+  let component: ReadmePage;
+  let fixture: ComponentFixture<ReadmePage>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ReadmeComponent ]
+      declarations: [ ReadmePage ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ReadmeComponent);
+    fixture = TestBed.createComponent(ReadmePage);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

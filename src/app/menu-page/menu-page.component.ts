@@ -1,11 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'kit-menu-doc',
-  templateUrl: './menu-doc.component.html',
-  styleUrls: ['./menu-doc.component.scss']
+  selector: 'uikit-menu-page',
+  templateUrl: './menu-page.component.html'
 })
-export class MenuDocComponent implements OnInit {
+export class MenuPage implements OnInit {
 
   menuItems = [
     {
