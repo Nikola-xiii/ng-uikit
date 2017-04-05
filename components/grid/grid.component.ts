@@ -12,7 +12,7 @@ export class GridComponent implements OnInit {
   @Input() settings;
   @Output() gridAction = new EventEmitter();
 
-  public actionData:object;
+  public actionData: object;
 
   GetRow(row: object, action: string) {
     this.actionData = {

@@ -32,6 +32,7 @@ $ukit-sidebar-width: 203px !default;
 
 %uikit-sidebar {
   width: $ukit-sidebar-width;
+  flex: $ukit-sidebar-width;
   background: $sidebar-color;
   box-shadow: $sidebar-box-shadow;
   height: $uikit-sidebar-height;
@@ -51,6 +52,6 @@ $uikit-content-padding: 18px;
 %uikit-content {
   padding: $uikit-content-padding;
   display: block;
-  flex: 100%;
+  flex: calc(100% - 239px);
   overflow-y: scroll;
 }

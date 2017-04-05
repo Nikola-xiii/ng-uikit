@@ -1,3 +1,12 @@
-<header class="uikit-header">
-  <ng-content></ng-content>
-</header>
+<label
+  [ngClass]="{disabled: disabled}"
+  *ngIf="label">{{label}}
+  <span *ngIf="required" class="required">*</span></label>
+<input
+  placeholder={{placeholder}}
+  [attr.disabled]="disabled ? true : null" type="text"
+  class="uikit-input"
+  [ngClass]="{error: !valid, disabled: disabled }">
+<div *ngIf="mentric" class="mentric">{{mentric}}</div>
+<div *ngIf="mentric" class="mentric">{{mentric}}</div>
+<span *ngIf="!valid" class="input-error-msg">{{errorText}}</span>

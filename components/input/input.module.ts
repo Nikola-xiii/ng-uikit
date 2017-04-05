@@ -1,10 +1,11 @@
 import { NgModule } from '@angular/core';
 import { InputComponent } from './input.component';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
-  imports: [],
+  imports: [CommonModule],
   exports: [InputComponent],
   declarations: [InputComponent]
 })
 
-export class HeaderModule { }
+export class InputModule { }

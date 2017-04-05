@@ -9,6 +9,10 @@ export class InputPageComponent implements OnInit {
 
   constructor() { }
 
+  public validInput() {
+    return false;
+  }
+
   ngOnInit() {
   }
 

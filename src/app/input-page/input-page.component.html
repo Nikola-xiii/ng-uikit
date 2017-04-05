@@ -1,7 +1,39 @@
 <main>
   <section class="uikit-content">
-    <p>
-      input-page works!
-    </p>
+    <h1>Input text component</h1>
+    <h3>Without label</h3>
+    <uikit-input
+      [errorText]="'Please fill this field!'"
+      placeholder="Text"
+      [required]="false"
+      [valid]="true"></uikit-input>
+    <h3>With label</h3>
+    <uikit-input
+      [label]="'Label'"
+      placeholder="Text"
+      [required]="false"
+      [valid]="true"></uikit-input>
+    <h3>Disabled</h3>
+    <uikit-input
+      [label]="'Label'"
+      placeholder="Text"
+      [required]="false"
+      [disabled]="true"
+      [valid]="true"></uikit-input>
+    <h3>Required field</h3>
+    <uikit-input
+      [label]="'Label'"
+      [errorText]="'Please fill this field!'"
+      placeholder="Text"
+      [required]="true"
+      [valid]="true"></uikit-input>
+    <h3>Required field not valid</h3>
+    <uikit-input
+      [label]="'Label'"
+      [errorText]="'Please fill this field!'"
+      placeholder="Text"
+      [required]="true"
+      [value]="Error"
+      [valid]="false"></uikit-input>
   </section>
 </main>

@@ -1,11 +1,59 @@
 // Colors
 //---------------------------------------------------------------------------------------------------------------------
-
+$uikit-input-border-color: #d0d0d0;
+$uikit-input-hover-color: #000;
+$uikit-input-error-color: #b11118;
 
 // Box size setting
 //---------------------------------------------------------------------------------------------------------------------
-
+$uikit-input-width: 170px;
+$uikit-input-padding: 7px;
 
 %uikit-input {
   position: relative;
+  width: $uikit-input-width;
+  padding: $uikit-input-padding;
+  font-size: 11px;
+
+  line-height: 1.4;
+  border: 1px solid $uikit-input-border-color;
+
+  &::placeholder {
+    color: #323232;
+  }
+
+  &.disabled {
+    opacity: 0.5;
+
+    &:hover,
+    &:focus {
+      border: 1px solid $uikit-input-border-color;
+      outline: none;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    border: 1px solid $uikit-input-hover-color;
+    outline: none;
+  }
+
+  &.error {
+    border-color: $uikit-input-error-color;
+  }
+}
+
+%uikit-label {
+  font-size: 12px;
+  line-height: 1.4;
+  margin-bottom: 6px;
+  display: block;
+
+  &.disabled {
+    opacity: 0.5;
+  }
+
+  .required {
+    color: $uikit-input-error-color;
+  }
 }
